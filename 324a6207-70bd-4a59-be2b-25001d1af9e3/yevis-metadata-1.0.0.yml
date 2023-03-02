@@ -19,21 +19,21 @@ workflow:
   testing:
     - id: test_1
       files:
-        - url: "http://yevis-http-server:8194/mutect2.input.small.json"
+        - url: "https://zenodo.org/record/7687569/files/mutect2.input.small.json"
           target: wf_params.json
           type: wf_params
-        - url: "http://yevis-http-server:8194/Homo_sapiens_assembly19.fasta.fai"
+        - url: "https://zenodo.org/record/7687569/files/Homo_sapiens_assembly19.fasta.fai"
           target: Homo_sapiens_assembly19.fasta.fai
           type: other
-        - url: "http://yevis-http-server:8194/Homo_sapiens_assembly19.fasta"
+        - url: "https://zenodo.org/record/7687569/files/Homo_sapiens_assembly19.fasta"
           target: Homo_sapiens_assembly19.fasta
           type: other
-        - url: "http://yevis-http-server:8194/Homo_sapiens_assembly19.dict"
+        - url: "https://zenodo.org/record/7687569/files/Homo_sapiens_assembly19.dict"
           target: Homo_sapiens_assembly19.dict
           type: other
-        - url: "http://yevis-http-server:8194/SM-74NEG.small.bam"
+        - url: "https://zenodo.org/record/7687569/files/SM-74NEG.small.bam"
           target: SM-74NEG.small.bam
           type: other
-        - url: "http://yevis-http-server:8194/SM-74NEG.small.bam.bai"
+        - url: "https://zenodo.org/record/7687569/files/SM-74NEG.small.bam.bai"
           target: SM-74NEG.small.bam.bai
           type: other
