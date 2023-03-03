@@ -8,32 +8,32 @@ authors:
     affiliation: GAJ
 workflow:
   name: mutect2
-  readme: "https://raw.githubusercontent.com/broadinstitute/gatk/227bbca4d6cf41dbc61f605ff4a4b49fc3dbc337/README.md"
+  readme: "https://raw.githubusercontent.com/broadinstitute/gatk/330c59a5bcda6a837a545afd2d453361f373fae3/README.md"
   language:
     type: WDL
     version: "1.0"
   files:
-    - url: "https://raw.githubusercontent.com/broadinstitute/gatk/227bbca4d6cf41dbc61f605ff4a4b49fc3dbc337/scripts/mutect2_wdl/mutect2.wdl"
+    - url: "https://raw.githubusercontent.com/broadinstitute/gatk/330c59a5bcda6a837a545afd2d453361f373fae3/scripts/mutect2_wdl/mutect2.wdl"
       target: mutect2.wdl
       type: primary
   testing:
     - id: test_1
       files:
-        - url: "https://zenodo.org/record/7687569/files/mutect2.input.small.json"
+        - url: "https://dl.dropboxusercontent.com/s/vwl7v0y8qye2zlu/mutect2.input.small.json"
           target: wf_params.json
           type: wf_params
-        - url: "https://zenodo.org/record/7687569/files/Homo_sapiens_assembly19.fasta.fai"
+        - url: "https://dl.dropboxusercontent.com/s/w9qd2zcimbl2uop/Homo_sapiens_assembly19.fasta.fai"
           target: Homo_sapiens_assembly19.fasta.fai
           type: other
-        - url: "https://zenodo.org/record/7687569/files/Homo_sapiens_assembly19.fasta"
+        - url: "https://dl.dropboxusercontent.com/s/umgayi62fmz5i3s/Homo_sapiens_assembly19.fasta"
           target: Homo_sapiens_assembly19.fasta
           type: other
-        - url: "https://zenodo.org/record/7687569/files/Homo_sapiens_assembly19.dict"
+        - url: "https://dl.dropboxusercontent.com/s/hqf4awyr8frauqv/Homo_sapiens_assembly19.dict"
           target: Homo_sapiens_assembly19.dict
           type: other
-        - url: "https://zenodo.org/record/7687569/files/SM-74NEG.small.bam"
+        - url: "https://dl.dropboxusercontent.com/s/2p8zv1dwb2u25o6/SM-74NEG.small.bam"
           target: SM-74NEG.small.bam
           type: other
-        - url: "https://zenodo.org/record/7687569/files/SM-74NEG.small.bam.bai"
+        - url: "https://dl.dropboxusercontent.com/s/9r4v912d2b6xn8a/SM-74NEG.small.bam.bai"
           target: SM-74NEG.small.bam.bai
           type: other
