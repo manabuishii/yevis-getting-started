@@ -13,7 +13,7 @@ workflow:
     type: WDL
     version: "1.0"
   files:
-    - url: "https://raw.githubusercontent.com/broadinstitute/gatk/330c59a5bcda6a837a545afd2d453361f373fae3/scripts/mutect2_wdl/mutect2.wdl"
+    - url: "https://raw.githubusercontent.com/broadinstitute/gatk/c4f18e223abcbc19e92b6f9d4bb9268b768723e0/scripts/mutect2_wdl/mutect2.wdl"
       target: mutect2.wdl
       type: primary
   testing:
