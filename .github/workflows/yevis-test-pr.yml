@@ -21,8 +21,7 @@ jobs:
       - name: "Download yevis binary from artifact"
         id: download-binary-artifact
         run: |
-          #RUN_ID=`gh run --repo sapporo-wes/yevis-cli list --workflow build_binary --json databaseId --jq .[0].databaseId`
-          RUN_ID="3945888772"
+          RUN_ID=`gh run --repo sapporo-wes/yevis-cli list --workflow build_binary --json databaseId --jq .[0].databaseId`
           gh run --repo sapporo-wes/yevis-cli download ${RUN_ID} -n yevis
           chmod +x yevis
         env:
