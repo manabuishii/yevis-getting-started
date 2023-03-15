@@ -1,0 +1,1784 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.1/context",
+    {
+      "FileStats": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#FileStats",
+      "Format": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#Format",
+      "IntermediateFile": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#IntermediateFile",
+      "OutputFile": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#OutputFile",
+      "SapporoConfiguration": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#SapporoConfiguration",
+      "SapporoService": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#SapporoService",
+      "TestDefinition": "https://w3id.org/ro/terms/test#TestDefinition",
+      "TestEnvironment": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#TestEnvironment",
+      "TestInstance": "https://w3id.org/ro/terms/test#TestInstance",
+      "TestResult": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#TestResult",
+      "TestService": "https://w3id.org/ro/terms/test#TestService",
+      "TestSuite": "https://w3id.org/ro/terms/test#TestSuite",
+      "WorkflowAttachment": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#WorkflowAttachment",
+      "attachment": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#attachment",
+      "cmd": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#cmd",
+      "configuration": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#configuration",
+      "cpuArchitecture": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#cpuArchitecture",
+      "cpuCount": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#cpuCount",
+      "definition": "https://w3id.org/ro/terms/test#definition",
+      "duplicateRate": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#duplicateRate",
+      "duplicateReads": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#duplicateReads",
+      "engineVersion": "https://w3id.org/ro/terms/test#engineVersion",
+      "environment": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#environment",
+      "executableWorkflows": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#executableWorkflows",
+      "exitCode": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#exitCode",
+      "format": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#format",
+      "freeDiskSpace": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#freeDiskSpace",
+      "generatedBy": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#generatedBy",
+      "getRuns": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#getRuns",
+      "gid": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#gid",
+      "inDocker": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#inDocker",
+      "indelsCount": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#indelsCount",
+      "instance": "https://w3id.org/ro/terms/test#instance",
+      "intermediateFiles": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#intermediateFiles",
+      "lineCount": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#lineCount",
+      "mappedRate": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#mappedRate",
+      "mappedReads": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#mappedReads",
+      "mode": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#mode",
+      "os": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#os",
+      "osVersion": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#osVersion",
+      "outputs": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#outputs",
+      "pid": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#pid",
+      "registeredOnlyMode": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#registeredOnlyMode",
+      "resource": "https://w3id.org/ro/terms/test#resource",
+      "result": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#result",
+      "runId": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#runId",
+      "runSh": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#runSh",
+      "runsOn": "https://w3id.org/ro/terms/test#runsOn",
+      "sapporoConfig": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#sapporoConfig",
+      "sapporoEndpoint": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#sapporoEndpoint",
+      "serviceInfo": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#serviceInfo",
+      "sha512": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#sha512",
+      "snpsCount": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#snpsCount",
+      "state": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#state",
+      "stats": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#stats",
+      "stderr": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#stderr",
+      "stdout": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#stdout",
+      "totalMemory": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#totalMemory",
+      "totalReads": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#totalReads",
+      "uid": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#uid",
+      "unmappedRate": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#unmappedRate",
+      "unmappedReads": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#unmappedReads",
+      "urlPrefix": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#urlPrefix",
+      "variantCount": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#variantCount",
+      "workflowAttachment": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#workflowAttachment",
+      "workflowEngineParameters": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#workflowEngineParameters",
+      "workflowParameters": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#workflowParameters",
+      "yevisId": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#yevisId",
+      "yevisMetadata": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#yevisMetadata",
+      "yevisTestId": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#yevisTestId"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "about": {
+        "@id": "#sapporo-test-suite"
+      },
+      "author": {
+        "@id": "https://github.com/manabuishii"
+      },
+      "datePublished": "2023-03-15T16:44:50+00:00",
+      "description": "RO-Crate of Sapporo's run execution results.",
+      "hasPart": [
+        {
+          "@id": "exe/"
+        },
+        {
+          "@id": "outputs/"
+        },
+        {
+          "@id": "https://zenodo.org/api/files/2cab6fd8-4a80-4e73-9e8a-29e7b12cedfc/haplotypecaller-gvcf-gatk4.wdl"
+        },
+        {
+          "@id": "exe/.dockstore.yml"
+        },
+        {
+          "@id": "exe/LICENSE"
+        },
+        {
+          "@id": "exe/README.md"
+        },
+        {
+          "@id": "exe/generic.google-papi.options.json"
+        },
+        {
+          "@id": "exe/haplotypecaller-gvcf-gatk4.hg38.wgs.inputs.json"
+        },
+        {
+          "@id": "service_info.json"
+        },
+        {
+          "@id": "executable_workflows.json"
+        },
+        {
+          "@id": "run.sh"
+        },
+        {
+          "@id": "sapporo_config.json"
+        },
+        {
+          "@id": "run_request.json"
+        },
+        {
+          "@id": "exe/workflow_params.json"
+        },
+        {
+          "@id": "workflow_engine_params.txt"
+        },
+        {
+          "@id": "yevis-metadata.yml"
+        },
+        {
+          "@id": "exe/Homo_sapiens_assembly38.fasta"
+        },
+        {
+          "@id": "exe/Homo_sapiens_assembly38.fasta.fai"
+        },
+        {
+          "@id": "exe/Homo_sapiens_assembly38.dict"
+        },
+        {
+          "@id": "exe/interval_list.txt"
+        },
+        {
+          "@id": "exe/NA12775_small.bam"
+        },
+        {
+          "@id": "exe/NA12775_small.bam.bai"
+        },
+        {
+          "@id": "exe/wgs_calling_regions.hg38.interval_list"
+        },
+        {
+          "@id": "stdout.log"
+        },
+        {
+          "@id": "stderr.log"
+        },
+        {
+          "@id": "outputs/NA12775_small.g.vcf.gz.tbi"
+        },
+        {
+          "@id": "outputs/NA12775_small.g.vcf.gz"
+        },
+        {
+          "@id": "exe/metadata.json"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-MergeGVCFs/execution/script.background"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-MergeGVCFs/execution/NA12775_small.g.vcf.gz.tbi"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-MergeGVCFs/execution/rc"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-MergeGVCFs/execution/stderr.background"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-MergeGVCFs/execution/stdout.background"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-MergeGVCFs/execution/NA12775_small.g.vcf.gz"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-MergeGVCFs/execution/stdout"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-MergeGVCFs/execution/stderr"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-MergeGVCFs/execution/script.submit"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-MergeGVCFs/execution/docker_cid"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-MergeGVCFs/execution/script"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-MergeGVCFs/inputs/913895450/NA12775_small.g.vcf.gz.tbi"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-MergeGVCFs/inputs/913895450/NA12775_small.g.vcf.gz"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/execution/script.background"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/execution/NA12775_small.g.vcf.gz.tbi"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/execution/rc"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/execution/stderr.background"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/execution/stdout.background"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/execution/NA12775_small.g.vcf.gz"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/execution/stdout"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/execution/stderr"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/execution/NA12775_small.g.vcf.gz.bamout.bam"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/execution/script.submit"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/execution/docker_cid"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/execution/script"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/inputs/1916655152/wgs_calling_regions.hg38.interval_list"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/inputs/1916655152/Homo_sapiens_assembly38.fasta"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/inputs/1916655152/NA12775_small.bam"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/inputs/1916655152/Homo_sapiens_assembly38.fasta.fai"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/inputs/1916655152/NA12775_small.bam.bai"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/inputs/1916655152/Homo_sapiens_assembly38.dict"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/tmp.b9f65290/tmp_read_resource_4865754509440231620.config"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/tmp.b9f65290/tmp_read_resource_2644765822790484517.config"
+        }
+      ],
+      "mainEntity": {
+        "@id": "https://zenodo.org/api/files/2cab6fd8-4a80-4e73-9e8a-29e7b12cedfc/haplotypecaller-gvcf-gatk4.wdl"
+      },
+      "name": "Sapporo RO-Crate"
+    },
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "about": {
+        "@id": "./"
+      },
+      "conformsTo": [
+        {
+          "@id": "https://w3id.org/ro/crate/1.1"
+        },
+        {
+          "@id": "https://w3id.org/workflowhub/workflow-ro-crate/1.0"
+        }
+      ],
+      "license": {
+        "@id": "http://choosealicense.com/licenses/cc0-1.0/"
+      }
+    },
+    {
+      "@id": "http://choosealicense.com/licenses/cc0-1.0/",
+      "@type": [
+        "CreativeWork"
+      ],
+      "name": "Creative Commons Zero v1.0 Universal"
+    },
+    {
+      "@id": "https://github.com/manabuishii",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": "GAJ",
+      "name": "Manabu ISHII"
+    },
+    {
+      "@id": "exe/",
+      "@type": "Dataset",
+      "hasPart": [
+        {
+          "@id": "exe/.dockstore.yml"
+        },
+        {
+          "@id": "exe/LICENSE"
+        },
+        {
+          "@id": "exe/README.md"
+        },
+        {
+          "@id": "exe/generic.google-papi.options.json"
+        },
+        {
+          "@id": "exe/haplotypecaller-gvcf-gatk4.hg38.wgs.inputs.json"
+        },
+        {
+          "@id": "exe/workflow_params.json"
+        },
+        {
+          "@id": "exe/Homo_sapiens_assembly38.fasta"
+        },
+        {
+          "@id": "exe/Homo_sapiens_assembly38.fasta.fai"
+        },
+        {
+          "@id": "exe/Homo_sapiens_assembly38.dict"
+        },
+        {
+          "@id": "exe/interval_list.txt"
+        },
+        {
+          "@id": "exe/NA12775_small.bam"
+        },
+        {
+          "@id": "exe/NA12775_small.bam.bai"
+        },
+        {
+          "@id": "exe/wgs_calling_regions.hg38.interval_list"
+        },
+        {
+          "@id": "exe/metadata.json"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-MergeGVCFs/execution/script.background"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-MergeGVCFs/execution/NA12775_small.g.vcf.gz.tbi"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-MergeGVCFs/execution/rc"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-MergeGVCFs/execution/stderr.background"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-MergeGVCFs/execution/stdout.background"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-MergeGVCFs/execution/NA12775_small.g.vcf.gz"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-MergeGVCFs/execution/stdout"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-MergeGVCFs/execution/stderr"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-MergeGVCFs/execution/script.submit"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-MergeGVCFs/execution/docker_cid"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-MergeGVCFs/execution/script"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-MergeGVCFs/inputs/913895450/NA12775_small.g.vcf.gz.tbi"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-MergeGVCFs/inputs/913895450/NA12775_small.g.vcf.gz"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/execution/script.background"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/execution/NA12775_small.g.vcf.gz.tbi"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/execution/rc"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/execution/stderr.background"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/execution/stdout.background"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/execution/NA12775_small.g.vcf.gz"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/execution/stdout"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/execution/stderr"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/execution/NA12775_small.g.vcf.gz.bamout.bam"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/execution/script.submit"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/execution/docker_cid"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/execution/script"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/inputs/1916655152/wgs_calling_regions.hg38.interval_list"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/inputs/1916655152/Homo_sapiens_assembly38.fasta"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/inputs/1916655152/NA12775_small.bam"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/inputs/1916655152/Homo_sapiens_assembly38.fasta.fai"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/inputs/1916655152/NA12775_small.bam.bai"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/inputs/1916655152/Homo_sapiens_assembly38.dict"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/tmp.b9f65290/tmp_read_resource_4865754509440231620.config"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/tmp.b9f65290/tmp_read_resource_2644765822790484517.config"
+        }
+      ]
+    },
+    {
+      "@id": "outputs/",
+      "@type": "Dataset",
+      "hasPart": [
+        {
+          "@id": "outputs/NA12775_small.g.vcf.gz.tbi"
+        },
+        {
+          "@id": "outputs/NA12775_small.g.vcf.gz"
+        }
+      ]
+    },
+    {
+      "@id": "https://zenodo.org/api/files/2cab6fd8-4a80-4e73-9e8a-29e7b12cedfc/haplotypecaller-gvcf-gatk4.wdl",
+      "@type": [
+        "File",
+        "SoftwareSourceCode",
+        "ComputationalWorkflow"
+      ],
+      "attachment": [
+        {
+          "@id": "exe/.dockstore.yml"
+        },
+        {
+          "@id": "exe/LICENSE"
+        },
+        {
+          "@id": "exe/README.md"
+        },
+        {
+          "@id": "exe/generic.google-papi.options.json"
+        },
+        {
+          "@id": "exe/haplotypecaller-gvcf-gatk4.hg38.wgs.inputs.json"
+        }
+      ],
+      "contentSize": 8916,
+      "description": {
+        "@id": "https://zenodo.org/api/files/2cab6fd8-4a80-4e73-9e8a-29e7b12cedfc/README.md"
+      },
+      "encodingFormat": "text/plain",
+      "lineCount": 279,
+      "name": "haplotypecaller-gvcf-gatk4",
+      "programmingLanguage": {
+        "@id": "#https://openwdl.org"
+      },
+      "sha512": "1e117e5cbb8d58daaf37086781257389519908eda541eed947c8cd8c9fdb13ca003cc30fbd7b3853c8e2909d6b8ef2844ed4bdb14621dba82a330f586c64bf63",
+      "text": "version 1.0\n\n## Copyright Broad Institute, 2019\n## \n## The haplotypecaller-gvcf-gatk4 workflow runs the HaplotypeCaller tool\n## from GATK4 in GVCF mode on a single sample according to GATK Best Practices.\n## When executed the workflow scatters the HaplotypeCaller tool over a sample\n## using an intervals list file. The output file produced will be a\n## single gvcf file which can be used by the joint-discovery workflow.\n##\n## Requirements/expectations :\n## - One analysis-ready BAM file for a single sample (as identified in RG:SM)\n## - Set of variant calling intervals lists for the scatter, provided in a file\n##\n## Outputs :\n## - One GVCF file and its index\n##\n## Cromwell version support \n## - Successfully tested on v53\n##\n## Runtime parameters are optimized for Broad's Google Cloud Platform implementation.\n##\n## LICENSING : \n## This script is released under the WDL source code license (BSD-3) (see LICENSE in \n## https://github.com/broadinstitute/wdl). Note however that the programs it calls may \n## be subject to different licenses. Users are responsible for checking that they are\n## authorized to run all programs before running this script. Please see the dockers\n## for detailed licensing information pertaining to the included programs.\n\n# WORKFLOW DEFINITION \nworkflow HaplotypeCallerGvcf_GATK4 {\n  input {\n    File input_bam\n    File input_bam_index\n    File ref_dict\n    File ref_fasta\n    File ref_fasta_index\n    File scattered_calling_intervals_list\n  \n    Boolean make_gvcf = true\n    Boolean make_bamout = false\n    String gatk_docker = \"us.gcr.io/broad-gatk/gatk:4.2.0.0\"\n    String gatk_path = \"/gatk/gatk\"\n    String gitc_docker = \"us.gcr.io/broad-gotc-prod/genomes-in-the-cloud:2.4.7-1603303710\"\n    String samtools_path = \"samtools\"\n  }  \n\n    Array[File] scattered_calling_intervals = read_lines(scattered_calling_intervals_list)\n\n    #is the input a cram file?\n    Boolean is_cram = sub(basename(input_bam), \".*\\\\.\", \"\") == \"cram\"\n\n    String sample_basename = if is_cram then  basename(input_bam, \".cram\") else basename(input_bam, \".bam\")\n    String vcf_basename = sample_basename\n    String output_suffix = if make_gvcf then \".g.vcf.gz\" else \".vcf.gz\"\n    String output_filename = vcf_basename + output_suffix\n\n    # We need disk to localize the sharded input and output due to the scatter for HaplotypeCaller.\n    # If we take the number we are scattering by and reduce by 20 we will have enough disk space\n    # to account for the fact that the data is quite uneven across the shards.\n    Int potential_hc_divisor = length(scattered_calling_intervals) - 20\n    Int hc_divisor = if potential_hc_divisor > 1 then potential_hc_divisor else 1\n\n  if ( is_cram ) {\n    call CramToBamTask {\n      input:\n        input_cram = input_bam,\n        sample_name = sample_basename,\n        ref_dict = ref_dict,\n        ref_fasta = ref_fasta,\n        ref_fasta_index = ref_fasta_index,\n        docker = gitc_docker,\n        samtools_path = samtools_path\n    }\n  }\n\n  # Call variants in parallel over grouped calling intervals\n  scatter (interval_file in scattered_calling_intervals) {\n\n    # Generate GVCF by interval\n    call HaplotypeCaller {\n      input:\n        input_bam = select_first([CramToBamTask.output_bam, input_bam]),\n        input_bam_index = select_first([CramToBamTask.output_bai, input_bam_index]),\n        interval_list = interval_file,\n        output_filename = output_filename,\n        ref_dict = ref_dict,\n        ref_fasta = ref_fasta,\n        ref_fasta_index = ref_fasta_index,\n        hc_scatter = hc_divisor,\n        make_gvcf = make_gvcf,\n        make_bamout = make_bamout,\n        docker = gatk_docker,\n        gatk_path = gatk_path\n    }\n  }\n\n  # Merge per-interval GVCFs\n  call MergeGVCFs {\n    input:\n      input_vcfs = HaplotypeCaller.output_vcf,\n      input_vcfs_indexes = HaplotypeCaller.output_vcf_index,\n      output_filename = output_filename,\n      docker = gatk_docker,\n      gatk_path = gatk_path\n  }\n\n  # Outputs that will be retained when execution is complete\n  output {\n    File output_vcf = MergeGVCFs.output_vcf\n    File output_vcf_index = MergeGVCFs.output_vcf_index\n  }\n}\n\n# TASK DEFINITIONS\n\ntask CramToBamTask {\n  input {\n    # Command parameters\n    File ref_fasta\n    File ref_fasta_index\n    File ref_dict\n    File input_cram\n    String sample_name\n\n    # Runtime parameters\n    String docker\n    Int? machine_mem_gb\n    Int? disk_space_gb\n    Boolean use_ssd = false\n    Int? preemptible_attempts\n    String samtools_path\n  }\n    Float output_bam_size = size(input_cram, \"GB\") / 0.60\n    Float ref_size = size(ref_fasta, \"GB\") + size(ref_fasta_index, \"GB\") + size(ref_dict, \"GB\")\n    Int disk_size = ceil(size(input_cram, \"GB\") + output_bam_size + ref_size) + 20\n  \n  command {\n    set -e\n    set -o pipefail\n\n    ~{samtools_path} view -h -T ~{ref_fasta} ~{input_cram} |\n    ~{samtools_path} view -b -o ~{sample_name}.bam -\n    ~{samtools_path} index -b ~{sample_name}.bam\n    mv ~{sample_name}.bam.bai ~{sample_name}.bai\n  }\n  runtime {\n    docker: docker\n    memory: select_first([machine_mem_gb, 15]) + \" GB\"\n    disks: \"local-disk \" + select_first([disk_space_gb, disk_size]) + if use_ssd then \" SSD\" else \" HDD\"\n    preemptible: select_first([preemptible_attempts, 3])\n }\n  output {\n    File output_bam = \"~{sample_name}.bam\"\n    File output_bai = \"~{sample_name}.bai\"\n  }\n}\n\n# HaplotypeCaller per-sample in GVCF mode\ntask HaplotypeCaller {\n  input {\n    # Command parameters\n    File input_bam\n    File input_bam_index\n    File interval_list\n    String output_filename\n    File ref_dict\n    File ref_fasta\n    File ref_fasta_index\n    Float? contamination\n    Boolean make_gvcf\n    Boolean make_bamout\n    Int hc_scatter\n\n    String? gcs_project_for_requester_pays\n\n    String gatk_path\n    String? java_options\n\n    # Runtime parameters\n    String docker\n    Int? mem_gb\n    Int? disk_space_gb\n    Boolean use_ssd = false\n    Int? preemptible_attempts\n  }\n\n  String java_opt = select_first([java_options, \"-XX:GCTimeLimit=50 -XX:GCHeapFreeLimit=10\"]) \n\n  Int machine_mem_gb = select_first([mem_gb, 7])\n  Int command_mem_gb = machine_mem_gb - 1\n\n  Float ref_size = size(ref_fasta, \"GB\") + size(ref_fasta_index, \"GB\") + size(ref_dict, \"GB\")\n  Int disk_size = ceil(((size(input_bam, \"GB\") + 30) / hc_scatter) + ref_size) + 20\n\n  String vcf_basename = if make_gvcf then  basename(output_filename, \".gvcf\") else basename(output_filename, \".vcf\")\n  String bamout_arg = if make_bamout then \"-bamout ~{vcf_basename}.bamout.bam\" else \"\"\n\n  parameter_meta {\n    input_bam: {\n      description: \"a bam file\",\n      localization_optional: true\n    }\n    input_bam_index: {\n      description: \"an index file for the bam input\",\n      localization_optional: true\n    }\n  }\n  command {\n    set -e\n  \n    ~{gatk_path} --java-options \"-Xmx~{command_mem_gb}G ~{java_opt}\" \\\n      HaplotypeCaller \\\n      -R ~{ref_fasta} \\\n      -I ~{input_bam} \\\n      -L ~{interval_list} \\\n      -O ~{output_filename} \\\n      -contamination ~{default=\"0\" contamination} \\\n      -G StandardAnnotation -G StandardHCAnnotation ~{true=\"-G AS_StandardAnnotation\" false=\"\" make_gvcf} \\\n      -GQB 10 -GQB 20 -GQB 30 -GQB 40 -GQB 50 -GQB 60 -GQB 70 -GQB 80 -GQB 90 \\\n      ~{true=\"-ERC GVCF\" false=\"\" make_gvcf} \\\n      ~{if defined(gcs_project_for_requester_pays) then \"--gcs-project-for-requester-pays ~{gcs_project_for_requester_pays}\" else \"\"} \\\n      ~{bamout_arg}\n\n    # Cromwell doesn't like optional task outputs, so we have to touch this file.\n    touch ~{vcf_basename}.bamout.bam \n  }\n  runtime {\n    docker: docker\n    memory: machine_mem_gb + \" GB\"\n    disks: \"local-disk \" + select_first([disk_space_gb, disk_size]) + if use_ssd then \" SSD\" else \" HDD\"\n    preemptible: select_first([preemptible_attempts, 3])\n  }\n  output {\n    File output_vcf = \"~{output_filename}\"\n    File output_vcf_index = \"~{output_filename}.tbi\"\n    File bamout = \"~{vcf_basename}.bamout.bam\"\n  }\n}\n# Merge GVCFs generated per-interval for the same sample\ntask MergeGVCFs {\n  input {\n    # Command parameters\n    Array[File] input_vcfs\n    Array[File] input_vcfs_indexes\n    String output_filename\n\n    String gatk_path\n\n    # Runtime parameters\n    String docker\n    Int? mem_gb\n    Int? disk_space_gb\n    Int? preemptible_attempts\n  }\n    Boolean use_ssd = false\n    Int machine_mem_gb = select_first([mem_gb, 3])\n    Int command_mem_gb = machine_mem_gb - 1\n  \n  command {\n  set -e\n\n    ~{gatk_path} --java-options \"-Xmx~{command_mem_gb}G\"  \\\n      MergeVcfs \\\n      --INPUT ~{sep=' --INPUT ' input_vcfs} \\\n      --OUTPUT ~{output_filename}\n  }\n  runtime {\n    docker: docker\n    memory: machine_mem_gb + \" GB\"\n    disks: \"local-disk \" + select_first([disk_space_gb, 100]) + if use_ssd then \" SSD\" else \" HDD\"\n    preemptible: select_first([preemptible_attempts, 3])\n  }\n  output {\n    File output_vcf = \"~{output_filename}\"\n    File output_vcf_index = \"~{output_filename}.tbi\"\n  }\n}\n\n",
+      "version": "1.0.0",
+      "yevisId": "8a684dfb-1212-49b1-b788-7759b9d02531"
+    },
+    {
+      "@id": "#https://openwdl.org",
+      "@type": "ComputerLanguage",
+      "alternateName": "WDL",
+      "identifier": {
+        "@id": "#https://openwdl.org"
+      },
+      "name": "Workflow Description Language",
+      "url": {
+        "@id": "#https://openwdl.org"
+      },
+      "version": "1.0"
+    },
+    {
+      "@id": "https://zenodo.org/api/files/2cab6fd8-4a80-4e73-9e8a-29e7b12cedfc/README.md",
+      "@type": [
+        "WebPage"
+      ],
+      "name": "README.md"
+    },
+    {
+      "@id": "exe/.dockstore.yml",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "WorkflowAttachment"
+      ],
+      "contentSize": 223,
+      "dateModified": "2023-03-15T15:37:28.840281",
+      "encodingFormat": "text/plain",
+      "gid": 0,
+      "lineCount": 7,
+      "mode": "-rw-r--r--",
+      "sha512": "d4bca4d897493c06b900d29eee1a3b205acdd06ee107b09a1db9048b69e58091ce7e1bd8b43a65b70e8563330a53a4f21521e9d8cafebbbd8c939608e99da88e",
+      "uid": 0,
+      "url": "https://zenodo.org/api/files/2cab6fd8-4a80-4e73-9e8a-29e7b12cedfc/.dockstore.yml"
+    },
+    {
+      "@id": "exe/LICENSE",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "WorkflowAttachment"
+      ],
+      "contentSize": 1515,
+      "dateModified": "2023-03-15T15:37:30.644302",
+      "encodingFormat": "text/plain",
+      "gid": 0,
+      "lineCount": 29,
+      "mode": "-rw-r--r--",
+      "sha512": "cadc3e7a0ba91104f5f9a4ec940570cc0fc316d4b1ac42b1923771acba0f2e4e22fea3756a5e69ec0ca0a142e9683a094a7bf02fd4fe0cfaf80a1ac00c82766c",
+      "uid": 0,
+      "url": "https://zenodo.org/api/files/2cab6fd8-4a80-4e73-9e8a-29e7b12cedfc/LICENSE"
+    },
+    {
+      "@id": "exe/README.md",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "WorkflowAttachment"
+      ],
+      "contentSize": 3629,
+      "dateModified": "2023-03-15T15:37:32.160320",
+      "encodingFormat": "text/plain",
+      "gid": 0,
+      "lineCount": 49,
+      "mode": "-rw-r--r--",
+      "sha512": "dc60ad2edf865c0f9df6c11c2747fc1d03ede03409835b1328c3f0994c84c3478780c43720f7731dbe407f41de0257bd84933ec6456c32f2db9812bc37f80843",
+      "uid": 0,
+      "url": "https://zenodo.org/api/files/2cab6fd8-4a80-4e73-9e8a-29e7b12cedfc/README.md"
+    },
+    {
+      "@id": "exe/generic.google-papi.options.json",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "WorkflowAttachment"
+      ],
+      "contentSize": 134,
+      "dateModified": "2023-03-15T15:37:33.792340",
+      "encodingFormat": "application/json",
+      "gid": 0,
+      "lineCount": 5,
+      "mode": "-rw-r--r--",
+      "sha512": "00defe7f21ebc446ce192837eebc11c185f66f0cf6e10d1c58327f135d60dc8c56734344d966da7915fd8f3f30630f17f065153c4ce8a3fb9609116de74152d6",
+      "uid": 0,
+      "url": "https://zenodo.org/api/files/2cab6fd8-4a80-4e73-9e8a-29e7b12cedfc/generic.google-papi.options.json"
+    },
+    {
+      "@id": "exe/haplotypecaller-gvcf-gatk4.hg38.wgs.inputs.json",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "WorkflowAttachment"
+      ],
+      "contentSize": 709,
+      "dateModified": "2023-03-15T15:37:34.964353",
+      "encodingFormat": "application/json",
+      "gid": 0,
+      "lineCount": 10,
+      "mode": "-rw-r--r--",
+      "sha512": "6b44c8c21ae61bf1ed5362754c885fe37328344b7859a7cd10a3ce2a4454d682ea5dad0369af063233de594f9ab35279daf9c35c313bca74f9d1f6c6866593af",
+      "uid": 0,
+      "url": "https://zenodo.org/api/files/2cab6fd8-4a80-4e73-9e8a-29e7b12cedfc/haplotypecaller-gvcf-gatk4.hg38.wgs.inputs.json"
+    },
+    {
+      "@id": "#sapporo-test-suite",
+      "@type": "TestSuite",
+      "definition": {
+        "@id": "run_request.json"
+      },
+      "instance": {
+        "@id": "#sapporo-test-instance"
+      },
+      "mainEntity": {
+        "@id": "https://zenodo.org/api/files/2cab6fd8-4a80-4e73-9e8a-29e7b12cedfc/haplotypecaller-gvcf-gatk4.wdl"
+      },
+      "name": "Sapporo test suite",
+      "result": {
+        "@id": "#sapporo-test-result"
+      }
+    },
+    {
+      "@id": "#sapporo-test-instance",
+      "@type": "TestInstance",
+      "environment": {
+        "@id": "#sapporo-test-environment"
+      },
+      "name": "Sapporo test instance",
+      "runsOn": {
+        "@id": "#sapporo-service"
+      },
+      "url": "http://localhost:1122"
+    },
+    {
+      "@id": "#sapporo-service",
+      "@type": [
+        "TestService",
+        "SapporoService",
+        "SoftwareApplication"
+      ],
+      "configuration": {
+        "@id": "#sapporo-config"
+      },
+      "name": "Sapporo-service",
+      "resource": "/",
+      "url": {
+        "@id": "https://github.com/sapporo-wes/sapporo-service"
+      },
+      "version": "1.4.9"
+    },
+    {
+      "@id": "https://github.com/sapporo-wes/sapporo-service",
+      "@type": [
+        "WebPage"
+      ]
+    },
+    {
+      "@id": "#sapporo-config",
+      "@type": [
+        "SapporoConfiguration"
+      ],
+      "executableWorkflows": {
+        "@id": "executable_workflows.json"
+      },
+      "getRuns": true,
+      "registeredOnlyMode": false,
+      "runSh": {
+        "@id": "run.sh"
+      },
+      "sapporoConfig": {
+        "@id": "sapporo_config.json"
+      },
+      "sapporoEndpoint": "http://localhost:1122",
+      "serviceInfo": {
+        "@id": "service_info.json"
+      },
+      "urlPrefix": "/",
+      "workflowAttachment": true
+    },
+    {
+      "@id": "service_info.json",
+      "@type": "File",
+      "contentSize": 1632,
+      "dateModified": "2023-03-15T15:37:24.604224",
+      "encodingFormat": "application/json",
+      "gid": 0,
+      "lineCount": 83,
+      "mode": "-rw-r--r--",
+      "name": "Sapporo service info",
+      "sha512": "63b75e3740bb06a99fced06b2b7e714229d3d46b01e634ae99f70630816b9bcf2ab2da4e32296a1159667a5bfaea86176faf2b8d3fec1a16b2a2020d8956f409",
+      "text": "{\n  \"workflow_type_versions\": {\n    \"CWL\": {\n      \"workflow_type_version\": [\n        \"v1.0\",\n        \"v1.1\",\n        \"v1.2\"\n      ]\n    },\n    \"WDL\": {\n      \"workflow_type_version\": [\n        \"1.0\"\n      ]\n    },\n    \"NFL\": {\n      \"workflow_type_version\": [\n        \"1.0\",\n        \"DSL2\"\n      ]\n    },\n    \"SMK\": {\n      \"workflow_type_version\": [\n        \"1.0\"\n      ]\n    },\n    \"StreamFlow\": {\n      \"workflow_type_version\": [\n        \"v1.0\"\n      ]\n    }\n  },\n  \"supported_filesystem_protocols\": [\n    \"http\",\n    \"https\",\n    \"file\",\n    \"s3\"\n  ],\n  \"default_workflow_engine_parameters\": {\n    \"nextflow\": [\n      {\n        \"name\": \"-dsl1\",\n        \"type\": \"str\",\n        \"default_value\": \"\"\n      }\n    ],\n    \"snakemake\": [\n      {\n        \"name\": \"--cores\",\n        \"type\": \"int\",\n        \"default_value\": 1\n      },\n      {\n        \"name\": \"--use-conda\",\n        \"type\": \"str\",\n        \"default_value\": \"\"\n      }\n    ]\n  },\n  \"workflow_engine_versions\": {\n    \"cwltool\": \"3.1.20220628170238\",\n    \"nextflow\": \"22.04.4\",\n    \"toil (experimental)\": \"4.1.0\",\n    \"cromwell\": \"80\",\n    \"snakemake\": \"v7.8.3\",\n    \"ep3 (experimental)\": \"v1.7.0\",\n    \"streamflow\": \"0.1.3\"\n  },\n  \"auth_instructions_url\": \"https://github.com/sapporo-wes/sapporo-service\",\n  \"contact_info_url\": \"https://github.com/sapporo-wes/sapporo-service\",\n  \"tags\": {\n    \"wes-name\": \"sapporo\",\n    \"sapporo-version\": \"1.4.9\",\n    \"news_content\": \"\",\n    \"get_runs\": true,\n    \"workflow_attachment\": true,\n    \"registered_only_mode\": false\n  },\n  \"supported_wes_versions\": [\n    \"sapporo-wes-1.0.1\"\n  ],\n  \"system_state_counts\": {\n    \"UNKNOWN\": 1\n  }\n}",
+      "uid": 0
+    },
+    {
+      "@id": "executable_workflows.json",
+      "@type": "File",
+      "contentSize": 33024,
+      "dateModified": "2023-03-15T15:37:27.128258",
+      "encodingFormat": "text/plain",
+      "gid": 0,
+      "lineCount": 650,
+      "mode": "-rw-r--r--",
+      "name": "Sapporo executable workflows",
+      "sha512": "186d6d93ed49399c525e4541e2259da3d6b6a5cc6cfe76489930061add95affad25477d286ede26aa56d81f7fb4b0a452202715bb2a4611ee1e7c8912d60443d",
+      "uid": 0
+    },
+    {
+      "@id": "run.sh",
+      "@type": "File",
+      "contentSize": 11327,
+      "dateModified": "2023-03-15T15:37:27.128258",
+      "encodingFormat": "text/x-shellscript",
+      "gid": 0,
+      "lineCount": 307,
+      "mode": "-rw-r--r--",
+      "name": "Sapporo run.sh",
+      "sha512": "b0f968d72e5722befba64719731849f574ab20f7a3c2cd0ab8165457c629cedbcc88b0d4392d812533ac6c6316647e9a089339e57269332c40f04674842d84b9",
+      "uid": 0
+    },
+    {
+      "@id": "sapporo_config.json",
+      "@type": "File",
+      "contentSize": 441,
+      "dateModified": "2023-03-15T15:37:24.604224",
+      "encodingFormat": "application/json",
+      "gid": 0,
+      "lineCount": 10,
+      "mode": "-rw-r--r--",
+      "name": "Sapporo runtime configuration",
+      "sha512": "e14130e9a59dc8e1ad8da08c9ef4cc1c85460a8c90b1131d02a916f7c72e27be78135737b23f0b762f6fdee06c72392ddaf45ec8da6b2ca8b516bde375f83a3d",
+      "text": "{\n  \"sapporo_version\": \"1.4.9\",\n  \"get_runs\": true,\n  \"workflow_attachment\": true,\n  \"registered_only_mode\": false,\n  \"service_info\": \"/usr/local/lib/python3.8/site-packages/sapporo/service-info.json\",\n  \"executable_workflows\": \"/usr/local/lib/python3.8/site-packages/sapporo/executable_workflows.json\",\n  \"run_sh\": \"/usr/local/lib/python3.8/site-packages/sapporo/run.sh\",\n  \"url_prefix\": \"/\",\n  \"sapporo_endpoint\": \"http://localhost:1122\"\n}",
+      "uid": 0
+    },
+    {
+      "@id": "#sapporo-test-environment",
+      "@type": [
+        "TestEnvironment"
+      ],
+      "cpuArchitecture": "x86_64",
+      "cpuCount": 2,
+      "freeDiskSpace": 18222059520,
+      "gid": 0,
+      "inDocker": true,
+      "os": "Linux",
+      "osVersion": "5.15.0-1034-azure",
+      "totalMemory": 7281307648,
+      "uid": 0
+    },
+    {
+      "@id": "run_request.json",
+      "@type": [
+        "TestDefinition",
+        "File"
+      ],
+      "cmd": "docker run --rm -v /var/run/docker.sock:/var/run/docker.sock -v /home/runner/work/yevis-getting-started/yevis-getting-started/test-results/86/86af5b6d-8780-4ccc-8d9b-3864c82590da:/home/runner/work/yevis-getting-started/yevis-getting-started/test-results/86/86af5b6d-8780-4ccc-8d9b-3864c82590da -v /tmp:/tmp -v /usr/bin/docker:/usr/bin/docker -w=/home/runner/work/yevis-getting-started/yevis-getting-started/test-results/86/86af5b6d-8780-4ccc-8d9b-3864c82590da/exe broadinstitute/cromwell:80 run https://zenodo.org/api/files/2cab6fd8-4a80-4e73-9e8a-29e7b12cedfc/haplotypecaller-gvcf-gatk4.wdl -i /home/runner/work/yevis-getting-started/yevis-getting-started/test-results/86/86af5b6d-8780-4ccc-8d9b-3864c82590da/exe/workflow_params.json -m /home/runner/work/yevis-getting-started/yevis-getting-started/test-results/86/86af5b6d-8780-4ccc-8d9b-3864c82590da/exe/metadata.json --type WDL --type-version 1.0 1>/home/runner/work/yevis-getting-started/yevis-getting-started/test-results/86/86af5b6d-8780-4ccc-8d9b-3864c82590da/stdout.log 2>/home/runner/work/yevis-getting-started/yevis-getting-started/test-results/86/86af5b6d-8780-4ccc-8d9b-3864c82590da/stderr.log",
+      "conformsTo": {
+        "@id": "#cromwell"
+      },
+      "contentSize": 2739,
+      "dateModified": "2023-03-15T15:37:24.604224",
+      "encodingFormat": "application/json",
+      "engineVersion": "80",
+      "gid": 0,
+      "input": [
+        {
+          "@id": "exe/Homo_sapiens_assembly38.fasta"
+        },
+        {
+          "@id": "exe/Homo_sapiens_assembly38.fasta.fai"
+        },
+        {
+          "@id": "exe/Homo_sapiens_assembly38.dict"
+        },
+        {
+          "@id": "exe/interval_list.txt"
+        },
+        {
+          "@id": "exe/NA12775_small.bam"
+        },
+        {
+          "@id": "exe/NA12775_small.bam.bai"
+        },
+        {
+          "@id": "exe/wgs_calling_regions.hg38.interval_list"
+        }
+      ],
+      "lineCount": 10,
+      "mode": "-rw-r--r--",
+      "name": "Sapporo run request",
+      "sha512": "d28dbc72dbf0b453248adfaedc01161269be327c877bab9a9d5a5a98abcd0dfbfa70d9c46ec37986172d7a298c234ac3d053d154ccecb53e1161014c1948d74f",
+      "text": "{\n  \"workflow_params\": \"{\\n  \\\"HaplotypeCallerGvcf_GATK4.ref_fasta\\\": \\\"./Homo_sapiens_assembly38.fasta\\\",\\n  \\\"HaplotypeCallerGvcf_GATK4.ref_fasta_index\\\": \\\"./Homo_sapiens_assembly38.fasta.fai\\\",\\n  \\\"HaplotypeCallerGvcf_GATK4.ref_dict\\\": \\\"./Homo_sapiens_assembly38.dict\\\",\\n  \\\"HaplotypeCallerGvcf_GATK4.input_bam\\\": \\\"./NA12775_small.bam\\\",\\n  \\\"HaplotypeCallerGvcf_GATK4.input_bam_index\\\": \\\"./NA12775_small.bam.bai\\\",\\n  \\\"HaplotypeCallerGvcf_GATK4.scattered_calling_intervals_list\\\": \\\"./interval_list.txt\\\"\\n}\\n\",\n  \"workflow_type\": \"WDL\",\n  \"workflow_type_version\": \"1.0\",\n  \"tags\": null,\n  \"workflow_engine_name\": \"cromwell\",\n  \"workflow_engine_parameters\": \"{}\",\n  \"workflow_url\": \"https://zenodo.org/api/files/2cab6fd8-4a80-4e73-9e8a-29e7b12cedfc/haplotypecaller-gvcf-gatk4.wdl\",\n  \"workflow_name\": null,\n  \"workflow_attachment\": \"[{\\\"file_name\\\": \\\".dockstore.yml\\\", \\\"file_url\\\": \\\"https://zenodo.org/api/files/2cab6fd8-4a80-4e73-9e8a-29e7b12cedfc/.dockstore.yml\\\"}, {\\\"file_name\\\": \\\"LICENSE\\\", \\\"file_url\\\": \\\"https://zenodo.org/api/files/2cab6fd8-4a80-4e73-9e8a-29e7b12cedfc/LICENSE\\\"}, {\\\"file_name\\\": \\\"README.md\\\", \\\"file_url\\\": \\\"https://zenodo.org/api/files/2cab6fd8-4a80-4e73-9e8a-29e7b12cedfc/README.md\\\"}, {\\\"file_name\\\": \\\"generic.google-papi.options.json\\\", \\\"file_url\\\": \\\"https://zenodo.org/api/files/2cab6fd8-4a80-4e73-9e8a-29e7b12cedfc/generic.google-papi.options.json\\\"}, {\\\"file_name\\\": \\\"haplotypecaller-gvcf-gatk4.hg38.wgs.inputs.json\\\", \\\"file_url\\\": \\\"https://zenodo.org/api/files/2cab6fd8-4a80-4e73-9e8a-29e7b12cedfc/haplotypecaller-gvcf-gatk4.hg38.wgs.inputs.json\\\"}, {\\\"file_name\\\": \\\"Homo_sapiens_assembly38.fasta\\\", \\\"file_url\\\": \\\"https://zenodo.org/api/files/2cab6fd8-4a80-4e73-9e8a-29e7b12cedfc/Homo_sapiens_assembly38.fasta\\\"}, {\\\"file_name\\\": \\\"Homo_sapiens_assembly38.fasta.fai\\\", \\\"file_url\\\": \\\"https://zenodo.org/api/files/2cab6fd8-4a80-4e73-9e8a-29e7b12cedfc/Homo_sapiens_assembly38.fasta.fai\\\"}, {\\\"file_name\\\": \\\"Homo_sapiens_assembly38.dict\\\", \\\"file_url\\\": \\\"https://zenodo.org/api/files/2cab6fd8-4a80-4e73-9e8a-29e7b12cedfc/Homo_sapiens_assembly38.dict\\\"}, {\\\"file_name\\\": \\\"interval_list.txt\\\", \\\"file_url\\\": \\\"https://zenodo.org/api/files/2cab6fd8-4a80-4e73-9e8a-29e7b12cedfc/interval_list.txt\\\"}, {\\\"file_name\\\": \\\"NA12775_small.bam\\\", \\\"file_url\\\": \\\"https://zenodo.org/api/files/2cab6fd8-4a80-4e73-9e8a-29e7b12cedfc/NA12775_small.bam\\\"}, {\\\"file_name\\\": \\\"NA12775_small.bam.bai\\\", \\\"file_url\\\": \\\"https://zenodo.org/api/files/2cab6fd8-4a80-4e73-9e8a-29e7b12cedfc/NA12775_small.bam.bai\\\"}, {\\\"file_name\\\": \\\"wgs_calling_regions.hg38.interval_list\\\", \\\"file_url\\\": \\\"https://zenodo.org/api/files/2cab6fd8-4a80-4e73-9e8a-29e7b12cedfc/wgs_calling_regions.hg38.interval_list\\\"}]\"\n}",
+      "uid": 0,
+      "workflowEngineParameters": {
+        "@id": "workflow_engine_params.txt"
+      },
+      "workflowParameters": {
+        "@id": "exe/workflow_params.json"
+      },
+      "yevisMetadata": {
+        "@id": "yevis-metadata.yml"
+      },
+      "yevisTestId": "test_1"
+    },
+    {
+      "@id": "exe/workflow_params.json",
+      "@type": [
+        "File"
+      ],
+      "contentSize": 464,
+      "dateModified": "2023-03-15T15:37:24.604224",
+      "encodingFormat": "application/json",
+      "gid": 0,
+      "lineCount": 8,
+      "mode": "-rw-r--r--",
+      "name": "Sapporo workflow parameters",
+      "sha512": "ee933bde364c091698016b90348865853f93769a2639d747960919c33a297aa51e92ba80254b8ab0b8c8d4f15b2a6a269617700612f0c448406848170b285684",
+      "text": "{\n  \"HaplotypeCallerGvcf_GATK4.ref_fasta\": \"./Homo_sapiens_assembly38.fasta\",\n  \"HaplotypeCallerGvcf_GATK4.ref_fasta_index\": \"./Homo_sapiens_assembly38.fasta.fai\",\n  \"HaplotypeCallerGvcf_GATK4.ref_dict\": \"./Homo_sapiens_assembly38.dict\",\n  \"HaplotypeCallerGvcf_GATK4.input_bam\": \"./NA12775_small.bam\",\n  \"HaplotypeCallerGvcf_GATK4.input_bam_index\": \"./NA12775_small.bam.bai\",\n  \"HaplotypeCallerGvcf_GATK4.scattered_calling_intervals_list\": \"./interval_list.txt\"\n}\n",
+      "uid": 0,
+      "url": "https://zenodo.org/api/files/2cab6fd8-4a80-4e73-9e8a-29e7b12cedfc/wf_params.json"
+    },
+    {
+      "@id": "workflow_engine_params.txt",
+      "@type": [
+        "File"
+      ],
+      "contentSize": 0,
+      "dateModified": "2023-03-15T15:37:24.604224",
+      "encodingFormat": "inode/x-empty",
+      "gid": 0,
+      "lineCount": 0,
+      "mode": "-rw-r--r--",
+      "name": "Sapporo workflow engine parameters",
+      "sha512": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
+      "text": "",
+      "uid": 0
+    },
+    {
+      "@id": "yevis-metadata.yml",
+      "@type": [
+        "File"
+      ],
+      "contentSize": 2686,
+      "dateModified": "2023-03-15T15:37:27.128258",
+      "encodingFormat": "application/json",
+      "gid": 0,
+      "lineCount": 0,
+      "mode": "-rw-r--r--",
+      "name": "Yevis metadata",
+      "sha512": "f2c6c52cbb8c8982b89a8bd3327ca1ed98de5c2f47785a753789df6ca2aade62f23916bbb786ad2f47c6c5e27847b518b6f2efc1b43ed02c7a2092f2cfa135e8",
+      "text": "{\"id\":\"8a684dfb-1212-49b1-b788-7759b9d02531\",\"version\":\"1.0.0\",\"license\":\"CC0-1.0\",\"authors\":[{\"github_account\":\"manabuishii\",\"name\":\"Manabu ISHII\",\"affiliation\":\"GAJ\"}],\"zenodo\":{\"url\":\"https://zenodo.org/record/7737390\",\"id\":7737390,\"doi\":\"10.5281/zenodo.7737390\",\"concept_doi\":\"10.5281/zenodo.7737389\"},\"workflow\":{\"name\":\"haplotypecaller-gvcf-gatk4\",\"readme\":\"https://zenodo.org/api/files/2cab6fd8-4a80-4e73-9e8a-29e7b12cedfc/README.md\",\"language\":{\"type\":\"WDL\",\"version\":\"1.0\"},\"files\":[{\"url\":\"https://zenodo.org/api/files/2cab6fd8-4a80-4e73-9e8a-29e7b12cedfc/.dockstore.yml\",\"target\":\".dockstore.yml\",\"type\":\"secondary\"},{\"url\":\"https://zenodo.org/api/files/2cab6fd8-4a80-4e73-9e8a-29e7b12cedfc/LICENSE\",\"target\":\"LICENSE\",\"type\":\"secondary\"},{\"url\":\"https://zenodo.org/api/files/2cab6fd8-4a80-4e73-9e8a-29e7b12cedfc/README.md\",\"target\":\"README.md\",\"type\":\"secondary\"},{\"url\":\"https://zenodo.org/api/files/2cab6fd8-4a80-4e73-9e8a-29e7b12cedfc/generic.google-papi.options.json\",\"target\":\"generic.google-papi.options.json\",\"type\":\"secondary\"},{\"url\":\"https://zenodo.org/api/files/2cab6fd8-4a80-4e73-9e8a-29e7b12cedfc/haplotypecaller-gvcf-gatk4.hg38.wgs.inputs.json\",\"target\":\"haplotypecaller-gvcf-gatk4.hg38.wgs.inputs.json\",\"type\":\"secondary\"},{\"url\":\"https://zenodo.org/api/files/2cab6fd8-4a80-4e73-9e8a-29e7b12cedfc/haplotypecaller-gvcf-gatk4.wdl\",\"target\":\"haplotypecaller-gvcf-gatk4.wdl\",\"type\":\"primary\"}],\"testing\":[{\"id\":\"test_1\",\"files\":[{\"url\":\"https://zenodo.org/api/files/2cab6fd8-4a80-4e73-9e8a-29e7b12cedfc/wf_params.json\",\"target\":\"wf_params.json\",\"type\":\"wf_params\"},{\"url\":\"https://zenodo.org/api/files/2cab6fd8-4a80-4e73-9e8a-29e7b12cedfc/Homo_sapiens_assembly38.fasta\",\"target\":\"Homo_sapiens_assembly38.fasta\",\"type\":\"other\"},{\"url\":\"https://zenodo.org/api/files/2cab6fd8-4a80-4e73-9e8a-29e7b12cedfc/Homo_sapiens_assembly38.fasta.fai\",\"target\":\"Homo_sapiens_assembly38.fasta.fai\",\"type\":\"other\"},{\"url\":\"https://zenodo.org/api/files/2cab6fd8-4a80-4e73-9e8a-29e7b12cedfc/Homo_sapiens_assembly38.dict\",\"target\":\"Homo_sapiens_assembly38.dict\",\"type\":\"other\"},{\"url\":\"https://zenodo.org/api/files/2cab6fd8-4a80-4e73-9e8a-29e7b12cedfc/interval_list.txt\",\"target\":\"interval_list.txt\",\"type\":\"other\"},{\"url\":\"https://zenodo.org/api/files/2cab6fd8-4a80-4e73-9e8a-29e7b12cedfc/NA12775_small.bam\",\"target\":\"NA12775_small.bam\",\"type\":\"other\"},{\"url\":\"https://zenodo.org/api/files/2cab6fd8-4a80-4e73-9e8a-29e7b12cedfc/NA12775_small.bam.bai\",\"target\":\"NA12775_small.bam.bai\",\"type\":\"other\"},{\"url\":\"https://zenodo.org/api/files/2cab6fd8-4a80-4e73-9e8a-29e7b12cedfc/wgs_calling_regions.hg38.interval_list\",\"target\":\"wgs_calling_regions.hg38.interval_list\",\"type\":\"other\"}]}]}}",
+      "uid": 0
+    },
+    {
+      "@id": "https://cromwell.readthedocs.io/en/stable/",
+      "@type": [
+        "WebPage"
+      ]
+    },
+    {
+      "@id": "#cromwell",
+      "@type": "SoftwareApplication",
+      "name": "cromwell",
+      "url": {
+        "@id": "https://cromwell.readthedocs.io/en/stable/"
+      },
+      "version": "80"
+    },
+    {
+      "@id": "http://edamontology.org/format_1929",
+      "@type": [
+        "Format"
+      ],
+      "name": "FASTA format including NCBI-style IDs."
+    },
+    {
+      "@id": "exe/Homo_sapiens_assembly38.fasta",
+      "@type": [
+        "File",
+        "FormalParameter"
+      ],
+      "contentSize": 3249912778,
+      "dateModified": "2023-03-15T16:02:12.097641",
+      "encodingFormat": "text/plain",
+      "format": {
+        "@id": "http://edamontology.org/format_1929"
+      },
+      "gid": 0,
+      "lineCount": 32178545,
+      "mode": "-rw-r--r--",
+      "sha512": "41a0edb97c470b327464d37a4efe8d36f1796e1148191f1c5be1d7d868c4bfb91958f66de4234d402ec0360fac07b6fdd766b5c1100ae909c073425551256915",
+      "uid": 0,
+      "url": "https://zenodo.org/api/files/2cab6fd8-4a80-4e73-9e8a-29e7b12cedfc/Homo_sapiens_assembly38.fasta"
+    },
+    {
+      "@id": "exe/Homo_sapiens_assembly38.fasta.fai",
+      "@type": [
+        "File",
+        "FormalParameter"
+      ],
+      "contentSize": 160928,
+      "dateModified": "2023-03-15T16:02:13.893662",
+      "encodingFormat": "text/plain",
+      "gid": 0,
+      "lineCount": 3366,
+      "mode": "-rw-r--r--",
+      "sha512": "cfcc85de41b11afddc0013653f9d55c8c0d0e9f20962432ecdbd9445e42fd56601f91eeed1bdc31c257d35ef3a4d81ced720112018310b2db74cbb2730738feb",
+      "uid": 0,
+      "url": "https://zenodo.org/api/files/2cab6fd8-4a80-4e73-9e8a-29e7b12cedfc/Homo_sapiens_assembly38.fasta.fai"
+    },
+    {
+      "@id": "exe/Homo_sapiens_assembly38.dict",
+      "@type": [
+        "File",
+        "FormalParameter"
+      ],
+      "contentSize": 581712,
+      "dateModified": "2023-03-15T16:02:17.777708",
+      "encodingFormat": "text/plain",
+      "gid": 0,
+      "lineCount": 3367,
+      "mode": "-rw-r--r--",
+      "sha512": "9b64fa47412becaab2e41ecc7c4132fe5a5763980b27f2d16e52c8c712309f33efb1bc2fc713fcf75317e32386ebd8f06009e608c4d6e7252612a755b61e22bd",
+      "uid": 0,
+      "url": "https://zenodo.org/api/files/2cab6fd8-4a80-4e73-9e8a-29e7b12cedfc/Homo_sapiens_assembly38.dict"
+    },
+    {
+      "@id": "exe/interval_list.txt",
+      "@type": [
+        "File",
+        "FormalParameter"
+      ],
+      "contentSize": 41,
+      "dateModified": "2023-03-15T16:02:19.021723",
+      "encodingFormat": "text/plain",
+      "gid": 0,
+      "lineCount": 1,
+      "mode": "-rw-r--r--",
+      "sha512": "83c520875355e8ce46e16a98dd8f44ef25a1b9e22eec965a6e68101a251fea5cd04f9b0737803e63e085b3f46097c5ae46c981b40a53af3a7ac07d6dbba1152d",
+      "text": "./wgs_calling_regions.hg38.interval_list\n",
+      "uid": 0,
+      "url": "https://zenodo.org/api/files/2cab6fd8-4a80-4e73-9e8a-29e7b12cedfc/interval_list.txt"
+    },
+    {
+      "@id": "http://edamontology.org/format_2572",
+      "@type": [
+        "Format"
+      ],
+      "name": "BAM format, the binary, BGZF-formatted compressed version of SAM format for alignment of nucleotide sequences (e.g. sequencing reads) to (a) reference sequence(s). May contain base-call and alignment qualities and other data."
+    },
+    {
+      "@id": "exe/NA12775_small.bam",
+      "@type": [
+        "File",
+        "FormalParameter"
+      ],
+      "contentSize": 3629707,
+      "dateModified": "2023-03-15T16:02:36.617929",
+      "encodingFormat": "application/gzip",
+      "format": {
+        "@id": "http://edamontology.org/format_2572"
+      },
+      "gid": 0,
+      "mode": "-rw-r--r--",
+      "sha512": "7cea5545bc98c6563dc8589c03833a9642fe2823e92e4ad2f13062b546b308860a1a45186bb24db2937ade6e9c00ec7a2d7b81c21d48ee8016e4dbe4be49f7db",
+      "uid": 0,
+      "url": "https://zenodo.org/api/files/2cab6fd8-4a80-4e73-9e8a-29e7b12cedfc/NA12775_small.bam"
+    },
+    {
+      "@id": "exe/NA12775_small.bam.bai",
+      "@type": [
+        "File",
+        "FormalParameter"
+      ],
+      "contentSize": 28128,
+      "dateModified": "2023-03-15T16:02:37.905944",
+      "encodingFormat": "application/octet-stream",
+      "gid": 0,
+      "mode": "-rw-r--r--",
+      "sha512": "23480adada1d77ba4e3367b50480b01b2167e68618f57232231b765ba29bb5b95a0eab4b8f75e6980fe15e2cde23b7b9d2de07d61d65db6a62e0d68821131794",
+      "uid": 0,
+      "url": "https://zenodo.org/api/files/2cab6fd8-4a80-4e73-9e8a-29e7b12cedfc/NA12775_small.bam.bai"
+    },
+    {
+      "@id": "exe/wgs_calling_regions.hg38.interval_list",
+      "@type": [
+        "File",
+        "FormalParameter"
+      ],
+      "contentSize": 599399,
+      "dateModified": "2023-03-15T16:02:41.489985",
+      "encodingFormat": "text/plain",
+      "gid": 0,
+      "lineCount": 3724,
+      "mode": "-rw-r--r--",
+      "sha512": "e5e16c7d2b514a2c32403df05716a670c3901451da55437727f6c0056a2479c9a633d33f3249500989e792d212d2390137e49fbbfec8090e7ae0333210c62daf",
+      "uid": 0,
+      "url": "https://zenodo.org/api/files/2cab6fd8-4a80-4e73-9e8a-29e7b12cedfc/wgs_calling_regions.hg38.interval_list"
+    },
+    {
+      "@id": "#sapporo-test-result",
+      "@type": [
+        "TestResult"
+      ],
+      "endTime": "2023-03-15T16:44:50",
+      "exitCode": 0,
+      "intermediateFiles": [
+        {
+          "@id": "exe/metadata.json"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-MergeGVCFs/execution/script.background"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-MergeGVCFs/execution/NA12775_small.g.vcf.gz.tbi"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-MergeGVCFs/execution/rc"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-MergeGVCFs/execution/stderr.background"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-MergeGVCFs/execution/stdout.background"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-MergeGVCFs/execution/NA12775_small.g.vcf.gz"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-MergeGVCFs/execution/stdout"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-MergeGVCFs/execution/stderr"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-MergeGVCFs/execution/script.submit"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-MergeGVCFs/execution/docker_cid"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-MergeGVCFs/execution/script"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-MergeGVCFs/inputs/913895450/NA12775_small.g.vcf.gz.tbi"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-MergeGVCFs/inputs/913895450/NA12775_small.g.vcf.gz"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/execution/script.background"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/execution/NA12775_small.g.vcf.gz.tbi"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/execution/rc"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/execution/stderr.background"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/execution/stdout.background"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/execution/NA12775_small.g.vcf.gz"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/execution/stdout"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/execution/stderr"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/execution/NA12775_small.g.vcf.gz.bamout.bam"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/execution/script.submit"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/execution/docker_cid"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/execution/script"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/inputs/1916655152/wgs_calling_regions.hg38.interval_list"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/inputs/1916655152/Homo_sapiens_assembly38.fasta"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/inputs/1916655152/NA12775_small.bam"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/inputs/1916655152/Homo_sapiens_assembly38.fasta.fai"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/inputs/1916655152/NA12775_small.bam.bai"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/inputs/1916655152/Homo_sapiens_assembly38.dict"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/tmp.b9f65290/tmp_read_resource_4865754509440231620.config"
+        },
+        {
+          "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/tmp.b9f65290/tmp_read_resource_2644765822790484517.config"
+        }
+      ],
+      "name": "Sapporo test result",
+      "outputs": [
+        {
+          "@id": "outputs/NA12775_small.g.vcf.gz.tbi"
+        },
+        {
+          "@id": "outputs/NA12775_small.g.vcf.gz"
+        }
+      ],
+      "pid": 12,
+      "runId": "86af5b6d-8780-4ccc-8d9b-3864c82590da",
+      "startTime": "2023-03-15T16:02:41",
+      "state": "COMPLETE",
+      "stderr": {
+        "@id": "stderr.log"
+      },
+      "stdout": {
+        "@id": "stdout.log"
+      }
+    },
+    {
+      "@id": "stdout.log",
+      "@type": "File",
+      "contentSize": 31108,
+      "dateModified": "2023-03-15T16:44:49.135355",
+      "encodingFormat": "text/plain",
+      "gid": 0,
+      "lineCount": 313,
+      "mode": "-rw-r--r--",
+      "name": "Sapporo stdout",
+      "sha512": "1e758c66888180b7c09a29da9715332c70a2f160729ba7a8c21f2a4cfc6a879c4c22090c710e3c156c7c97bc61c5bd41d397b9f2735763b7e3b97454b7ceb25c",
+      "uid": 0
+    },
+    {
+      "@id": "stderr.log",
+      "@type": "File",
+      "contentSize": 69112,
+      "dateModified": "2023-03-15T16:44:50.111367",
+      "encodingFormat": "text/plain",
+      "gid": 0,
+      "lineCount": 1107,
+      "mode": "-rw-r--r--",
+      "name": "Sapporo stderr",
+      "sha512": "eb2522cecdddd9805dbde0c654e29f4c7fe83e4724078052d08d62f2c4a87d2d013675f836f720403788fee7efe016a5aff9f2d6b1fb13a2577dc9d23cc2878a",
+      "uid": 0
+    },
+    {
+      "@id": "outputs/NA12775_small.g.vcf.gz.tbi",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "OutputFile"
+      ],
+      "contentSize": 22510,
+      "dateModified": "2023-03-15T16:44:49.719362",
+      "encodingFormat": "application/gzip",
+      "gid": 0,
+      "mode": "-rw-r--r--",
+      "sha512": "8df3f433292faf7a0581cbace975c4f786e185ca282eb0bb75c390a04c3d2aebce51b31378bf38e21d47757a8a95a7a15c7dde417e256ba9b32304fb304c74b7",
+      "uid": 0,
+      "url": "http://localhost:1122/runs/86af5b6d-8780-4ccc-8d9b-3864c82590da/data/outputs/NA12775_small.g.vcf.gz.tbi"
+    },
+    {
+      "@id": "http://edamontology.org/format_3016",
+      "@type": [
+        "Format"
+      ],
+      "name": "Variant Call Format (VCF) for sequence variation (indels, polymorphisms, structural variation)."
+    },
+    {
+      "@id": "#vcftools",
+      "@type": "SoftwareApplication",
+      "name": "vcftools",
+      "version": "0.1.16--pl5321h9a82719_6"
+    },
+    {
+      "@id": "#e78ee158-6d5f-455e-b40f-db008d6635c1",
+      "@type": [
+        "FileStats"
+      ],
+      "generatedBy": {
+        "@id": "#vcftools"
+      },
+      "indelsCount": 91,
+      "snpsCount": 371,
+      "variantCount": 21350
+    },
+    {
+      "@id": "outputs/NA12775_small.g.vcf.gz",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "OutputFile"
+      ],
+      "contentSize": 475258,
+      "dateModified": "2023-03-15T16:44:49.723362",
+      "encodingFormat": "application/gzip",
+      "format": {
+        "@id": "http://edamontology.org/format_3016"
+      },
+      "gid": 0,
+      "mode": "-rw-r--r--",
+      "sha512": "df8717a6c7c9549ed10520128495c9e10318e56c319cef4e22188587c433e754470edf937a1f9dfbc0cfe74c8d69d0341ce305b37c20e6d71ff2cfdb0d12a3de",
+      "stats": {
+        "@id": "#e78ee158-6d5f-455e-b40f-db008d6635c1"
+      },
+      "uid": 0,
+      "url": "http://localhost:1122/runs/86af5b6d-8780-4ccc-8d9b-3864c82590da/data/outputs/NA12775_small.g.vcf.gz"
+    },
+    {
+      "@id": "exe/metadata.json",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "IntermediateFile"
+      ],
+      "contentSize": 23061,
+      "dateModified": "2023-03-15T16:44:48.775351",
+      "encodingFormat": "application/json",
+      "gid": 0,
+      "lineCount": 222,
+      "mode": "-rw-r--r--",
+      "sha512": "ff822cf018c30e9f133a2727f4782ff5a547746d7d4c24ee24055f7fe7a1915a86002cddb61ac0393dcd7bf84e5657e13a63fe3134945822d723071d00f5a0f2",
+      "uid": 0
+    },
+    {
+      "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-MergeGVCFs/execution/script.background",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "IntermediateFile"
+      ],
+      "contentSize": 593,
+      "dateModified": "2023-03-15T16:44:08.914896",
+      "encodingFormat": "text/x-shellscript",
+      "gid": 0,
+      "lineCount": 3,
+      "mode": "-rw-r--r--",
+      "sha512": "f167a8f5d006846d97c5145229f0d8ec99607f66463a793f0b63c549bb75489b1263031362b75aef41fa793ae9f5fb6b884c489e8d47b3b673141b22db3b9602",
+      "uid": 0
+    },
+    {
+      "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-MergeGVCFs/execution/NA12775_small.g.vcf.gz.tbi",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "IntermediateFile"
+      ],
+      "contentSize": 22510,
+      "dateModified": "2023-03-15T16:44:12.426933",
+      "encodingFormat": "application/gzip",
+      "gid": 0,
+      "mode": "-rw-r--r--",
+      "sha512": "8df3f433292faf7a0581cbace975c4f786e185ca282eb0bb75c390a04c3d2aebce51b31378bf38e21d47757a8a95a7a15c7dde417e256ba9b32304fb304c74b7",
+      "uid": 0
+    },
+    {
+      "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-MergeGVCFs/execution/rc",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "IntermediateFile"
+      ],
+      "contentSize": 2,
+      "dateModified": "2023-03-15T16:44:12.466933",
+      "encodingFormat": "text/plain",
+      "gid": 0,
+      "lineCount": 1,
+      "mode": "-rw-r--r--",
+      "sha512": "a546d1300f49037a465ecec8bc1ebd07d57015a5ff1abfa1c94da9b30576933fb68e3898ff764d4de6e6741da822a7c93adc6e845806a266a63aa14c8bb09ebb",
+      "uid": 0
+    },
+    {
+      "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-MergeGVCFs/execution/stderr.background",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "IntermediateFile"
+      ],
+      "contentSize": 2179,
+      "dateModified": "2023-03-15T16:44:12.458933",
+      "encodingFormat": "text/plain",
+      "gid": 0,
+      "lineCount": 13,
+      "mode": "-rw-r--r--",
+      "sha512": "b2befb1ee202e7ee7150954fa2a2fe18f75004c780f467cee19dd897dd89196b9a35512837836316720956990c2a0d0e829796d46c6d232a13e1f536c0de1472",
+      "uid": 0
+    },
+    {
+      "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-MergeGVCFs/execution/stdout.background",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "IntermediateFile"
+      ],
+      "contentSize": 86,
+      "dateModified": "2023-03-15T16:44:12.650935",
+      "encodingFormat": "text/plain",
+      "gid": 0,
+      "lineCount": 4,
+      "mode": "-rw-r--r--",
+      "sha512": "c9a9faa37e65b99f28c3e6801ae2031bc2b56e26814417b00a701d355a87a41f6b3a296c7f4831908bdb34b562ee019131c3596d8557ff1ebded9fea7514d3b2",
+      "uid": 0
+    },
+    {
+      "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-MergeGVCFs/execution/NA12775_small.g.vcf.gz",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "IntermediateFile"
+      ],
+      "contentSize": 475258,
+      "dateModified": "2023-03-15T16:44:12.406933",
+      "encodingFormat": "application/gzip",
+      "format": {
+        "@id": "http://edamontology.org/format_3016"
+      },
+      "gid": 0,
+      "mode": "-rw-r--r--",
+      "sha512": "df8717a6c7c9549ed10520128495c9e10318e56c319cef4e22188587c433e754470edf937a1f9dfbc0cfe74c8d69d0341ce305b37c20e6d71ff2cfdb0d12a3de",
+      "uid": 0
+    },
+    {
+      "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-MergeGVCFs/execution/stdout",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "IntermediateFile"
+      ],
+      "contentSize": 17,
+      "dateModified": "2023-03-15T16:44:12.430933",
+      "encodingFormat": "text/plain",
+      "gid": 0,
+      "lineCount": 2,
+      "mode": "-rw-r--r--",
+      "sha512": "6b702efecddd4b667cbe523eae6cfcf47a93f161af8ba152ea786fd13b82ea48df34c613c1364a28911470cb81d54f3975e6e64b1707ffcc6334887d0884a3f0",
+      "uid": 0
+    },
+    {
+      "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-MergeGVCFs/execution/stderr",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "IntermediateFile"
+      ],
+      "contentSize": 2179,
+      "dateModified": "2023-03-15T16:44:12.458933",
+      "encodingFormat": "text/plain",
+      "gid": 0,
+      "lineCount": 13,
+      "mode": "-rw-r--r--",
+      "sha512": "b2befb1ee202e7ee7150954fa2a2fe18f75004c780f467cee19dd897dd89196b9a35512837836316720956990c2a0d0e829796d46c6d232a13e1f536c0de1472",
+      "uid": 0
+    },
+    {
+      "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-MergeGVCFs/execution/script.submit",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "IntermediateFile"
+      ],
+      "contentSize": 1896,
+      "dateModified": "2023-03-15T16:44:08.914896",
+      "encodingFormat": "text/x-shellscript",
+      "gid": 0,
+      "lineCount": 20,
+      "mode": "-rw-r--r--",
+      "sha512": "3d1ec433a98eb618608e2bcc224c069b84a0dbd932b2611cfd1f39a917648ae6bd418715c0705106a12f49b20e34d266ad14593e80e3209cc57affc7ea1c6f7e",
+      "uid": 0
+    },
+    {
+      "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-MergeGVCFs/execution/docker_cid",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "IntermediateFile"
+      ],
+      "contentSize": 64,
+      "dateModified": "2023-03-15T16:44:08.994896",
+      "encodingFormat": "text/plain",
+      "gid": 0,
+      "lineCount": 0,
+      "mode": "-rw-r--r--",
+      "sha512": "a3af26bb23885ebca7e0d9911b7743dd99ebeded06df50d00705877d9d07cc1870adc23d98120ca6010ed3c27cfdee44b9b95904d6366f13fc58f0080f7e0fe8",
+      "uid": 0
+    },
+    {
+      "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-MergeGVCFs/execution/script",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "IntermediateFile"
+      ],
+      "contentSize": 2481,
+      "dateModified": "2023-03-15T16:44:08.910895",
+      "encodingFormat": "text/x-shellscript",
+      "gid": 0,
+      "lineCount": 42,
+      "mode": "-rw-r--r--",
+      "sha512": "fe38a277e9483cc20409bb773035ef747e326933c80de3972acaac3ab7ae19ea57f24d3851054269c8fc505830d467090323fad74531b9ac9d08e51c039d647e",
+      "uid": 0
+    },
+    {
+      "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-MergeGVCFs/inputs/913895450/NA12775_small.g.vcf.gz.tbi",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "IntermediateFile"
+      ],
+      "contentSize": 22510,
+      "dateModified": "2023-03-15T16:39:07.131443",
+      "encodingFormat": "application/gzip",
+      "gid": 0,
+      "mode": "-rw-r--r--",
+      "sha512": "8df3f433292faf7a0581cbace975c4f786e185ca282eb0bb75c390a04c3d2aebce51b31378bf38e21d47757a8a95a7a15c7dde417e256ba9b32304fb304c74b7",
+      "uid": 0
+    },
+    {
+      "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-MergeGVCFs/inputs/913895450/NA12775_small.g.vcf.gz",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "IntermediateFile"
+      ],
+      "contentSize": 475258,
+      "dateModified": "2023-03-15T16:39:07.083442",
+      "encodingFormat": "application/gzip",
+      "format": {
+        "@id": "http://edamontology.org/format_3016"
+      },
+      "gid": 0,
+      "mode": "-rw-r--r--",
+      "sha512": "df8717a6c7c9549ed10520128495c9e10318e56c319cef4e22188587c433e754470edf937a1f9dfbc0cfe74c8d69d0341ce305b37c20e6d71ff2cfdb0d12a3de",
+      "uid": 0
+    },
+    {
+      "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/execution/script.background",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "IntermediateFile"
+      ],
+      "contentSize": 619,
+      "dateModified": "2023-03-15T16:03:10.022315",
+      "encodingFormat": "text/x-shellscript",
+      "gid": 0,
+      "lineCount": 3,
+      "mode": "-rw-r--r--",
+      "sha512": "cdce4f844552c54eb62d9692b49839cd9dd36a2e550362e2f2707ad7e38b11707b54d950b874051cb03b56644872b6fba358fbe2a0b3a64e1c46941e5d9e12b1",
+      "uid": 0
+    },
+    {
+      "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/execution/NA12775_small.g.vcf.gz.tbi",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "IntermediateFile"
+      ],
+      "contentSize": 22510,
+      "dateModified": "2023-03-15T16:39:07.131443",
+      "encodingFormat": "application/gzip",
+      "gid": 0,
+      "mode": "-rw-r--r--",
+      "sha512": "8df3f433292faf7a0581cbace975c4f786e185ca282eb0bb75c390a04c3d2aebce51b31378bf38e21d47757a8a95a7a15c7dde417e256ba9b32304fb304c74b7",
+      "uid": 0
+    },
+    {
+      "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/execution/rc",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "IntermediateFile"
+      ],
+      "contentSize": 2,
+      "dateModified": "2023-03-15T16:39:07.431447",
+      "encodingFormat": "text/plain",
+      "gid": 0,
+      "lineCount": 1,
+      "mode": "-rw-r--r--",
+      "sha512": "a546d1300f49037a465ecec8bc1ebd07d57015a5ff1abfa1c94da9b30576933fb68e3898ff764d4de6e6741da822a7c93adc6e845806a266a63aa14c8bb09ebb",
+      "uid": 0
+    },
+    {
+      "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/execution/stderr.background",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "IntermediateFile"
+      ],
+      "contentSize": 31174,
+      "dateModified": "2023-03-15T16:39:07.311445",
+      "encodingFormat": "text/plain",
+      "gid": 0,
+      "lineCount": 301,
+      "mode": "-rw-r--r--",
+      "sha512": "b6866fd2a5c73d1f69f0f0779aeaed82bd2520b58f2aebeea1906102f6f9ce4e5f9d15c866069565c7a1ce79c10abd869ec3849f49cf038ff489017edcab06a7",
+      "uid": 0
+    },
+    {
+      "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/execution/stdout.background",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "IntermediateFile"
+      ],
+      "contentSize": 69,
+      "dateModified": "2023-03-15T16:39:07.959453",
+      "encodingFormat": "text/plain",
+      "gid": 0,
+      "lineCount": 2,
+      "mode": "-rw-r--r--",
+      "sha512": "674af48f632b6c7570a22f5af5a0746f1abb8980366a806c0f1ce96ed8a4f4905870a6331a51296dfafebce1b1fdedc21291f06217e08d11169fe1cd8eac4371",
+      "uid": 0
+    },
+    {
+      "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/execution/NA12775_small.g.vcf.gz",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "IntermediateFile"
+      ],
+      "contentSize": 475258,
+      "dateModified": "2023-03-15T16:39:07.083442",
+      "encodingFormat": "application/gzip",
+      "format": {
+        "@id": "http://edamontology.org/format_3016"
+      },
+      "gid": 0,
+      "mode": "-rw-r--r--",
+      "sha512": "df8717a6c7c9549ed10520128495c9e10318e56c319cef4e22188587c433e754470edf937a1f9dfbc0cfe74c8d69d0341ce305b37c20e6d71ff2cfdb0d12a3de",
+      "uid": 0
+    },
+    {
+      "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/execution/stdout",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "IntermediateFile"
+      ],
+      "contentSize": 0,
+      "dateModified": "2023-03-15T16:04:28.903238",
+      "encodingFormat": "inode/x-empty",
+      "gid": 0,
+      "lineCount": 0,
+      "mode": "-rw-r--r--",
+      "sha512": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
+      "uid": 0
+    },
+    {
+      "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/execution/stderr",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "IntermediateFile"
+      ],
+      "contentSize": 29894,
+      "dateModified": "2023-03-15T16:39:07.311445",
+      "encodingFormat": "text/plain",
+      "gid": 0,
+      "lineCount": 270,
+      "mode": "-rw-r--r--",
+      "sha512": "d17867922a650adfe2fd4e69af142063902202ff43d534dd45be66b1e8d028b48a9baa3f4f33d430232cbb1a04a43ade383ca1a3dd662fca367f5b629d0c4a31",
+      "uid": 0
+    },
+    {
+      "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/execution/NA12775_small.g.vcf.gz.bamout.bam",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "IntermediateFile"
+      ],
+      "contentSize": 0,
+      "dateModified": "2023-03-15T16:39:07.427446",
+      "encodingFormat": "inode/x-empty",
+      "format": {
+        "@id": "http://edamontology.org/format_2572"
+      },
+      "gid": 0,
+      "lineCount": 0,
+      "mode": "-rw-r--r--",
+      "sha512": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
+      "uid": 0
+    },
+    {
+      "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/execution/script.submit",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "IntermediateFile"
+      ],
+      "contentSize": 1987,
+      "dateModified": "2023-03-15T16:03:10.018315",
+      "encodingFormat": "text/x-shellscript",
+      "gid": 0,
+      "lineCount": 20,
+      "mode": "-rw-r--r--",
+      "sha512": "f463529dc5692c65710a0c8b5a90f8a3b2b9b432a8557d1e528c5dcd73abcec9760752dc3df30c423170bbe248e6e397eaa8dc80432822107779e9c474425793",
+      "uid": 0
+    },
+    {
+      "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/execution/docker_cid",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "IntermediateFile"
+      ],
+      "contentSize": 64,
+      "dateModified": "2023-03-15T16:04:28.487233",
+      "encodingFormat": "text/plain",
+      "gid": 0,
+      "lineCount": 0,
+      "mode": "-rw-r--r--",
+      "sha512": "061d0dd3b533b3c629bbf46f65f7011c1f7786e6c2b4bb9d3cfd7929e7c954727b69c24dd61feca576df84174fffaf73213e4e592b54d9578638c50c532790c0",
+      "uid": 0
+    },
+    {
+      "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/execution/script",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "IntermediateFile"
+      ],
+      "contentSize": 3360,
+      "dateModified": "2023-03-15T16:03:09.966314",
+      "encodingFormat": "text/x-shellscript",
+      "gid": 0,
+      "lineCount": 53,
+      "mode": "-rw-r--r--",
+      "sha512": "f02014f0e4c935a742c5ffdb575d0517767c478005aeed4a384c7b252fb389a3ad79859e8d5344d77a4b34167d25a3e28940f9cbabdebcdef9df1e8a2dbd247e",
+      "uid": 0
+    },
+    {
+      "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/inputs/1916655152/wgs_calling_regions.hg38.interval_list",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "IntermediateFile"
+      ],
+      "contentSize": 599399,
+      "dateModified": "2023-03-15T16:02:41.489985",
+      "encodingFormat": "text/plain",
+      "gid": 0,
+      "lineCount": 3724,
+      "mode": "-rw-r--r--",
+      "sha512": "e5e16c7d2b514a2c32403df05716a670c3901451da55437727f6c0056a2479c9a633d33f3249500989e792d212d2390137e49fbbfec8090e7ae0333210c62daf",
+      "uid": 0
+    },
+    {
+      "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/inputs/1916655152/Homo_sapiens_assembly38.fasta",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "IntermediateFile"
+      ],
+      "contentSize": 3249912778,
+      "dateModified": "2023-03-15T16:02:12.097641",
+      "encodingFormat": "text/plain",
+      "format": {
+        "@id": "http://edamontology.org/format_1929"
+      },
+      "gid": 0,
+      "lineCount": 32178545,
+      "mode": "-rw-r--r--",
+      "sha512": "41a0edb97c470b327464d37a4efe8d36f1796e1148191f1c5be1d7d868c4bfb91958f66de4234d402ec0360fac07b6fdd766b5c1100ae909c073425551256915",
+      "uid": 0
+    },
+    {
+      "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/inputs/1916655152/NA12775_small.bam",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "IntermediateFile"
+      ],
+      "contentSize": 3629707,
+      "dateModified": "2023-03-15T16:02:36.617929",
+      "encodingFormat": "application/gzip",
+      "format": {
+        "@id": "http://edamontology.org/format_2572"
+      },
+      "gid": 0,
+      "mode": "-rw-r--r--",
+      "sha512": "7cea5545bc98c6563dc8589c03833a9642fe2823e92e4ad2f13062b546b308860a1a45186bb24db2937ade6e9c00ec7a2d7b81c21d48ee8016e4dbe4be49f7db",
+      "uid": 0
+    },
+    {
+      "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/inputs/1916655152/Homo_sapiens_assembly38.fasta.fai",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "IntermediateFile"
+      ],
+      "contentSize": 160928,
+      "dateModified": "2023-03-15T16:02:13.893662",
+      "encodingFormat": "text/plain",
+      "gid": 0,
+      "lineCount": 3366,
+      "mode": "-rw-r--r--",
+      "sha512": "cfcc85de41b11afddc0013653f9d55c8c0d0e9f20962432ecdbd9445e42fd56601f91eeed1bdc31c257d35ef3a4d81ced720112018310b2db74cbb2730738feb",
+      "uid": 0
+    },
+    {
+      "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/inputs/1916655152/NA12775_small.bam.bai",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "IntermediateFile"
+      ],
+      "contentSize": 28128,
+      "dateModified": "2023-03-15T16:02:37.905944",
+      "encodingFormat": "application/octet-stream",
+      "gid": 0,
+      "mode": "-rw-r--r--",
+      "sha512": "23480adada1d77ba4e3367b50480b01b2167e68618f57232231b765ba29bb5b95a0eab4b8f75e6980fe15e2cde23b7b9d2de07d61d65db6a62e0d68821131794",
+      "uid": 0
+    },
+    {
+      "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/inputs/1916655152/Homo_sapiens_assembly38.dict",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "IntermediateFile"
+      ],
+      "contentSize": 581712,
+      "dateModified": "2023-03-15T16:02:17.777708",
+      "encodingFormat": "text/plain",
+      "gid": 0,
+      "lineCount": 3367,
+      "mode": "-rw-r--r--",
+      "sha512": "9b64fa47412becaab2e41ecc7c4132fe5a5763980b27f2d16e52c8c712309f33efb1bc2fc713fcf75317e32386ebd8f06009e608c4d6e7252612a755b61e22bd",
+      "uid": 0
+    },
+    {
+      "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/tmp.b9f65290/tmp_read_resource_4865754509440231620.config",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "IntermediateFile"
+      ],
+      "contentSize": 510,
+      "dateModified": "2023-03-15T16:04:32.203277",
+      "encodingFormat": "text/plain",
+      "gid": 0,
+      "lineCount": 9,
+      "mode": "-rw-r--r--",
+      "sha512": "e70e710cb6163bb5a7fee8a1f286a59d037f359d2a700df7afb3926dd3618dc817acd50236df22383ca7d9bd1bd7e18540f453e429b88e8560cafbd0f77c26ee",
+      "uid": 0
+    },
+    {
+      "@id": "exe/cromwell-executions/HaplotypeCallerGvcf_GATK4/71db8657-c3e1-493c-a73e-f2bad0c65e68/call-HaplotypeCaller/shard-0/tmp.b9f65290/tmp_read_resource_2644765822790484517.config",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "IntermediateFile"
+      ],
+      "contentSize": 510,
+      "dateModified": "2023-03-15T16:04:32.199277",
+      "encodingFormat": "text/plain",
+      "gid": 0,
+      "lineCount": 9,
+      "mode": "-rw-r--r--",
+      "sha512": "e70e710cb6163bb5a7fee8a1f286a59d037f359d2a700df7afb3926dd3618dc817acd50236df22383ca7d9bd1bd7e18540f453e429b88e8560cafbd0f77c26ee",
+      "uid": 0
+    }
+  ]
+}
