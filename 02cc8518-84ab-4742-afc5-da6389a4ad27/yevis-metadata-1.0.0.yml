@@ -6,52 +6,57 @@ authors:
   - github_account: manabuishii
     name: Manabu ISHII
     affiliation: GAJ
+zenodo:
+  url: "https://zenodo.org/record/7739166"
+  id: 7739166
+  doi: 10.5281/zenodo.7739166
+  concept_doi: 10.5281/zenodo.7739165
 workflow:
   name: interleaved-fastq-to-paired-fastq
-  readme: "https://raw.githubusercontent.com/gatk-workflows/seq-format-conversion/6b69dde1877de997effedd3388aeaca929db04da/README.md"
+  readme: "https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/README.md"
   language:
     type: WDL
     version: "1.0"
   files:
-    - url: "https://raw.githubusercontent.com/gatk-workflows/seq-format-conversion/6b69dde1877de997effedd3388aeaca929db04da/LICENSE"
+    - url: "https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/LICENSE"
       target: LICENSE
       type: secondary
-    - url: "https://raw.githubusercontent.com/gatk-workflows/seq-format-conversion/6b69dde1877de997effedd3388aeaca929db04da/README.md"
+    - url: "https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/README.md"
       target: README.md
       type: secondary
-    - url: "https://raw.githubusercontent.com/gatk-workflows/seq-format-conversion/6b69dde1877de997effedd3388aeaca929db04da/bam-to-unmapped-bams.inputs.json"
+    - url: "https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/bam-to-unmapped-bams.inputs.json"
       target: bam-to-unmapped-bams.inputs.json
       type: secondary
-    - url: "https://raw.githubusercontent.com/gatk-workflows/seq-format-conversion/6b69dde1877de997effedd3388aeaca929db04da/bam-to-unmapped-bams.wdl"
+    - url: "https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/bam-to-unmapped-bams.wdl"
       target: bam-to-unmapped-bams.wdl
       type: secondary
-    - url: "https://raw.githubusercontent.com/gatk-workflows/seq-format-conversion/6b69dde1877de997effedd3388aeaca929db04da/cram-to-bam.inputs.json"
+    - url: "https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/cram-to-bam.inputs.json"
       target: cram-to-bam.inputs.json
       type: secondary
-    - url: "https://raw.githubusercontent.com/gatk-workflows/seq-format-conversion/6b69dde1877de997effedd3388aeaca929db04da/cram-to-bam.wdl"
+    - url: "https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/cram-to-bam.wdl"
       target: cram-to-bam.wdl
       type: secondary
-    - url: "https://raw.githubusercontent.com/gatk-workflows/seq-format-conversion/6b69dde1877de997effedd3388aeaca929db04da/generic.google-papi.options.json"
+    - url: "https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/generic.google-papi.options.json"
       target: generic.google-papi.options.json
       type: secondary
-    - url: "https://raw.githubusercontent.com/gatk-workflows/seq-format-conversion/6b69dde1877de997effedd3388aeaca929db04da/interleaved-fastq-to-paired-fastq.inputs.json"
+    - url: "https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/interleaved-fastq-to-paired-fastq.inputs.json"
       target: interleaved-fastq-to-paired-fastq.inputs.json
       type: secondary
-    - url: "https://raw.githubusercontent.com/gatk-workflows/seq-format-conversion/6b69dde1877de997effedd3388aeaca929db04da/interleaved-fastq-to-paired-fastq.wdl"
+    - url: "https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/interleaved-fastq-to-paired-fastq.wdl"
       target: interleaved-fastq-to-paired-fastq.wdl
       type: primary
-    - url: "https://raw.githubusercontent.com/gatk-workflows/seq-format-conversion/6b69dde1877de997effedd3388aeaca929db04da/paired-fastq-to-unmapped-bam.inputs.json"
+    - url: "https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/paired-fastq-to-unmapped-bam.inputs.json"
       target: paired-fastq-to-unmapped-bam.inputs.json
       type: secondary
-    - url: "https://raw.githubusercontent.com/gatk-workflows/seq-format-conversion/6b69dde1877de997effedd3388aeaca929db04da/paired-fastq-to-unmapped-bam.wdl"
+    - url: "https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/paired-fastq-to-unmapped-bam.wdl"
       target: paired-fastq-to-unmapped-bam.wdl
       type: secondary
   testing:
     - id: test_1
       files:
-        - url: "https://dl.dropboxusercontent.com/s/bw49381pps5zaqx/interleaved-fastq-to-paired-fastq.input.small.json"
+        - url: "https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/wf_params.json"
           target: wf_params.json
           type: wf_params
-        - url: "https://dl.dropboxusercontent.com/s/7yfpq3vlz9rf9iz/NA18549.final.small_interleaved.fastq.gz"
+        - url: "https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/NA18549.final.small_interleaved.fastq.gz"
           target: NA18549.final.small_interleaved.fastq.gz
           type: other
