@@ -1,0 +1,1198 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.1/context",
+    {
+      "FileStats": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#FileStats",
+      "Format": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#Format",
+      "IntermediateFile": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#IntermediateFile",
+      "OutputFile": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#OutputFile",
+      "SapporoConfiguration": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#SapporoConfiguration",
+      "SapporoService": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#SapporoService",
+      "TestDefinition": "https://w3id.org/ro/terms/test#TestDefinition",
+      "TestEnvironment": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#TestEnvironment",
+      "TestInstance": "https://w3id.org/ro/terms/test#TestInstance",
+      "TestResult": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#TestResult",
+      "TestService": "https://w3id.org/ro/terms/test#TestService",
+      "TestSuite": "https://w3id.org/ro/terms/test#TestSuite",
+      "WorkflowAttachment": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#WorkflowAttachment",
+      "attachment": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#attachment",
+      "cmd": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#cmd",
+      "configuration": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#configuration",
+      "cpuArchitecture": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#cpuArchitecture",
+      "cpuCount": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#cpuCount",
+      "definition": "https://w3id.org/ro/terms/test#definition",
+      "duplicateRate": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#duplicateRate",
+      "duplicateReads": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#duplicateReads",
+      "engineVersion": "https://w3id.org/ro/terms/test#engineVersion",
+      "environment": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#environment",
+      "executableWorkflows": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#executableWorkflows",
+      "exitCode": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#exitCode",
+      "format": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#format",
+      "freeDiskSpace": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#freeDiskSpace",
+      "generatedBy": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#generatedBy",
+      "getRuns": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#getRuns",
+      "gid": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#gid",
+      "inDocker": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#inDocker",
+      "indelsCount": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#indelsCount",
+      "instance": "https://w3id.org/ro/terms/test#instance",
+      "intermediateFiles": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#intermediateFiles",
+      "lineCount": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#lineCount",
+      "mappedRate": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#mappedRate",
+      "mappedReads": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#mappedReads",
+      "mode": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#mode",
+      "os": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#os",
+      "osVersion": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#osVersion",
+      "outputs": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#outputs",
+      "pid": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#pid",
+      "registeredOnlyMode": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#registeredOnlyMode",
+      "resource": "https://w3id.org/ro/terms/test#resource",
+      "result": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#result",
+      "runId": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#runId",
+      "runSh": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#runSh",
+      "runsOn": "https://w3id.org/ro/terms/test#runsOn",
+      "sapporoConfig": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#sapporoConfig",
+      "sapporoEndpoint": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#sapporoEndpoint",
+      "serviceInfo": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#serviceInfo",
+      "sha512": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#sha512",
+      "snpsCount": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#snpsCount",
+      "state": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#state",
+      "stats": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#stats",
+      "stderr": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#stderr",
+      "stdout": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#stdout",
+      "totalMemory": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#totalMemory",
+      "totalReads": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#totalReads",
+      "uid": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#uid",
+      "unmappedRate": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#unmappedRate",
+      "unmappedReads": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#unmappedReads",
+      "urlPrefix": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#urlPrefix",
+      "variantCount": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#variantCount",
+      "workflowAttachment": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#workflowAttachment",
+      "workflowEngineParameters": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#workflowEngineParameters",
+      "workflowParameters": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#workflowParameters",
+      "yevisId": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#yevisId",
+      "yevisMetadata": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#yevisMetadata",
+      "yevisTestId": "https://raw.githubusercontent.com/sapporo-wes/sapporo-service/main/sapporo/ro-terms.csv#yevisTestId"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "about": {
+        "@id": "#sapporo-test-suite"
+      },
+      "author": {
+        "@id": "https://github.com/manabuishii"
+      },
+      "datePublished": "2023-03-16T01:10:22+00:00",
+      "description": "RO-Crate of Sapporo's run execution results.",
+      "hasPart": [
+        {
+          "@id": "exe/"
+        },
+        {
+          "@id": "outputs/"
+        },
+        {
+          "@id": "https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/interleaved-fastq-to-paired-fastq.wdl"
+        },
+        {
+          "@id": "exe/LICENSE"
+        },
+        {
+          "@id": "exe/README.md"
+        },
+        {
+          "@id": "exe/bam-to-unmapped-bams.inputs.json"
+        },
+        {
+          "@id": "exe/bam-to-unmapped-bams.wdl"
+        },
+        {
+          "@id": "exe/cram-to-bam.inputs.json"
+        },
+        {
+          "@id": "exe/cram-to-bam.wdl"
+        },
+        {
+          "@id": "exe/generic.google-papi.options.json"
+        },
+        {
+          "@id": "exe/interleaved-fastq-to-paired-fastq.inputs.json"
+        },
+        {
+          "@id": "exe/paired-fastq-to-unmapped-bam.inputs.json"
+        },
+        {
+          "@id": "exe/paired-fastq-to-unmapped-bam.wdl"
+        },
+        {
+          "@id": "service_info.json"
+        },
+        {
+          "@id": "executable_workflows.json"
+        },
+        {
+          "@id": "run.sh"
+        },
+        {
+          "@id": "sapporo_config.json"
+        },
+        {
+          "@id": "run_request.json"
+        },
+        {
+          "@id": "exe/workflow_params.json"
+        },
+        {
+          "@id": "workflow_engine_params.txt"
+        },
+        {
+          "@id": "yevis-metadata.yml"
+        },
+        {
+          "@id": "exe/NA18549.final.small_interleaved.fastq.gz"
+        },
+        {
+          "@id": "stdout.log"
+        },
+        {
+          "@id": "stderr.log"
+        },
+        {
+          "@id": "outputs/NA18549.final.small_interleaved.fastq.gz_reads_1.fastq"
+        },
+        {
+          "@id": "outputs/NA18549.final.small_interleaved.fastq.gz_reads_2.fastq"
+        },
+        {
+          "@id": "exe/metadata.json"
+        },
+        {
+          "@id": "exe/cromwell-executions/UninterleaveFastqs/c48c3368-048d-4ba2-9de6-fcc1db59c8ef/call-uninterleave_fqs/execution/script.background"
+        },
+        {
+          "@id": "exe/cromwell-executions/UninterleaveFastqs/c48c3368-048d-4ba2-9de6-fcc1db59c8ef/call-uninterleave_fqs/execution/rc"
+        },
+        {
+          "@id": "exe/cromwell-executions/UninterleaveFastqs/c48c3368-048d-4ba2-9de6-fcc1db59c8ef/call-uninterleave_fqs/execution/stderr.background"
+        },
+        {
+          "@id": "exe/cromwell-executions/UninterleaveFastqs/c48c3368-048d-4ba2-9de6-fcc1db59c8ef/call-uninterleave_fqs/execution/stdout.background"
+        },
+        {
+          "@id": "exe/cromwell-executions/UninterleaveFastqs/c48c3368-048d-4ba2-9de6-fcc1db59c8ef/call-uninterleave_fqs/execution/stdout"
+        },
+        {
+          "@id": "exe/cromwell-executions/UninterleaveFastqs/c48c3368-048d-4ba2-9de6-fcc1db59c8ef/call-uninterleave_fqs/execution/stderr"
+        },
+        {
+          "@id": "exe/cromwell-executions/UninterleaveFastqs/c48c3368-048d-4ba2-9de6-fcc1db59c8ef/call-uninterleave_fqs/execution/script.submit"
+        },
+        {
+          "@id": "exe/cromwell-executions/UninterleaveFastqs/c48c3368-048d-4ba2-9de6-fcc1db59c8ef/call-uninterleave_fqs/execution/NA18549.final.small_interleaved.fastq.gz_reads_1.fastq"
+        },
+        {
+          "@id": "exe/cromwell-executions/UninterleaveFastqs/c48c3368-048d-4ba2-9de6-fcc1db59c8ef/call-uninterleave_fqs/execution/docker_cid"
+        },
+        {
+          "@id": "exe/cromwell-executions/UninterleaveFastqs/c48c3368-048d-4ba2-9de6-fcc1db59c8ef/call-uninterleave_fqs/execution/NA18549.final.small_interleaved.fastq.gz_reads_2.fastq"
+        },
+        {
+          "@id": "exe/cromwell-executions/UninterleaveFastqs/c48c3368-048d-4ba2-9de6-fcc1db59c8ef/call-uninterleave_fqs/execution/script"
+        },
+        {
+          "@id": "exe/cromwell-executions/UninterleaveFastqs/c48c3368-048d-4ba2-9de6-fcc1db59c8ef/call-uninterleave_fqs/inputs/-79094003/NA18549.final.small_interleaved.fastq.gz"
+        }
+      ],
+      "mainEntity": {
+        "@id": "https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/interleaved-fastq-to-paired-fastq.wdl"
+      },
+      "name": "Sapporo RO-Crate"
+    },
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "about": {
+        "@id": "./"
+      },
+      "conformsTo": [
+        {
+          "@id": "https://w3id.org/ro/crate/1.1"
+        },
+        {
+          "@id": "https://w3id.org/workflowhub/workflow-ro-crate/1.0"
+        }
+      ],
+      "license": {
+        "@id": "http://choosealicense.com/licenses/cc0-1.0/"
+      }
+    },
+    {
+      "@id": "http://choosealicense.com/licenses/cc0-1.0/",
+      "@type": [
+        "CreativeWork"
+      ],
+      "name": "Creative Commons Zero v1.0 Universal"
+    },
+    {
+      "@id": "https://github.com/manabuishii",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": "GAJ",
+      "name": "Manabu ISHII"
+    },
+    {
+      "@id": "exe/",
+      "@type": "Dataset",
+      "hasPart": [
+        {
+          "@id": "exe/LICENSE"
+        },
+        {
+          "@id": "exe/README.md"
+        },
+        {
+          "@id": "exe/bam-to-unmapped-bams.inputs.json"
+        },
+        {
+          "@id": "exe/bam-to-unmapped-bams.wdl"
+        },
+        {
+          "@id": "exe/cram-to-bam.inputs.json"
+        },
+        {
+          "@id": "exe/cram-to-bam.wdl"
+        },
+        {
+          "@id": "exe/generic.google-papi.options.json"
+        },
+        {
+          "@id": "exe/interleaved-fastq-to-paired-fastq.inputs.json"
+        },
+        {
+          "@id": "exe/paired-fastq-to-unmapped-bam.inputs.json"
+        },
+        {
+          "@id": "exe/paired-fastq-to-unmapped-bam.wdl"
+        },
+        {
+          "@id": "exe/workflow_params.json"
+        },
+        {
+          "@id": "exe/NA18549.final.small_interleaved.fastq.gz"
+        },
+        {
+          "@id": "exe/metadata.json"
+        },
+        {
+          "@id": "exe/cromwell-executions/UninterleaveFastqs/c48c3368-048d-4ba2-9de6-fcc1db59c8ef/call-uninterleave_fqs/execution/script.background"
+        },
+        {
+          "@id": "exe/cromwell-executions/UninterleaveFastqs/c48c3368-048d-4ba2-9de6-fcc1db59c8ef/call-uninterleave_fqs/execution/rc"
+        },
+        {
+          "@id": "exe/cromwell-executions/UninterleaveFastqs/c48c3368-048d-4ba2-9de6-fcc1db59c8ef/call-uninterleave_fqs/execution/stderr.background"
+        },
+        {
+          "@id": "exe/cromwell-executions/UninterleaveFastqs/c48c3368-048d-4ba2-9de6-fcc1db59c8ef/call-uninterleave_fqs/execution/stdout.background"
+        },
+        {
+          "@id": "exe/cromwell-executions/UninterleaveFastqs/c48c3368-048d-4ba2-9de6-fcc1db59c8ef/call-uninterleave_fqs/execution/stdout"
+        },
+        {
+          "@id": "exe/cromwell-executions/UninterleaveFastqs/c48c3368-048d-4ba2-9de6-fcc1db59c8ef/call-uninterleave_fqs/execution/stderr"
+        },
+        {
+          "@id": "exe/cromwell-executions/UninterleaveFastqs/c48c3368-048d-4ba2-9de6-fcc1db59c8ef/call-uninterleave_fqs/execution/script.submit"
+        },
+        {
+          "@id": "exe/cromwell-executions/UninterleaveFastqs/c48c3368-048d-4ba2-9de6-fcc1db59c8ef/call-uninterleave_fqs/execution/NA18549.final.small_interleaved.fastq.gz_reads_1.fastq"
+        },
+        {
+          "@id": "exe/cromwell-executions/UninterleaveFastqs/c48c3368-048d-4ba2-9de6-fcc1db59c8ef/call-uninterleave_fqs/execution/docker_cid"
+        },
+        {
+          "@id": "exe/cromwell-executions/UninterleaveFastqs/c48c3368-048d-4ba2-9de6-fcc1db59c8ef/call-uninterleave_fqs/execution/NA18549.final.small_interleaved.fastq.gz_reads_2.fastq"
+        },
+        {
+          "@id": "exe/cromwell-executions/UninterleaveFastqs/c48c3368-048d-4ba2-9de6-fcc1db59c8ef/call-uninterleave_fqs/execution/script"
+        },
+        {
+          "@id": "exe/cromwell-executions/UninterleaveFastqs/c48c3368-048d-4ba2-9de6-fcc1db59c8ef/call-uninterleave_fqs/inputs/-79094003/NA18549.final.small_interleaved.fastq.gz"
+        }
+      ]
+    },
+    {
+      "@id": "outputs/",
+      "@type": "Dataset",
+      "hasPart": [
+        {
+          "@id": "outputs/NA18549.final.small_interleaved.fastq.gz_reads_1.fastq"
+        },
+        {
+          "@id": "outputs/NA18549.final.small_interleaved.fastq.gz_reads_2.fastq"
+        }
+      ]
+    },
+    {
+      "@id": "https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/interleaved-fastq-to-paired-fastq.wdl",
+      "@type": [
+        "File",
+        "SoftwareSourceCode",
+        "ComputationalWorkflow"
+      ],
+      "attachment": [
+        {
+          "@id": "exe/LICENSE"
+        },
+        {
+          "@id": "exe/README.md"
+        },
+        {
+          "@id": "exe/bam-to-unmapped-bams.inputs.json"
+        },
+        {
+          "@id": "exe/bam-to-unmapped-bams.wdl"
+        },
+        {
+          "@id": "exe/cram-to-bam.inputs.json"
+        },
+        {
+          "@id": "exe/cram-to-bam.wdl"
+        },
+        {
+          "@id": "exe/generic.google-papi.options.json"
+        },
+        {
+          "@id": "exe/interleaved-fastq-to-paired-fastq.inputs.json"
+        },
+        {
+          "@id": "exe/paired-fastq-to-unmapped-bam.inputs.json"
+        },
+        {
+          "@id": "exe/paired-fastq-to-unmapped-bam.wdl"
+        }
+      ],
+      "contentSize": 1308,
+      "description": {
+        "@id": "https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/README.md"
+      },
+      "encodingFormat": "text/plain",
+      "lineCount": 54,
+      "name": "interleaved-fastq-to-paired-fastq",
+      "programmingLanguage": {
+        "@id": "#https://openwdl.org"
+      },
+      "sha512": "202500e00f0b48c816462eb7c2ee49f6c3f0fb51c37f617622270ac08a972aa7e65d8cd0452745d692fa04caf86434247db34470267ff46a3e0f85e06010677e",
+      "text": "version 1.0\n# This WDL takes in a single interleaved(R1+R2) FASTQ file and separates it into \n# separate R1 and R2 FASTQ (i.e. paired FASTQ) files. Paired FASTQ files are the \n# input format for the tool that generates unmapped BAMs (the format used in most \n# GATK processing and analysis tools).\n#\n# Requirements/expectations \n# - Interleaved Fastq file\n#\n# Outputs \n# - Separate R1 and R2 FASTQ files (i.e. paired FASTQ)\n#\n##################\n\nworkflow UninterleaveFastqs {\n  input {\n    File input_fastq\n  }\n\n  call uninterleave_fqs {\n    input: \n      input_fastq = input_fastq\n  }\n\n}\n\ntask uninterleave_fqs {\n  input {\n    File input_fastq\n\n    Int machine_mem_gb = 8\n    Int addtional_disk_size = 10\n  }\n    Int disk_size = ceil(size(input_fastq, \"GB\") * 2) + addtional_disk_size\n    String r1_name = basename(input_fastq, \".fastq\") + \"_reads_1.fastq\"\n    String r2_name = basename(input_fastq, \".fastq\") + \"_reads_2.fastq\"\n  \n  command {\n    cat ~{input_fastq} | paste - - - - - - - -  | \\\n    tee >(cut -f 1-4 | tr \"\\t\" \"\\n\" > ~{r1_name}) | \\\n    cut -f 5-8 | tr \"\\t\" \"\\n\" > ~{r2_name}\n  }\n\n  runtime {\n    docker: \"ubuntu:latest\"\n    memory: machine_mem_gb + \" GB\"\n    disks: \"local-disk \" + disk_size + \" HDD\"\n  }\n\n  output {\n    File r1_fastq = \"~{r1_name}\"\n    File r2_fastq = \"~{r2_name}\"\n  }\n}\n",
+      "version": "1.0.0",
+      "yevisId": "02cc8518-84ab-4742-afc5-da6389a4ad27"
+    },
+    {
+      "@id": "#https://openwdl.org",
+      "@type": "ComputerLanguage",
+      "alternateName": "WDL",
+      "identifier": {
+        "@id": "#https://openwdl.org"
+      },
+      "name": "Workflow Description Language",
+      "url": {
+        "@id": "#https://openwdl.org"
+      },
+      "version": "1.0"
+    },
+    {
+      "@id": "https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/README.md",
+      "@type": [
+        "WebPage"
+      ],
+      "name": "README.md"
+    },
+    {
+      "@id": "exe/LICENSE",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "WorkflowAttachment"
+      ],
+      "contentSize": 1515,
+      "dateModified": "2023-03-16T01:09:19.226191",
+      "encodingFormat": "text/plain",
+      "gid": 0,
+      "lineCount": 29,
+      "mode": "-rw-r--r--",
+      "sha512": "cadc3e7a0ba91104f5f9a4ec940570cc0fc316d4b1ac42b1923771acba0f2e4e22fea3756a5e69ec0ca0a142e9683a094a7bf02fd4fe0cfaf80a1ac00c82766c",
+      "uid": 0,
+      "url": "https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/LICENSE"
+    },
+    {
+      "@id": "exe/README.md",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "WorkflowAttachment"
+      ],
+      "contentSize": 3726,
+      "dateModified": "2023-03-16T01:09:20.142193",
+      "encodingFormat": "text/plain",
+      "gid": 0,
+      "lineCount": 86,
+      "mode": "-rw-r--r--",
+      "sha512": "b7f4af20ed6cf7e0483fdba8d20c3e5e02b21ca2c6757c20e0ff83075370b1c6b646c5555e3a32646a760da748b58937d3990f0afd748522a4d11ff35e8904c4",
+      "uid": 0,
+      "url": "https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/README.md"
+    },
+    {
+      "@id": "exe/bam-to-unmapped-bams.inputs.json",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "WorkflowAttachment"
+      ],
+      "contentSize": 98,
+      "dateModified": "2023-03-16T01:09:21.406196",
+      "encodingFormat": "application/json",
+      "gid": 0,
+      "lineCount": 5,
+      "mode": "-rw-r--r--",
+      "sha512": "386359341ccfc1f9422dd625db5230c148fb300dc4b05a9e732989f1bd67d48198613d6c0aec367e2a4995e102b96bd86dec60f94b3d622850e2893e28c9b7d9",
+      "uid": 0,
+      "url": "https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/bam-to-unmapped-bams.inputs.json"
+    },
+    {
+      "@id": "exe/bam-to-unmapped-bams.wdl",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "WorkflowAttachment"
+      ],
+      "contentSize": 3519,
+      "dateModified": "2023-03-16T01:09:22.630199",
+      "encodingFormat": "text/plain",
+      "gid": 0,
+      "lineCount": 134,
+      "mode": "-rw-r--r--",
+      "sha512": "bc03fefe0e2b80c52e7040cfb287beb761042513114ae4e6fbe13276a63b7619b5b0be807a554c015e4e425239ff7f6ed872ecd4414e7c4f39f9f727dd55ec47",
+      "uid": 0,
+      "url": "https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/bam-to-unmapped-bams.wdl"
+    },
+    {
+      "@id": "exe/cram-to-bam.inputs.json",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "WorkflowAttachment"
+      ],
+      "contentSize": 484,
+      "dateModified": "2023-03-16T01:09:23.886203",
+      "encodingFormat": "application/json",
+      "gid": 0,
+      "lineCount": 8,
+      "mode": "-rw-r--r--",
+      "sha512": "f8120d69f1e59ce3d3bc84e3f69a19a4e762ceb04ff8af27d69ec75d9d8feacacb344969bdfb040a6fd124bb00b7c0da0314d5b8658110addfb41c80b88d2a8f",
+      "uid": 0,
+      "url": "https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/cram-to-bam.inputs.json"
+    },
+    {
+      "@id": "exe/cram-to-bam.wdl",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "WorkflowAttachment"
+      ],
+      "contentSize": 5250,
+      "dateModified": "2023-03-16T01:09:25.258206",
+      "encodingFormat": "text/plain",
+      "gid": 0,
+      "lineCount": 152,
+      "mode": "-rw-r--r--",
+      "sha512": "4ae27c1bf61588bdf2c70e7dbdd8ba5509bb4a354356b318fadba4fe54b73a61d1951391dc6aaa50db6561ff14e69aa9e7da5bcb3d23530a983e12cc34c0961a",
+      "uid": 0,
+      "url": "https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/cram-to-bam.wdl"
+    },
+    {
+      "@id": "exe/generic.google-papi.options.json",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "WorkflowAttachment"
+      ],
+      "contentSize": 134,
+      "dateModified": "2023-03-16T01:09:26.190208",
+      "encodingFormat": "application/json",
+      "gid": 0,
+      "lineCount": 5,
+      "mode": "-rw-r--r--",
+      "sha512": "00defe7f21ebc446ce192837eebc11c185f66f0cf6e10d1c58327f135d60dc8c56734344d966da7915fd8f3f30630f17f065153c4ce8a3fb9609116de74152d6",
+      "uid": 0,
+      "url": "https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/generic.google-papi.options.json"
+    },
+    {
+      "@id": "exe/interleaved-fastq-to-paired-fastq.inputs.json",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "WorkflowAttachment"
+      ],
+      "contentSize": 133,
+      "dateModified": "2023-03-16T01:09:27.150211",
+      "encodingFormat": "application/json",
+      "gid": 0,
+      "lineCount": 3,
+      "mode": "-rw-r--r--",
+      "sha512": "61fb7f8adf61e0fd6cab140824a64f13ed44542510b12c0d07691e3f69802cda19a50aaa4c8da830b8bd5f36981d2bfaec322ee03a2ca997c386ddc4e8bb9c46",
+      "uid": 0,
+      "url": "https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/interleaved-fastq-to-paired-fastq.inputs.json"
+    },
+    {
+      "@id": "exe/paired-fastq-to-unmapped-bam.inputs.json",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "WorkflowAttachment"
+      ],
+      "contentSize": 832,
+      "dateModified": "2023-03-16T01:09:28.398214",
+      "encodingFormat": "application/json",
+      "gid": 0,
+      "lineCount": 13,
+      "mode": "-rw-r--r--",
+      "sha512": "3960acbaebb7e5d01fafd35e04aab0fa3775218bb297299db8c0f600a16aa7eff831acde66f55d850370422c680210caaa0c45cef48d20cbd6047f6f8db9128f",
+      "uid": 0,
+      "url": "https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/paired-fastq-to-unmapped-bam.inputs.json"
+    },
+    {
+      "@id": "exe/paired-fastq-to-unmapped-bam.wdl",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "WorkflowAttachment"
+      ],
+      "contentSize": 4868,
+      "dateModified": "2023-03-16T01:09:29.802217",
+      "encodingFormat": "text/plain",
+      "gid": 0,
+      "lineCount": 166,
+      "mode": "-rw-r--r--",
+      "sha512": "275b61470de899eabb9ffbe0086f7aba2651055b3f1737ef99590052ba81315ee252d5dbea6470e504295066d5de34a04ac1b7eddeaa0cecb7b81501d8922d9c",
+      "uid": 0,
+      "url": "https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/paired-fastq-to-unmapped-bam.wdl"
+    },
+    {
+      "@id": "#sapporo-test-suite",
+      "@type": "TestSuite",
+      "definition": {
+        "@id": "run_request.json"
+      },
+      "instance": {
+        "@id": "#sapporo-test-instance"
+      },
+      "mainEntity": {
+        "@id": "https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/interleaved-fastq-to-paired-fastq.wdl"
+      },
+      "name": "Sapporo test suite",
+      "result": {
+        "@id": "#sapporo-test-result"
+      }
+    },
+    {
+      "@id": "#sapporo-test-instance",
+      "@type": "TestInstance",
+      "environment": {
+        "@id": "#sapporo-test-environment"
+      },
+      "name": "Sapporo test instance",
+      "runsOn": {
+        "@id": "#sapporo-service"
+      },
+      "url": "http://localhost:1122"
+    },
+    {
+      "@id": "#sapporo-service",
+      "@type": [
+        "TestService",
+        "SapporoService",
+        "SoftwareApplication"
+      ],
+      "configuration": {
+        "@id": "#sapporo-config"
+      },
+      "name": "Sapporo-service",
+      "resource": "/",
+      "url": {
+        "@id": "https://github.com/sapporo-wes/sapporo-service"
+      },
+      "version": "1.4.9"
+    },
+    {
+      "@id": "https://github.com/sapporo-wes/sapporo-service",
+      "@type": [
+        "WebPage"
+      ]
+    },
+    {
+      "@id": "#sapporo-config",
+      "@type": [
+        "SapporoConfiguration"
+      ],
+      "executableWorkflows": {
+        "@id": "executable_workflows.json"
+      },
+      "getRuns": true,
+      "registeredOnlyMode": false,
+      "runSh": {
+        "@id": "run.sh"
+      },
+      "sapporoConfig": {
+        "@id": "sapporo_config.json"
+      },
+      "sapporoEndpoint": "http://localhost:1122",
+      "serviceInfo": {
+        "@id": "service_info.json"
+      },
+      "urlPrefix": "/",
+      "workflowAttachment": true
+    },
+    {
+      "@id": "service_info.json",
+      "@type": "File",
+      "contentSize": 1632,
+      "dateModified": "2023-03-16T01:09:17.038185",
+      "encodingFormat": "application/json",
+      "gid": 0,
+      "lineCount": 83,
+      "mode": "-rw-r--r--",
+      "name": "Sapporo service info",
+      "sha512": "63b75e3740bb06a99fced06b2b7e714229d3d46b01e634ae99f70630816b9bcf2ab2da4e32296a1159667a5bfaea86176faf2b8d3fec1a16b2a2020d8956f409",
+      "text": "{\n  \"workflow_type_versions\": {\n    \"CWL\": {\n      \"workflow_type_version\": [\n        \"v1.0\",\n        \"v1.1\",\n        \"v1.2\"\n      ]\n    },\n    \"WDL\": {\n      \"workflow_type_version\": [\n        \"1.0\"\n      ]\n    },\n    \"NFL\": {\n      \"workflow_type_version\": [\n        \"1.0\",\n        \"DSL2\"\n      ]\n    },\n    \"SMK\": {\n      \"workflow_type_version\": [\n        \"1.0\"\n      ]\n    },\n    \"StreamFlow\": {\n      \"workflow_type_version\": [\n        \"v1.0\"\n      ]\n    }\n  },\n  \"supported_filesystem_protocols\": [\n    \"http\",\n    \"https\",\n    \"file\",\n    \"s3\"\n  ],\n  \"default_workflow_engine_parameters\": {\n    \"nextflow\": [\n      {\n        \"name\": \"-dsl1\",\n        \"type\": \"str\",\n        \"default_value\": \"\"\n      }\n    ],\n    \"snakemake\": [\n      {\n        \"name\": \"--cores\",\n        \"type\": \"int\",\n        \"default_value\": 1\n      },\n      {\n        \"name\": \"--use-conda\",\n        \"type\": \"str\",\n        \"default_value\": \"\"\n      }\n    ]\n  },\n  \"workflow_engine_versions\": {\n    \"cwltool\": \"3.1.20220628170238\",\n    \"nextflow\": \"22.04.4\",\n    \"toil (experimental)\": \"4.1.0\",\n    \"cromwell\": \"80\",\n    \"snakemake\": \"v7.8.3\",\n    \"ep3 (experimental)\": \"v1.7.0\",\n    \"streamflow\": \"0.1.3\"\n  },\n  \"auth_instructions_url\": \"https://github.com/sapporo-wes/sapporo-service\",\n  \"contact_info_url\": \"https://github.com/sapporo-wes/sapporo-service\",\n  \"tags\": {\n    \"wes-name\": \"sapporo\",\n    \"sapporo-version\": \"1.4.9\",\n    \"news_content\": \"\",\n    \"get_runs\": true,\n    \"workflow_attachment\": true,\n    \"registered_only_mode\": false\n  },\n  \"supported_wes_versions\": [\n    \"sapporo-wes-1.0.1\"\n  ],\n  \"system_state_counts\": {\n    \"UNKNOWN\": 1\n  }\n}",
+      "uid": 0
+    },
+    {
+      "@id": "executable_workflows.json",
+      "@type": "File",
+      "contentSize": 33024,
+      "dateModified": "2023-03-16T01:09:17.630187",
+      "encodingFormat": "text/plain",
+      "gid": 0,
+      "lineCount": 650,
+      "mode": "-rw-r--r--",
+      "name": "Sapporo executable workflows",
+      "sha512": "186d6d93ed49399c525e4541e2259da3d6b6a5cc6cfe76489930061add95affad25477d286ede26aa56d81f7fb4b0a452202715bb2a4611ee1e7c8912d60443d",
+      "uid": 0
+    },
+    {
+      "@id": "run.sh",
+      "@type": "File",
+      "contentSize": 11327,
+      "dateModified": "2023-03-16T01:09:17.630187",
+      "encodingFormat": "text/x-shellscript",
+      "gid": 0,
+      "lineCount": 307,
+      "mode": "-rw-r--r--",
+      "name": "Sapporo run.sh",
+      "sha512": "b0f968d72e5722befba64719731849f574ab20f7a3c2cd0ab8165457c629cedbcc88b0d4392d812533ac6c6316647e9a089339e57269332c40f04674842d84b9",
+      "uid": 0
+    },
+    {
+      "@id": "sapporo_config.json",
+      "@type": "File",
+      "contentSize": 441,
+      "dateModified": "2023-03-16T01:09:17.038185",
+      "encodingFormat": "application/json",
+      "gid": 0,
+      "lineCount": 10,
+      "mode": "-rw-r--r--",
+      "name": "Sapporo runtime configuration",
+      "sha512": "e14130e9a59dc8e1ad8da08c9ef4cc1c85460a8c90b1131d02a916f7c72e27be78135737b23f0b762f6fdee06c72392ddaf45ec8da6b2ca8b516bde375f83a3d",
+      "text": "{\n  \"sapporo_version\": \"1.4.9\",\n  \"get_runs\": true,\n  \"workflow_attachment\": true,\n  \"registered_only_mode\": false,\n  \"service_info\": \"/usr/local/lib/python3.8/site-packages/sapporo/service-info.json\",\n  \"executable_workflows\": \"/usr/local/lib/python3.8/site-packages/sapporo/executable_workflows.json\",\n  \"run_sh\": \"/usr/local/lib/python3.8/site-packages/sapporo/run.sh\",\n  \"url_prefix\": \"/\",\n  \"sapporo_endpoint\": \"http://localhost:1122\"\n}",
+      "uid": 0
+    },
+    {
+      "@id": "#sapporo-test-environment",
+      "@type": [
+        "TestEnvironment"
+      ],
+      "cpuArchitecture": "x86_64",
+      "cpuCount": 2,
+      "freeDiskSpace": 26317144064,
+      "gid": 0,
+      "inDocker": true,
+      "os": "Linux",
+      "osVersion": "5.15.0-1034-azure",
+      "totalMemory": 7281307648,
+      "uid": 0
+    },
+    {
+      "@id": "run_request.json",
+      "@type": [
+        "TestDefinition",
+        "File"
+      ],
+      "cmd": "docker run --rm -v /var/run/docker.sock:/var/run/docker.sock -v /home/runner/work/yevis-getting-started/yevis-getting-started/test-results/10/10a3ef57-a793-4f0f-9a8f-29eeab4a68ef:/home/runner/work/yevis-getting-started/yevis-getting-started/test-results/10/10a3ef57-a793-4f0f-9a8f-29eeab4a68ef -v /tmp:/tmp -v /usr/bin/docker:/usr/bin/docker -w=/home/runner/work/yevis-getting-started/yevis-getting-started/test-results/10/10a3ef57-a793-4f0f-9a8f-29eeab4a68ef/exe broadinstitute/cromwell:80 run https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/interleaved-fastq-to-paired-fastq.wdl -i /home/runner/work/yevis-getting-started/yevis-getting-started/test-results/10/10a3ef57-a793-4f0f-9a8f-29eeab4a68ef/exe/workflow_params.json -m /home/runner/work/yevis-getting-started/yevis-getting-started/test-results/10/10a3ef57-a793-4f0f-9a8f-29eeab4a68ef/exe/metadata.json --type WDL --type-version 1.0 1>/home/runner/work/yevis-getting-started/yevis-getting-started/test-results/10/10a3ef57-a793-4f0f-9a8f-29eeab4a68ef/stdout.log 2>/home/runner/work/yevis-getting-started/yevis-getting-started/test-results/10/10a3ef57-a793-4f0f-9a8f-29eeab4a68ef/stderr.log",
+      "conformsTo": {
+        "@id": "#cromwell"
+      },
+      "contentSize": 2247,
+      "dateModified": "2023-03-16T01:09:17.038185",
+      "encodingFormat": "application/json",
+      "engineVersion": "80",
+      "gid": 0,
+      "input": {
+        "@id": "exe/NA18549.final.small_interleaved.fastq.gz"
+      },
+      "lineCount": 10,
+      "mode": "-rw-r--r--",
+      "name": "Sapporo run request",
+      "sha512": "fec5f878f979962b3f43a8951a0ece7c6e8318441feece9734affea106a8db6b2a0e2e297736612f25f0956d259bae010207da3a0800743ec5767d5980f109c1",
+      "text": "{\n  \"workflow_params\": \"{\\n  \\\"UninterleaveFastqs.input_fastq\\\": \\\"./NA18549.final.small_interleaved.fastq.gz\\\"\\n}\\n\",\n  \"workflow_type\": \"WDL\",\n  \"workflow_type_version\": \"1.0\",\n  \"tags\": null,\n  \"workflow_engine_name\": \"cromwell\",\n  \"workflow_engine_parameters\": \"{}\",\n  \"workflow_url\": \"https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/interleaved-fastq-to-paired-fastq.wdl\",\n  \"workflow_name\": null,\n  \"workflow_attachment\": \"[{\\\"file_name\\\": \\\"LICENSE\\\", \\\"file_url\\\": \\\"https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/LICENSE\\\"}, {\\\"file_name\\\": \\\"README.md\\\", \\\"file_url\\\": \\\"https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/README.md\\\"}, {\\\"file_name\\\": \\\"bam-to-unmapped-bams.inputs.json\\\", \\\"file_url\\\": \\\"https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/bam-to-unmapped-bams.inputs.json\\\"}, {\\\"file_name\\\": \\\"bam-to-unmapped-bams.wdl\\\", \\\"file_url\\\": \\\"https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/bam-to-unmapped-bams.wdl\\\"}, {\\\"file_name\\\": \\\"cram-to-bam.inputs.json\\\", \\\"file_url\\\": \\\"https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/cram-to-bam.inputs.json\\\"}, {\\\"file_name\\\": \\\"cram-to-bam.wdl\\\", \\\"file_url\\\": \\\"https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/cram-to-bam.wdl\\\"}, {\\\"file_name\\\": \\\"generic.google-papi.options.json\\\", \\\"file_url\\\": \\\"https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/generic.google-papi.options.json\\\"}, {\\\"file_name\\\": \\\"interleaved-fastq-to-paired-fastq.inputs.json\\\", \\\"file_url\\\": \\\"https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/interleaved-fastq-to-paired-fastq.inputs.json\\\"}, {\\\"file_name\\\": \\\"paired-fastq-to-unmapped-bam.inputs.json\\\", \\\"file_url\\\": \\\"https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/paired-fastq-to-unmapped-bam.inputs.json\\\"}, {\\\"file_name\\\": \\\"paired-fastq-to-unmapped-bam.wdl\\\", \\\"file_url\\\": \\\"https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/paired-fastq-to-unmapped-bam.wdl\\\"}, {\\\"file_name\\\": \\\"NA18549.final.small_interleaved.fastq.gz\\\", \\\"file_url\\\": \\\"https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/NA18549.final.small_interleaved.fastq.gz\\\"}]\"\n}",
+      "uid": 0,
+      "workflowEngineParameters": {
+        "@id": "workflow_engine_params.txt"
+      },
+      "workflowParameters": {
+        "@id": "exe/workflow_params.json"
+      },
+      "yevisMetadata": {
+        "@id": "yevis-metadata.yml"
+      },
+      "yevisTestId": "test_1"
+    },
+    {
+      "@id": "exe/workflow_params.json",
+      "@type": [
+        "File"
+      ],
+      "contentSize": 85,
+      "dateModified": "2023-03-16T01:09:17.038185",
+      "encodingFormat": "application/json",
+      "gid": 0,
+      "lineCount": 3,
+      "mode": "-rw-r--r--",
+      "name": "Sapporo workflow parameters",
+      "sha512": "30a38f27ecd6e3d137d9ea2c80c21a71026e6d899df92f98e8457ab383a1199bac7bbc4f401cc50ecb0d1824d484c0d207b27564131bb42c4730b4b9b6a0f368",
+      "text": "{\n  \"UninterleaveFastqs.input_fastq\": \"./NA18549.final.small_interleaved.fastq.gz\"\n}\n",
+      "uid": 0,
+      "url": "https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/wf_params.json"
+    },
+    {
+      "@id": "workflow_engine_params.txt",
+      "@type": [
+        "File"
+      ],
+      "contentSize": 0,
+      "dateModified": "2023-03-16T01:09:17.038185",
+      "encodingFormat": "inode/x-empty",
+      "gid": 0,
+      "lineCount": 0,
+      "mode": "-rw-r--r--",
+      "name": "Sapporo workflow engine parameters",
+      "sha512": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
+      "text": "",
+      "uid": 0
+    },
+    {
+      "@id": "yevis-metadata.yml",
+      "@type": [
+        "File"
+      ],
+      "contentSize": 2637,
+      "dateModified": "2023-03-16T01:09:17.630187",
+      "encodingFormat": "application/json",
+      "gid": 0,
+      "lineCount": 0,
+      "mode": "-rw-r--r--",
+      "name": "Yevis metadata",
+      "sha512": "e54d61daf1286fd1b1b09067518cb634ec1b1c6258bf4844257a53ed473602e6818d9f11182c8ccd119279bf810f18fbed9b3e2f6ecb773136390b9207ff5f7e",
+      "text": "{\"id\":\"02cc8518-84ab-4742-afc5-da6389a4ad27\",\"version\":\"1.0.0\",\"license\":\"CC0-1.0\",\"authors\":[{\"github_account\":\"manabuishii\",\"name\":\"Manabu ISHII\",\"affiliation\":\"GAJ\"}],\"zenodo\":{\"url\":\"https://zenodo.org/record/7739166\",\"id\":7739166,\"doi\":\"10.5281/zenodo.7739166\",\"concept_doi\":\"10.5281/zenodo.7739165\"},\"workflow\":{\"name\":\"interleaved-fastq-to-paired-fastq\",\"readme\":\"https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/README.md\",\"language\":{\"type\":\"WDL\",\"version\":\"1.0\"},\"files\":[{\"url\":\"https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/LICENSE\",\"target\":\"LICENSE\",\"type\":\"secondary\"},{\"url\":\"https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/README.md\",\"target\":\"README.md\",\"type\":\"secondary\"},{\"url\":\"https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/bam-to-unmapped-bams.inputs.json\",\"target\":\"bam-to-unmapped-bams.inputs.json\",\"type\":\"secondary\"},{\"url\":\"https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/bam-to-unmapped-bams.wdl\",\"target\":\"bam-to-unmapped-bams.wdl\",\"type\":\"secondary\"},{\"url\":\"https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/cram-to-bam.inputs.json\",\"target\":\"cram-to-bam.inputs.json\",\"type\":\"secondary\"},{\"url\":\"https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/cram-to-bam.wdl\",\"target\":\"cram-to-bam.wdl\",\"type\":\"secondary\"},{\"url\":\"https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/generic.google-papi.options.json\",\"target\":\"generic.google-papi.options.json\",\"type\":\"secondary\"},{\"url\":\"https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/interleaved-fastq-to-paired-fastq.inputs.json\",\"target\":\"interleaved-fastq-to-paired-fastq.inputs.json\",\"type\":\"secondary\"},{\"url\":\"https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/interleaved-fastq-to-paired-fastq.wdl\",\"target\":\"interleaved-fastq-to-paired-fastq.wdl\",\"type\":\"primary\"},{\"url\":\"https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/paired-fastq-to-unmapped-bam.inputs.json\",\"target\":\"paired-fastq-to-unmapped-bam.inputs.json\",\"type\":\"secondary\"},{\"url\":\"https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/paired-fastq-to-unmapped-bam.wdl\",\"target\":\"paired-fastq-to-unmapped-bam.wdl\",\"type\":\"secondary\"}],\"testing\":[{\"id\":\"test_1\",\"files\":[{\"url\":\"https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/wf_params.json\",\"target\":\"wf_params.json\",\"type\":\"wf_params\"},{\"url\":\"https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/NA18549.final.small_interleaved.fastq.gz\",\"target\":\"NA18549.final.small_interleaved.fastq.gz\",\"type\":\"other\"}]}]}}",
+      "uid": 0
+    },
+    {
+      "@id": "https://cromwell.readthedocs.io/en/stable/",
+      "@type": [
+        "WebPage"
+      ]
+    },
+    {
+      "@id": "#cromwell",
+      "@type": "SoftwareApplication",
+      "name": "cromwell",
+      "url": {
+        "@id": "https://cromwell.readthedocs.io/en/stable/"
+      },
+      "version": "80"
+    },
+    {
+      "@id": "http://edamontology.org/format_1930",
+      "@type": [
+        "Format"
+      ],
+      "name": "FASTQ short read format ignoring quality scores."
+    },
+    {
+      "@id": "exe/NA18549.final.small_interleaved.fastq.gz",
+      "@type": [
+        "File",
+        "FormalParameter"
+      ],
+      "contentSize": 1930225,
+      "dateModified": "2023-03-16T01:09:36.206234",
+      "encodingFormat": "application/gzip",
+      "format": {
+        "@id": "http://edamontology.org/format_1930"
+      },
+      "gid": 0,
+      "mode": "-rw-r--r--",
+      "sha512": "79a6531c7d0a0d2df4bdf56a442f25538700bbf6b14eacd9eba95d7d3159ca4e0f2edb35f8086af55a4866aee29a1086449cdab43a4df370c6c006c028332ca2",
+      "uid": 0,
+      "url": "https://zenodo.org/api/files/1c5383db-4d50-4a66-a812-5f5663215005/NA18549.final.small_interleaved.fastq.gz"
+    },
+    {
+      "@id": "#sapporo-test-result",
+      "@type": [
+        "TestResult"
+      ],
+      "endTime": "2023-03-16T01:10:22",
+      "exitCode": 0,
+      "intermediateFiles": [
+        {
+          "@id": "exe/metadata.json"
+        },
+        {
+          "@id": "exe/cromwell-executions/UninterleaveFastqs/c48c3368-048d-4ba2-9de6-fcc1db59c8ef/call-uninterleave_fqs/execution/script.background"
+        },
+        {
+          "@id": "exe/cromwell-executions/UninterleaveFastqs/c48c3368-048d-4ba2-9de6-fcc1db59c8ef/call-uninterleave_fqs/execution/rc"
+        },
+        {
+          "@id": "exe/cromwell-executions/UninterleaveFastqs/c48c3368-048d-4ba2-9de6-fcc1db59c8ef/call-uninterleave_fqs/execution/stderr.background"
+        },
+        {
+          "@id": "exe/cromwell-executions/UninterleaveFastqs/c48c3368-048d-4ba2-9de6-fcc1db59c8ef/call-uninterleave_fqs/execution/stdout.background"
+        },
+        {
+          "@id": "exe/cromwell-executions/UninterleaveFastqs/c48c3368-048d-4ba2-9de6-fcc1db59c8ef/call-uninterleave_fqs/execution/stdout"
+        },
+        {
+          "@id": "exe/cromwell-executions/UninterleaveFastqs/c48c3368-048d-4ba2-9de6-fcc1db59c8ef/call-uninterleave_fqs/execution/stderr"
+        },
+        {
+          "@id": "exe/cromwell-executions/UninterleaveFastqs/c48c3368-048d-4ba2-9de6-fcc1db59c8ef/call-uninterleave_fqs/execution/script.submit"
+        },
+        {
+          "@id": "exe/cromwell-executions/UninterleaveFastqs/c48c3368-048d-4ba2-9de6-fcc1db59c8ef/call-uninterleave_fqs/execution/NA18549.final.small_interleaved.fastq.gz_reads_1.fastq"
+        },
+        {
+          "@id": "exe/cromwell-executions/UninterleaveFastqs/c48c3368-048d-4ba2-9de6-fcc1db59c8ef/call-uninterleave_fqs/execution/docker_cid"
+        },
+        {
+          "@id": "exe/cromwell-executions/UninterleaveFastqs/c48c3368-048d-4ba2-9de6-fcc1db59c8ef/call-uninterleave_fqs/execution/NA18549.final.small_interleaved.fastq.gz_reads_2.fastq"
+        },
+        {
+          "@id": "exe/cromwell-executions/UninterleaveFastqs/c48c3368-048d-4ba2-9de6-fcc1db59c8ef/call-uninterleave_fqs/execution/script"
+        },
+        {
+          "@id": "exe/cromwell-executions/UninterleaveFastqs/c48c3368-048d-4ba2-9de6-fcc1db59c8ef/call-uninterleave_fqs/inputs/-79094003/NA18549.final.small_interleaved.fastq.gz"
+        }
+      ],
+      "name": "Sapporo test result",
+      "outputs": [
+        {
+          "@id": "outputs/NA18549.final.small_interleaved.fastq.gz_reads_1.fastq"
+        },
+        {
+          "@id": "outputs/NA18549.final.small_interleaved.fastq.gz_reads_2.fastq"
+        }
+      ],
+      "pid": 12,
+      "runId": "10a3ef57-a793-4f0f-9a8f-29eeab4a68ef",
+      "startTime": "2023-03-16T01:09:36",
+      "state": "COMPLETE",
+      "stderr": {
+        "@id": "stderr.log"
+      },
+      "stdout": {
+        "@id": "stdout.log"
+      }
+    },
+    {
+      "@id": "stdout.log",
+      "@type": "File",
+      "contentSize": 28843,
+      "dateModified": "2023-03-16T01:10:21.534347",
+      "encodingFormat": "text/plain",
+      "gid": 0,
+      "lineCount": 297,
+      "mode": "-rw-r--r--",
+      "name": "Sapporo stdout",
+      "sha512": "00b19f2ec10e5258afd62a6e1f76c284b97d50224585f3647bc0e63034829c609f2a3743c1ffec7cf87927fc3d922f8e71055f8492a158b01af0d74ddd40133d",
+      "uid": 0
+    },
+    {
+      "@id": "stderr.log",
+      "@type": "File",
+      "contentSize": 69115,
+      "dateModified": "2023-03-16T01:10:22.354348",
+      "encodingFormat": "text/plain",
+      "gid": 0,
+      "lineCount": 1107,
+      "mode": "-rw-r--r--",
+      "name": "Sapporo stderr",
+      "sha512": "d2b6f777037f6bbe125377b32dc5b4b248b5b7b15a6dbf93f9fa8aafd1045c581db6b9ed86e184e0a31e971e31f2e4e6469bfd5890e8624824edd55f81b857fe",
+      "uid": 0
+    },
+    {
+      "@id": "outputs/NA18549.final.small_interleaved.fastq.gz_reads_1.fastq",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "OutputFile"
+      ],
+      "contentSize": 483855,
+      "dateModified": "2023-03-16T01:10:22.062348",
+      "encodingFormat": "application/gzip",
+      "format": {
+        "@id": "http://edamontology.org/format_1930"
+      },
+      "gid": 0,
+      "mode": "-rw-r--r--",
+      "sha512": "e7685fabf55a977cf083e89448981c81834e58e693cf85c7adf1a9fdbf175e9bc847585d985e990c793216bc678fc8cba7aea33e8571790ad34e7959f9560357",
+      "uid": 0,
+      "url": "http://localhost:1122/runs/10a3ef57-a793-4f0f-9a8f-29eeab4a68ef/data/outputs/NA18549.final.small_interleaved.fastq.gz_reads_1.fastq"
+    },
+    {
+      "@id": "outputs/NA18549.final.small_interleaved.fastq.gz_reads_2.fastq",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "OutputFile"
+      ],
+      "contentSize": 490743,
+      "dateModified": "2023-03-16T01:10:22.058348",
+      "encodingFormat": "application/octet-stream",
+      "format": {
+        "@id": "http://edamontology.org/format_1930"
+      },
+      "gid": 0,
+      "mode": "-rw-r--r--",
+      "sha512": "048ba4685dba77748b56b61b4071293127614e4969bd43a0d79028cbc05eca8c911b3ffd58658eb7a6994e221b4ab83d1a17ad5bebe7de156cf7ebe9aeec1f39",
+      "uid": 0,
+      "url": "http://localhost:1122/runs/10a3ef57-a793-4f0f-9a8f-29eeab4a68ef/data/outputs/NA18549.final.small_interleaved.fastq.gz_reads_2.fastq"
+    },
+    {
+      "@id": "exe/metadata.json",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "IntermediateFile"
+      ],
+      "contentSize": 7375,
+      "dateModified": "2023-03-16T01:10:21.166347",
+      "encodingFormat": "application/json",
+      "gid": 0,
+      "lineCount": 108,
+      "mode": "-rw-r--r--",
+      "sha512": "4ba19a0a7bb2cb3f4f6a35d25c3785a01c46576378a766e6475abc29cc191f55ef6d3a21597fc8763fdfb0379b928f45fcdf142c1eeaee3eae370c63b89caef2",
+      "uid": 0
+    },
+    {
+      "@id": "exe/cromwell-executions/UninterleaveFastqs/c48c3368-048d-4ba2-9de6-fcc1db59c8ef/call-uninterleave_fqs/execution/script.background",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "IntermediateFile"
+      ],
+      "contentSize": 591,
+      "dateModified": "2023-03-16T01:10:07.342315",
+      "encodingFormat": "text/x-shellscript",
+      "gid": 0,
+      "lineCount": 3,
+      "mode": "-rw-r--r--",
+      "sha512": "f024aeec14452ac5c22a113d0e346c66425022edfa3efa38787bc38ee0e16bd463a639d1a0b6859136ff41b8c867ea0520aac0ad741c6aa389672222bba57255",
+      "uid": 0
+    },
+    {
+      "@id": "exe/cromwell-executions/UninterleaveFastqs/c48c3368-048d-4ba2-9de6-fcc1db59c8ef/call-uninterleave_fqs/execution/rc",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "IntermediateFile"
+      ],
+      "contentSize": 2,
+      "dateModified": "2023-03-16T01:10:09.718320",
+      "encodingFormat": "text/plain",
+      "gid": 0,
+      "lineCount": 1,
+      "mode": "-rw-r--r--",
+      "sha512": "a546d1300f49037a465ecec8bc1ebd07d57015a5ff1abfa1c94da9b30576933fb68e3898ff764d4de6e6741da822a7c93adc6e845806a266a63aa14c8bb09ebb",
+      "uid": 0
+    },
+    {
+      "@id": "exe/cromwell-executions/UninterleaveFastqs/c48c3368-048d-4ba2-9de6-fcc1db59c8ef/call-uninterleave_fqs/execution/stderr.background",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "IntermediateFile"
+      ],
+      "contentSize": 301,
+      "dateModified": "2023-03-16T01:10:09.158319",
+      "encodingFormat": "text/plain",
+      "gid": 0,
+      "lineCount": 7,
+      "mode": "-rw-r--r--",
+      "sha512": "feca2b4c783ca4bd78d6b8003f5143a95442a92b3828a3b55ad407b890b0ccdc6337e26b1cf82e63179cc4fb76b19012bce5f7343e41ac5515fa2f9aa9ab6a53",
+      "uid": 0
+    },
+    {
+      "@id": "exe/cromwell-executions/UninterleaveFastqs/c48c3368-048d-4ba2-9de6-fcc1db59c8ef/call-uninterleave_fqs/execution/stdout.background",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "IntermediateFile"
+      ],
+      "contentSize": 69,
+      "dateModified": "2023-03-16T01:10:09.902321",
+      "encodingFormat": "text/plain",
+      "gid": 0,
+      "lineCount": 2,
+      "mode": "-rw-r--r--",
+      "sha512": "52120731d23b01ef2be2218cf9c5ef6f4f996237b8a88894bba79659cacfb2c130e7893b04cea8da95fab971faf928a7cdeffa7f29f5ff1ef14d1eed28d3dd9a",
+      "uid": 0
+    },
+    {
+      "@id": "exe/cromwell-executions/UninterleaveFastqs/c48c3368-048d-4ba2-9de6-fcc1db59c8ef/call-uninterleave_fqs/execution/stdout",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "IntermediateFile"
+      ],
+      "contentSize": 0,
+      "dateModified": "2023-03-16T01:10:09.686320",
+      "encodingFormat": "inode/x-empty",
+      "gid": 0,
+      "lineCount": 0,
+      "mode": "-rw-r--r--",
+      "sha512": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
+      "uid": 0
+    },
+    {
+      "@id": "exe/cromwell-executions/UninterleaveFastqs/c48c3368-048d-4ba2-9de6-fcc1db59c8ef/call-uninterleave_fqs/execution/stderr",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "IntermediateFile"
+      ],
+      "contentSize": 0,
+      "dateModified": "2023-03-16T01:10:09.686320",
+      "encodingFormat": "inode/x-empty",
+      "gid": 0,
+      "lineCount": 0,
+      "mode": "-rw-r--r--",
+      "sha512": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
+      "uid": 0
+    },
+    {
+      "@id": "exe/cromwell-executions/UninterleaveFastqs/c48c3368-048d-4ba2-9de6-fcc1db59c8ef/call-uninterleave_fqs/execution/script.submit",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "IntermediateFile"
+      ],
+      "contentSize": 1805,
+      "dateModified": "2023-03-16T01:10:07.338315",
+      "encodingFormat": "text/x-shellscript",
+      "gid": 0,
+      "lineCount": 20,
+      "mode": "-rw-r--r--",
+      "sha512": "6e89a5a66d18b3dedc27ed65fd5c5fd0e002b260555cbcc21d960ec060c2a75e1bc848650fec84c436c6c6245f02f19bad04af691416a94705dd9a27c0b78cdd",
+      "uid": 0
+    },
+    {
+      "@id": "exe/cromwell-executions/UninterleaveFastqs/c48c3368-048d-4ba2-9de6-fcc1db59c8ef/call-uninterleave_fqs/execution/NA18549.final.small_interleaved.fastq.gz_reads_1.fastq",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "IntermediateFile"
+      ],
+      "contentSize": 483855,
+      "dateModified": "2023-03-16T01:10:09.718320",
+      "encodingFormat": "application/gzip",
+      "format": {
+        "@id": "http://edamontology.org/format_1930"
+      },
+      "gid": 0,
+      "mode": "-rw-r--r--",
+      "sha512": "e7685fabf55a977cf083e89448981c81834e58e693cf85c7adf1a9fdbf175e9bc847585d985e990c793216bc678fc8cba7aea33e8571790ad34e7959f9560357",
+      "uid": 0
+    },
+    {
+      "@id": "exe/cromwell-executions/UninterleaveFastqs/c48c3368-048d-4ba2-9de6-fcc1db59c8ef/call-uninterleave_fqs/execution/docker_cid",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "IntermediateFile"
+      ],
+      "contentSize": 64,
+      "dateModified": "2023-03-16T01:10:09.386320",
+      "encodingFormat": "text/plain",
+      "gid": 0,
+      "lineCount": 0,
+      "mode": "-rw-r--r--",
+      "sha512": "8d0f62cb862ae052ce896178b0b070538e1a55091761ebd08def0f517d6623973ffe2b0c1bd6ae25a217a504d50a94d55372ac55247a59865ed8d0cfa188094b",
+      "uid": 0
+    },
+    {
+      "@id": "exe/cromwell-executions/UninterleaveFastqs/c48c3368-048d-4ba2-9de6-fcc1db59c8ef/call-uninterleave_fqs/execution/NA18549.final.small_interleaved.fastq.gz_reads_2.fastq",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "IntermediateFile"
+      ],
+      "contentSize": 490743,
+      "dateModified": "2023-03-16T01:10:09.718320",
+      "encodingFormat": "application/octet-stream",
+      "format": {
+        "@id": "http://edamontology.org/format_1930"
+      },
+      "gid": 0,
+      "mode": "-rw-r--r--",
+      "sha512": "048ba4685dba77748b56b61b4071293127614e4969bd43a0d79028cbc05eca8c911b3ffd58658eb7a6994e221b4ab83d1a17ad5bebe7de156cf7ebe9aeec1f39",
+      "uid": 0
+    },
+    {
+      "@id": "exe/cromwell-executions/UninterleaveFastqs/c48c3368-048d-4ba2-9de6-fcc1db59c8ef/call-uninterleave_fqs/execution/script",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "IntermediateFile"
+      ],
+      "contentSize": 2580,
+      "dateModified": "2023-03-16T01:10:07.274315",
+      "encodingFormat": "text/x-shellscript",
+      "gid": 0,
+      "lineCount": 39,
+      "mode": "-rw-r--r--",
+      "sha512": "de21ebea4dfe5262d251d6d99e6b4d6b6ca3e08043944d2696e493d67cc1a8582c8e98f2ff1beb96943b9a3ca13cd5356f440d3639624ffc867a99c2f2c95a48",
+      "uid": 0
+    },
+    {
+      "@id": "exe/cromwell-executions/UninterleaveFastqs/c48c3368-048d-4ba2-9de6-fcc1db59c8ef/call-uninterleave_fqs/inputs/-79094003/NA18549.final.small_interleaved.fastq.gz",
+      "@type": [
+        "File",
+        "FormalParameter",
+        "IntermediateFile"
+      ],
+      "contentSize": 1930225,
+      "dateModified": "2023-03-16T01:09:36.206234",
+      "encodingFormat": "application/gzip",
+      "format": {
+        "@id": "http://edamontology.org/format_1930"
+      },
+      "gid": 0,
+      "mode": "-rw-r--r--",
+      "sha512": "79a6531c7d0a0d2df4bdf56a442f25538700bbf6b14eacd9eba95d7d3159ca4e0f2edb35f8086af55a4866aee29a1086449cdab43a4df370c6c006c028332ca2",
+      "uid": 0
+    }
+  ]
+}
