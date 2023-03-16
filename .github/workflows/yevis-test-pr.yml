@@ -16,7 +16,6 @@ permissions:
 
 jobs:
   test:
-    # runs-on: ubuntu-latest
     runs-on: ubuntu-20.04
     steps:
       - name: "Download yevis binary from artifact"
