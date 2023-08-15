@@ -6,610 +6,615 @@ authors:
   - github_account: manabuishii
     name: Manabu ISHII
     affiliation: GAJ
+zenodo:
+  url: "https://zenodo.org/record/8248091"
+  id: 8248091
+  doi: 10.5281/zenodo.8248091
+  concept_doi: 10.5281/zenodo.8248090
 workflow:
   name: qc-filter
-  readme: "https://raw.githubusercontent.com/ddbj/jga-analysis/c667fde52b363f03afc8dd0843c5c717ecfecc47/README.md"
+  readme: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/README.md"
   language:
     type: CWL
     version: v1.2
   files:
-    - url: "https://raw.githubusercontent.com/ddbj/jga-analysis/c667fde52b363f03afc8dd0843c5c717ecfecc47/jga-analysis-qc-cwl/qc-filter.cwl"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/qc-filter.cwl"
       target: qc-filter.cwl
       type: primary
-    - url: "https://raw.githubusercontent.com/ddbj/jga-analysis/c667fde52b363f03afc8dd0843c5c717ecfecc47/jga-analysis-qc-cwl/qc-report.cwl"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/qc-report.cwl"
       target: qc-report.cwl
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20769/NA20769.chrY_nonPAR_ploidy_1.g.vcf.gz.tbi"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20769_NA20769.chrY_nonPAR_ploidy_1.g.vcf.gz.tbi"
       target: "./output/NA20769/NA20769.chrY_nonPAR_ploidy_1.g.vcf.gz.tbi"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20769/NA20769.autosome_PAR_ploidy_2.g.vcf.gz"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20769_NA20769.autosome_PAR_ploidy_2.g.vcf.gz"
       target: "./output/NA20769/NA20769.autosome_PAR_ploidy_2.g.vcf.gz"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20769/NA20769.chrX_nonPAR_ploidy_2.g.vcf.gz.tbi"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20769_NA20769.chrX_nonPAR_ploidy_2.g.vcf.gz.tbi"
       target: "./output/NA20769/NA20769.chrX_nonPAR_ploidy_2.g.vcf.gz.tbi"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20769/NA20769.cram.collect_base_dist_by_cycle.chart.pdf"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20769_NA20769.cram.collect_base_dist_by_cycle.chart.pdf"
       target: "./output/NA20769/NA20769.cram.collect_base_dist_by_cycle.chart.pdf"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20769/NA20769.autosome_PAR_ploidy_2.g.vcf.gz.bcftools-stats"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20769_NA20769.autosome_PAR_ploidy_2.g.vcf.gz.bcftools-stats"
       target: "./output/NA20769/NA20769.autosome_PAR_ploidy_2.g.vcf.gz.bcftools-stats"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20769/NA20769.cram.collect_base_dist_by_cycle.chart.png"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20769_NA20769.cram.collect_base_dist_by_cycle.chart.png"
       target: "./output/NA20769/NA20769.cram.collect_base_dist_by_cycle.chart.png"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20769/NA20769.metrics.txt"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20769_NA20769.metrics.txt"
       target: "./output/NA20769/NA20769.metrics.txt"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20769/NA20769.chrX_nonPAR_ploidy_2.g.vcf.gz"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20769_NA20769.chrX_nonPAR_ploidy_2.g.vcf.gz"
       target: "./output/NA20769/NA20769.chrX_nonPAR_ploidy_2.g.vcf.gz"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20769/NA20769.cram"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20769_NA20769.cram"
       target: "./output/NA20769/NA20769.cram"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20769/NA20769.cram.idxstats"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20769_NA20769.cram.idxstats"
       target: "./output/NA20769/NA20769.cram.idxstats"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20769/NA20769.cram.crai"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20769_NA20769.cram.crai"
       target: "./output/NA20769/NA20769.cram.crai"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20769/NA20769.autosome_PAR_ploidy_2.g.vcf.gz.tbi"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20769_NA20769.autosome_PAR_ploidy_2.g.vcf.gz.tbi"
       target: "./output/NA20769/NA20769.autosome_PAR_ploidy_2.g.vcf.gz.tbi"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20769/NA20769.chrY_nonPAR_ploidy_1.g.vcf.gz.bcftools-stats"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20769_NA20769.chrY_nonPAR_ploidy_1.g.vcf.gz.bcftools-stats"
       target: "./output/NA20769/NA20769.chrY_nonPAR_ploidy_1.g.vcf.gz.bcftools-stats"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20769/NA20769.chrY_nonPAR_ploidy_1.g.vcf.gz"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20769_NA20769.chrY_nonPAR_ploidy_1.g.vcf.gz"
       target: "./output/NA20769/NA20769.chrY_nonPAR_ploidy_1.g.vcf.gz"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20769/NA20769.cram.chrX_nonPAR_ploidy_1.wgs_metrics"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20769_NA20769.cram.chrX_nonPAR_ploidy_1.wgs_metrics"
       target: "./output/NA20769/NA20769.cram.chrX_nonPAR_ploidy_1.wgs_metrics"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20769/NA20769.cram.collect_base_dist_by_cycle"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20769_NA20769.cram.collect_base_dist_by_cycle"
       target: "./output/NA20769/NA20769.cram.collect_base_dist_by_cycle"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20769/NA20769.chrX_nonPAR_ploidy_1.g.vcf.gz.bcftools-stats"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20769_NA20769.chrX_nonPAR_ploidy_1.g.vcf.gz.bcftools-stats"
       target: "./output/NA20769/NA20769.chrX_nonPAR_ploidy_1.g.vcf.gz.bcftools-stats"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20769/NA20769.cram.flagstat"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20769_NA20769.cram.flagstat"
       target: "./output/NA20769/NA20769.cram.flagstat"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20769/NA20769.cram.chrY_nonPAR_ploidy_1.wgs_metrics"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20769_NA20769.cram.chrY_nonPAR_ploidy_1.wgs_metrics"
       target: "./output/NA20769/NA20769.cram.chrY_nonPAR_ploidy_1.wgs_metrics"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20769/NA20769.chrX_nonPAR_ploidy_1.g.vcf.gz"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20769_NA20769.chrX_nonPAR_ploidy_1.g.vcf.gz"
       target: "./output/NA20769/NA20769.chrX_nonPAR_ploidy_1.g.vcf.gz"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20769/NA20769.chrX_nonPAR_ploidy_1.g.vcf.gz.tbi"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20769_NA20769.chrX_nonPAR_ploidy_1.g.vcf.gz.tbi"
       target: "./output/NA20769/NA20769.chrX_nonPAR_ploidy_1.g.vcf.gz.tbi"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20769/NA20769.chrX_nonPAR_ploidy_2.g.vcf.gz.bcftools-stats"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20769_NA20769.chrX_nonPAR_ploidy_2.g.vcf.gz.bcftools-stats"
       target: "./output/NA20769/NA20769.chrX_nonPAR_ploidy_2.g.vcf.gz.bcftools-stats"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20769/NA20769.cram.autosome_PAR_ploidy_2.wgs_metrics"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20769_NA20769.cram.autosome_PAR_ploidy_2.wgs_metrics"
       target: "./output/NA20769/NA20769.cram.autosome_PAR_ploidy_2.wgs_metrics"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20769/NA20769.cram.chrX_nonPAR_ploidy_2.wgs_metrics"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20769_NA20769.cram.chrX_nonPAR_ploidy_2.wgs_metrics"
       target: "./output/NA20769/NA20769.cram.chrX_nonPAR_ploidy_2.wgs_metrics"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20757/NA20757.chrX_nonPAR_ploidy_2.g.vcf.gz.bcftools-stats"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20757_NA20757.chrX_nonPAR_ploidy_2.g.vcf.gz.bcftools-stats"
       target: "./output/NA20757/NA20757.chrX_nonPAR_ploidy_2.g.vcf.gz.bcftools-stats"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20757/NA20757.cram.collect_base_dist_by_cycle.chart.pdf"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20757_NA20757.cram.collect_base_dist_by_cycle.chart.pdf"
       target: "./output/NA20757/NA20757.cram.collect_base_dist_by_cycle.chart.pdf"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20757/NA20757.chrY_nonPAR_ploidy_1.g.vcf.gz"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20757_NA20757.chrY_nonPAR_ploidy_1.g.vcf.gz"
       target: "./output/NA20757/NA20757.chrY_nonPAR_ploidy_1.g.vcf.gz"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20757/NA20757.cram.chrX_nonPAR_ploidy_1.wgs_metrics"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20757_NA20757.cram.chrX_nonPAR_ploidy_1.wgs_metrics"
       target: "./output/NA20757/NA20757.cram.chrX_nonPAR_ploidy_1.wgs_metrics"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20757/NA20757.cram.collect_base_dist_by_cycle.chart.png"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20757_NA20757.cram.collect_base_dist_by_cycle.chart.png"
       target: "./output/NA20757/NA20757.cram.collect_base_dist_by_cycle.chart.png"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20757/NA20757.cram.crai"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20757_NA20757.cram.crai"
       target: "./output/NA20757/NA20757.cram.crai"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20757/NA20757.chrX_nonPAR_ploidy_1.g.vcf.gz.tbi"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20757_NA20757.chrX_nonPAR_ploidy_1.g.vcf.gz.tbi"
       target: "./output/NA20757/NA20757.chrX_nonPAR_ploidy_1.g.vcf.gz.tbi"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20757/NA20757.cram.idxstats"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20757_NA20757.cram.idxstats"
       target: "./output/NA20757/NA20757.cram.idxstats"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20757/NA20757.cram.chrY_nonPAR_ploidy_1.wgs_metrics"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20757_NA20757.cram.chrY_nonPAR_ploidy_1.wgs_metrics"
       target: "./output/NA20757/NA20757.cram.chrY_nonPAR_ploidy_1.wgs_metrics"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20757/NA20757.cram.autosome_PAR_ploidy_2.wgs_metrics"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20757_NA20757.cram.autosome_PAR_ploidy_2.wgs_metrics"
       target: "./output/NA20757/NA20757.cram.autosome_PAR_ploidy_2.wgs_metrics"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20757/NA20757.cram.chrX_nonPAR_ploidy_2.wgs_metrics"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20757_NA20757.cram.chrX_nonPAR_ploidy_2.wgs_metrics"
       target: "./output/NA20757/NA20757.cram.chrX_nonPAR_ploidy_2.wgs_metrics"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20757/NA20757.chrY_nonPAR_ploidy_1.g.vcf.gz.bcftools-stats"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20757_NA20757.chrY_nonPAR_ploidy_1.g.vcf.gz.bcftools-stats"
       target: "./output/NA20757/NA20757.chrY_nonPAR_ploidy_1.g.vcf.gz.bcftools-stats"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20757/NA20757.chrX_nonPAR_ploidy_1.g.vcf.gz.bcftools-stats"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20757_NA20757.chrX_nonPAR_ploidy_1.g.vcf.gz.bcftools-stats"
       target: "./output/NA20757/NA20757.chrX_nonPAR_ploidy_1.g.vcf.gz.bcftools-stats"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20757/NA20757.metrics.txt"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20757_NA20757.metrics.txt"
       target: "./output/NA20757/NA20757.metrics.txt"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20757/NA20757.chrX_nonPAR_ploidy_1.g.vcf.gz"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20757_NA20757.chrX_nonPAR_ploidy_1.g.vcf.gz"
       target: "./output/NA20757/NA20757.chrX_nonPAR_ploidy_1.g.vcf.gz"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20757/NA20757.chrX_nonPAR_ploidy_2.g.vcf.gz.tbi"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20757_NA20757.chrX_nonPAR_ploidy_2.g.vcf.gz.tbi"
       target: "./output/NA20757/NA20757.chrX_nonPAR_ploidy_2.g.vcf.gz.tbi"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20757/NA20757.autosome_PAR_ploidy_2.g.vcf.gz.tbi"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20757_NA20757.autosome_PAR_ploidy_2.g.vcf.gz.tbi"
       target: "./output/NA20757/NA20757.autosome_PAR_ploidy_2.g.vcf.gz.tbi"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20757/NA20757.cram.collect_base_dist_by_cycle"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20757_NA20757.cram.collect_base_dist_by_cycle"
       target: "./output/NA20757/NA20757.cram.collect_base_dist_by_cycle"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20757/NA20757.chrY_nonPAR_ploidy_1.g.vcf.gz.tbi"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20757_NA20757.chrY_nonPAR_ploidy_1.g.vcf.gz.tbi"
       target: "./output/NA20757/NA20757.chrY_nonPAR_ploidy_1.g.vcf.gz.tbi"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20757/NA20757.cram"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20757_NA20757.cram"
       target: "./output/NA20757/NA20757.cram"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20757/NA20757.chrX_nonPAR_ploidy_2.g.vcf.gz"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20757_NA20757.chrX_nonPAR_ploidy_2.g.vcf.gz"
       target: "./output/NA20757/NA20757.chrX_nonPAR_ploidy_2.g.vcf.gz"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20757/NA20757.autosome_PAR_ploidy_2.g.vcf.gz"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20757_NA20757.autosome_PAR_ploidy_2.g.vcf.gz"
       target: "./output/NA20757/NA20757.autosome_PAR_ploidy_2.g.vcf.gz"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20757/NA20757.autosome_PAR_ploidy_2.g.vcf.gz.bcftools-stats"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20757_NA20757.autosome_PAR_ploidy_2.g.vcf.gz.bcftools-stats"
       target: "./output/NA20757/NA20757.autosome_PAR_ploidy_2.g.vcf.gz.bcftools-stats"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20757/NA20757.cram.flagstat"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20757_NA20757.cram.flagstat"
       target: "./output/NA20757/NA20757.cram.flagstat"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA12842/NA12842.metrics.txt"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA12842_NA12842.metrics.txt"
       target: "./output/NA12842/NA12842.metrics.txt"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA12842/NA12842.chrX_nonPAR_ploidy_2.g.vcf.gz"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA12842_NA12842.chrX_nonPAR_ploidy_2.g.vcf.gz"
       target: "./output/NA12842/NA12842.chrX_nonPAR_ploidy_2.g.vcf.gz"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA12842/NA12842.cram"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA12842_NA12842.cram"
       target: "./output/NA12842/NA12842.cram"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA12842/NA12842.autosome_PAR_ploidy_2.g.vcf.gz.bcftools-stats"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA12842_NA12842.autosome_PAR_ploidy_2.g.vcf.gz.bcftools-stats"
       target: "./output/NA12842/NA12842.autosome_PAR_ploidy_2.g.vcf.gz.bcftools-stats"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA12842/NA12842.autosome_PAR_ploidy_2.g.vcf.gz.tbi"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA12842_NA12842.autosome_PAR_ploidy_2.g.vcf.gz.tbi"
       target: "./output/NA12842/NA12842.autosome_PAR_ploidy_2.g.vcf.gz.tbi"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA12842/NA12842.autosome_PAR_ploidy_2.g.vcf.gz"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA12842_NA12842.autosome_PAR_ploidy_2.g.vcf.gz"
       target: "./output/NA12842/NA12842.autosome_PAR_ploidy_2.g.vcf.gz"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA12842/NA12842.cram.idxstats"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA12842_NA12842.cram.idxstats"
       target: "./output/NA12842/NA12842.cram.idxstats"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA12842/NA12842.chrX_nonPAR_ploidy_1.g.vcf.gz.tbi"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA12842_NA12842.chrX_nonPAR_ploidy_1.g.vcf.gz.tbi"
       target: "./output/NA12842/NA12842.chrX_nonPAR_ploidy_1.g.vcf.gz.tbi"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA12842/NA12842.cram.collect_base_dist_by_cycle"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA12842_NA12842.cram.collect_base_dist_by_cycle"
       target: "./output/NA12842/NA12842.cram.collect_base_dist_by_cycle"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA12842/NA12842.cram.crai"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA12842_NA12842.cram.crai"
       target: "./output/NA12842/NA12842.cram.crai"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA12842/NA12842.chrX_nonPAR_ploidy_1.g.vcf.gz"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA12842_NA12842.chrX_nonPAR_ploidy_1.g.vcf.gz"
       target: "./output/NA12842/NA12842.chrX_nonPAR_ploidy_1.g.vcf.gz"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA12842/NA12842.chrY_nonPAR_ploidy_1.g.vcf.gz.tbi"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA12842_NA12842.chrY_nonPAR_ploidy_1.g.vcf.gz.tbi"
       target: "./output/NA12842/NA12842.chrY_nonPAR_ploidy_1.g.vcf.gz.tbi"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA12842/NA12842.chrX_nonPAR_ploidy_2.g.vcf.gz.bcftools-stats"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA12842_NA12842.chrX_nonPAR_ploidy_2.g.vcf.gz.bcftools-stats"
       target: "./output/NA12842/NA12842.chrX_nonPAR_ploidy_2.g.vcf.gz.bcftools-stats"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA12842/NA12842.cram.chrX_nonPAR_ploidy_1.wgs_metrics"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA12842_NA12842.cram.chrX_nonPAR_ploidy_1.wgs_metrics"
       target: "./output/NA12842/NA12842.cram.chrX_nonPAR_ploidy_1.wgs_metrics"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA12842/NA12842.chrX_nonPAR_ploidy_2.g.vcf.gz.tbi"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA12842_NA12842.chrX_nonPAR_ploidy_2.g.vcf.gz.tbi"
       target: "./output/NA12842/NA12842.chrX_nonPAR_ploidy_2.g.vcf.gz.tbi"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA12842/NA12842.cram.collect_base_dist_by_cycle.chart.pdf"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA12842_NA12842.cram.collect_base_dist_by_cycle.chart.pdf"
       target: "./output/NA12842/NA12842.cram.collect_base_dist_by_cycle.chart.pdf"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA12842/NA12842.cram.flagstat"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA12842_NA12842.cram.flagstat"
       target: "./output/NA12842/NA12842.cram.flagstat"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA12842/NA12842.chrY_nonPAR_ploidy_1.g.vcf.gz.bcftools-stats"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA12842_NA12842.chrY_nonPAR_ploidy_1.g.vcf.gz.bcftools-stats"
       target: "./output/NA12842/NA12842.chrY_nonPAR_ploidy_1.g.vcf.gz.bcftools-stats"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA12842/NA12842.cram.chrX_nonPAR_ploidy_2.wgs_metrics"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA12842_NA12842.cram.chrX_nonPAR_ploidy_2.wgs_metrics"
       target: "./output/NA12842/NA12842.cram.chrX_nonPAR_ploidy_2.wgs_metrics"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA12842/NA12842.chrX_nonPAR_ploidy_1.g.vcf.gz.bcftools-stats"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA12842_NA12842.chrX_nonPAR_ploidy_1.g.vcf.gz.bcftools-stats"
       target: "./output/NA12842/NA12842.chrX_nonPAR_ploidy_1.g.vcf.gz.bcftools-stats"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA12842/NA12842.cram.autosome_PAR_ploidy_2.wgs_metrics"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA12842_NA12842.cram.autosome_PAR_ploidy_2.wgs_metrics"
       target: "./output/NA12842/NA12842.cram.autosome_PAR_ploidy_2.wgs_metrics"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA12842/NA12842.cram.collect_base_dist_by_cycle.chart.png"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA12842_NA12842.cram.collect_base_dist_by_cycle.chart.png"
       target: "./output/NA12842/NA12842.cram.collect_base_dist_by_cycle.chart.png"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA12842/NA12842.chrY_nonPAR_ploidy_1.g.vcf.gz"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA12842_NA12842.chrY_nonPAR_ploidy_1.g.vcf.gz"
       target: "./output/NA12842/NA12842.chrY_nonPAR_ploidy_1.g.vcf.gz"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA12842/NA12842.cram.chrY_nonPAR_ploidy_1.wgs_metrics"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA12842_NA12842.cram.chrY_nonPAR_ploidy_1.wgs_metrics"
       target: "./output/NA12842/NA12842.cram.chrY_nonPAR_ploidy_1.wgs_metrics"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA12775/NA12775.chrX_nonPAR_ploidy_1.g.vcf.gz.tbi"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA12775_NA12775.chrX_nonPAR_ploidy_1.g.vcf.gz.tbi"
       target: "./output/NA12775/NA12775.chrX_nonPAR_ploidy_1.g.vcf.gz.tbi"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA12775/NA12775.cram.idxstats"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA12775_NA12775.cram.idxstats"
       target: "./output/NA12775/NA12775.cram.idxstats"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA12775/NA12775.autosome_PAR_ploidy_2.g.vcf.gz"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA12775_NA12775.autosome_PAR_ploidy_2.g.vcf.gz"
       target: "./output/NA12775/NA12775.autosome_PAR_ploidy_2.g.vcf.gz"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA12775/NA12775.chrX_nonPAR_ploidy_2.g.vcf.gz"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA12775_NA12775.chrX_nonPAR_ploidy_2.g.vcf.gz"
       target: "./output/NA12775/NA12775.chrX_nonPAR_ploidy_2.g.vcf.gz"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA12775/NA12775.cram.crai"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA12775_NA12775.cram.crai"
       target: "./output/NA12775/NA12775.cram.crai"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA12775/NA12775.cram.collect_base_dist_by_cycle"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA12775_NA12775.cram.collect_base_dist_by_cycle"
       target: "./output/NA12775/NA12775.cram.collect_base_dist_by_cycle"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA12775/NA12775.cram.autosome_PAR_ploidy_2.wgs_metrics"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA12775_NA12775.cram.autosome_PAR_ploidy_2.wgs_metrics"
       target: "./output/NA12775/NA12775.cram.autosome_PAR_ploidy_2.wgs_metrics"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA12775/NA12775.chrY_nonPAR_ploidy_1.g.vcf.gz.bcftools-stats"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA12775_NA12775.chrY_nonPAR_ploidy_1.g.vcf.gz.bcftools-stats"
       target: "./output/NA12775/NA12775.chrY_nonPAR_ploidy_1.g.vcf.gz.bcftools-stats"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA12775/NA12775.metrics.txt"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA12775_NA12775.metrics.txt"
       target: "./output/NA12775/NA12775.metrics.txt"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA12775/NA12775.chrY_nonPAR_ploidy_1.g.vcf.gz"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA12775_NA12775.chrY_nonPAR_ploidy_1.g.vcf.gz"
       target: "./output/NA12775/NA12775.chrY_nonPAR_ploidy_1.g.vcf.gz"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA12775/NA12775.autosome_PAR_ploidy_2.g.vcf.gz.tbi"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA12775_NA12775.autosome_PAR_ploidy_2.g.vcf.gz.tbi"
       target: "./output/NA12775/NA12775.autosome_PAR_ploidy_2.g.vcf.gz.tbi"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA12775/NA12775.chrX_nonPAR_ploidy_1.g.vcf.gz.bcftools-stats"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA12775_NA12775.chrX_nonPAR_ploidy_1.g.vcf.gz.bcftools-stats"
       target: "./output/NA12775/NA12775.chrX_nonPAR_ploidy_1.g.vcf.gz.bcftools-stats"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA12775/NA12775.cram.collect_base_dist_by_cycle.chart.png"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA12775_NA12775.cram.collect_base_dist_by_cycle.chart.png"
       target: "./output/NA12775/NA12775.cram.collect_base_dist_by_cycle.chart.png"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA12775/NA12775.cram.flagstat"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA12775_NA12775.cram.flagstat"
       target: "./output/NA12775/NA12775.cram.flagstat"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA12775/NA12775.cram.chrX_nonPAR_ploidy_1.wgs_metrics"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA12775_NA12775.cram.chrX_nonPAR_ploidy_1.wgs_metrics"
       target: "./output/NA12775/NA12775.cram.chrX_nonPAR_ploidy_1.wgs_metrics"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA12775/NA12775.cram.collect_base_dist_by_cycle.chart.pdf"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA12775_NA12775.cram.collect_base_dist_by_cycle.chart.pdf"
       target: "./output/NA12775/NA12775.cram.collect_base_dist_by_cycle.chart.pdf"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA12775/NA12775.cram"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA12775_NA12775.cram"
       target: "./output/NA12775/NA12775.cram"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA12775/NA12775.cram.chrX_nonPAR_ploidy_2.wgs_metrics"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA12775_NA12775.cram.chrX_nonPAR_ploidy_2.wgs_metrics"
       target: "./output/NA12775/NA12775.cram.chrX_nonPAR_ploidy_2.wgs_metrics"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA12775/NA12775.chrX_nonPAR_ploidy_2.g.vcf.gz.tbi"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA12775_NA12775.chrX_nonPAR_ploidy_2.g.vcf.gz.tbi"
       target: "./output/NA12775/NA12775.chrX_nonPAR_ploidy_2.g.vcf.gz.tbi"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA12775/NA12775.autosome_PAR_ploidy_2.g.vcf.gz.bcftools-stats"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA12775_NA12775.autosome_PAR_ploidy_2.g.vcf.gz.bcftools-stats"
       target: "./output/NA12775/NA12775.autosome_PAR_ploidy_2.g.vcf.gz.bcftools-stats"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA12775/NA12775.cram.chrY_nonPAR_ploidy_1.wgs_metrics"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA12775_NA12775.cram.chrY_nonPAR_ploidy_1.wgs_metrics"
       target: "./output/NA12775/NA12775.cram.chrY_nonPAR_ploidy_1.wgs_metrics"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA12775/NA12775.chrX_nonPAR_ploidy_2.g.vcf.gz.bcftools-stats"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA12775_NA12775.chrX_nonPAR_ploidy_2.g.vcf.gz.bcftools-stats"
       target: "./output/NA12775/NA12775.chrX_nonPAR_ploidy_2.g.vcf.gz.bcftools-stats"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA12775/NA12775.chrY_nonPAR_ploidy_1.g.vcf.gz.tbi"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA12775_NA12775.chrY_nonPAR_ploidy_1.g.vcf.gz.tbi"
       target: "./output/NA12775/NA12775.chrY_nonPAR_ploidy_1.g.vcf.gz.tbi"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA12775/NA12775.chrX_nonPAR_ploidy_1.g.vcf.gz"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA12775_NA12775.chrX_nonPAR_ploidy_1.g.vcf.gz"
       target: "./output/NA12775/NA12775.chrX_nonPAR_ploidy_1.g.vcf.gz"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/sample_list.yaml"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_sample_list.yaml"
       target: "./output/sample_list.yaml"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20752/NA20752.chrX_nonPAR_ploidy_2.g.vcf.gz.tbi"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20752_NA20752.chrX_nonPAR_ploidy_2.g.vcf.gz.tbi"
       target: "./output/NA20752/NA20752.chrX_nonPAR_ploidy_2.g.vcf.gz.tbi"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20752/NA20752.cram.chrX_nonPAR_ploidy_1.wgs_metrics"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20752_NA20752.cram.chrX_nonPAR_ploidy_1.wgs_metrics"
       target: "./output/NA20752/NA20752.cram.chrX_nonPAR_ploidy_1.wgs_metrics"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20752/NA20752.cram.flagstat"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20752_NA20752.cram.flagstat"
       target: "./output/NA20752/NA20752.cram.flagstat"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20752/NA20752.chrX_nonPAR_ploidy_2.g.vcf.gz.bcftools-stats"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20752_NA20752.chrX_nonPAR_ploidy_2.g.vcf.gz.bcftools-stats"
       target: "./output/NA20752/NA20752.chrX_nonPAR_ploidy_2.g.vcf.gz.bcftools-stats"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20752/NA20752.chrY_nonPAR_ploidy_1.g.vcf.gz.tbi"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20752_NA20752.chrY_nonPAR_ploidy_1.g.vcf.gz.tbi"
       target: "./output/NA20752/NA20752.chrY_nonPAR_ploidy_1.g.vcf.gz.tbi"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20752/NA20752.autosome_PAR_ploidy_2.g.vcf.gz"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20752_NA20752.autosome_PAR_ploidy_2.g.vcf.gz"
       target: "./output/NA20752/NA20752.autosome_PAR_ploidy_2.g.vcf.gz"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20752/NA20752.autosome_PAR_ploidy_2.g.vcf.gz.bcftools-stats"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20752_NA20752.autosome_PAR_ploidy_2.g.vcf.gz.bcftools-stats"
       target: "./output/NA20752/NA20752.autosome_PAR_ploidy_2.g.vcf.gz.bcftools-stats"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20752/NA20752.metrics.txt"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20752_NA20752.metrics.txt"
       target: "./output/NA20752/NA20752.metrics.txt"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20752/NA20752.chrY_nonPAR_ploidy_1.g.vcf.gz.bcftools-stats"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20752_NA20752.chrY_nonPAR_ploidy_1.g.vcf.gz.bcftools-stats"
       target: "./output/NA20752/NA20752.chrY_nonPAR_ploidy_1.g.vcf.gz.bcftools-stats"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20752/NA20752.chrX_nonPAR_ploidy_2.g.vcf.gz"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20752_NA20752.chrX_nonPAR_ploidy_2.g.vcf.gz"
       target: "./output/NA20752/NA20752.chrX_nonPAR_ploidy_2.g.vcf.gz"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20752/NA20752.chrX_nonPAR_ploidy_1.g.vcf.gz.bcftools-stats"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20752_NA20752.chrX_nonPAR_ploidy_1.g.vcf.gz.bcftools-stats"
       target: "./output/NA20752/NA20752.chrX_nonPAR_ploidy_1.g.vcf.gz.bcftools-stats"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20752/NA20752.autosome_PAR_ploidy_2.g.vcf.gz.tbi"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20752_NA20752.autosome_PAR_ploidy_2.g.vcf.gz.tbi"
       target: "./output/NA20752/NA20752.autosome_PAR_ploidy_2.g.vcf.gz.tbi"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20752/NA20752.cram.chrY_nonPAR_ploidy_1.wgs_metrics"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20752_NA20752.cram.chrY_nonPAR_ploidy_1.wgs_metrics"
       target: "./output/NA20752/NA20752.cram.chrY_nonPAR_ploidy_1.wgs_metrics"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20752/NA20752.cram"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20752_NA20752.cram"
       target: "./output/NA20752/NA20752.cram"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20752/NA20752.cram.chrX_nonPAR_ploidy_2.wgs_metrics"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20752_NA20752.cram.chrX_nonPAR_ploidy_2.wgs_metrics"
       target: "./output/NA20752/NA20752.cram.chrX_nonPAR_ploidy_2.wgs_metrics"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20752/NA20752.cram.autosome_PAR_ploidy_2.wgs_metrics"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20752_NA20752.cram.autosome_PAR_ploidy_2.wgs_metrics"
       target: "./output/NA20752/NA20752.cram.autosome_PAR_ploidy_2.wgs_metrics"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20752/NA20752.chrY_nonPAR_ploidy_1.g.vcf.gz"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20752_NA20752.chrY_nonPAR_ploidy_1.g.vcf.gz"
       target: "./output/NA20752/NA20752.chrY_nonPAR_ploidy_1.g.vcf.gz"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20752/NA20752.cram.idxstats"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20752_NA20752.cram.idxstats"
       target: "./output/NA20752/NA20752.cram.idxstats"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20752/NA20752.cram.crai"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20752_NA20752.cram.crai"
       target: "./output/NA20752/NA20752.cram.crai"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20752/NA20752.cram.collect_base_dist_by_cycle.chart.pdf"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20752_NA20752.cram.collect_base_dist_by_cycle.chart.pdf"
       target: "./output/NA20752/NA20752.cram.collect_base_dist_by_cycle.chart.pdf"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20752/NA20752.cram.collect_base_dist_by_cycle.chart.png"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20752_NA20752.cram.collect_base_dist_by_cycle.chart.png"
       target: "./output/NA20752/NA20752.cram.collect_base_dist_by_cycle.chart.png"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20752/NA20752.cram.collect_base_dist_by_cycle"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20752_NA20752.cram.collect_base_dist_by_cycle"
       target: "./output/NA20752/NA20752.cram.collect_base_dist_by_cycle"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20752/NA20752.chrX_nonPAR_ploidy_1.g.vcf.gz.tbi"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20752_NA20752.chrX_nonPAR_ploidy_1.g.vcf.gz.tbi"
       target: "./output/NA20752/NA20752.chrX_nonPAR_ploidy_1.g.vcf.gz.tbi"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20752/NA20752.chrX_nonPAR_ploidy_1.g.vcf.gz"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20752_NA20752.chrX_nonPAR_ploidy_1.g.vcf.gz"
       target: "./output/NA20752/NA20752.chrX_nonPAR_ploidy_1.g.vcf.gz"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20764/NA20764.cram.chrX_nonPAR_ploidy_1.wgs_metrics"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20764_NA20764.cram.chrX_nonPAR_ploidy_1.wgs_metrics"
       target: "./output/NA20764/NA20764.cram.chrX_nonPAR_ploidy_1.wgs_metrics"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20764/NA20764.autosome_PAR_ploidy_2.g.vcf.gz.bcftools-stats"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20764_NA20764.autosome_PAR_ploidy_2.g.vcf.gz.bcftools-stats"
       target: "./output/NA20764/NA20764.autosome_PAR_ploidy_2.g.vcf.gz.bcftools-stats"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20764/NA20764.chrY_nonPAR_ploidy_1.g.vcf.gz.tbi"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20764_NA20764.chrY_nonPAR_ploidy_1.g.vcf.gz.tbi"
       target: "./output/NA20764/NA20764.chrY_nonPAR_ploidy_1.g.vcf.gz.tbi"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20764/NA20764.chrY_nonPAR_ploidy_1.g.vcf.gz"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20764_NA20764.chrY_nonPAR_ploidy_1.g.vcf.gz"
       target: "./output/NA20764/NA20764.chrY_nonPAR_ploidy_1.g.vcf.gz"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20764/NA20764.cram.idxstats"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20764_NA20764.cram.idxstats"
       target: "./output/NA20764/NA20764.cram.idxstats"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20764/NA20764.chrX_nonPAR_ploidy_2.g.vcf.gz.tbi"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20764_NA20764.chrX_nonPAR_ploidy_2.g.vcf.gz.tbi"
       target: "./output/NA20764/NA20764.chrX_nonPAR_ploidy_2.g.vcf.gz.tbi"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20764/NA20764.autosome_PAR_ploidy_2.g.vcf.gz.tbi"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20764_NA20764.autosome_PAR_ploidy_2.g.vcf.gz.tbi"
       target: "./output/NA20764/NA20764.autosome_PAR_ploidy_2.g.vcf.gz.tbi"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20764/NA20764.chrX_nonPAR_ploidy_1.g.vcf.gz"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20764_NA20764.chrX_nonPAR_ploidy_1.g.vcf.gz"
       target: "./output/NA20764/NA20764.chrX_nonPAR_ploidy_1.g.vcf.gz"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20764/NA20764.autosome_PAR_ploidy_2.g.vcf.gz"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20764_NA20764.autosome_PAR_ploidy_2.g.vcf.gz"
       target: "./output/NA20764/NA20764.autosome_PAR_ploidy_2.g.vcf.gz"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20764/NA20764.cram.chrY_nonPAR_ploidy_1.wgs_metrics"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20764_NA20764.cram.chrY_nonPAR_ploidy_1.wgs_metrics"
       target: "./output/NA20764/NA20764.cram.chrY_nonPAR_ploidy_1.wgs_metrics"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20764/NA20764.cram.crai"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20764_NA20764.cram.crai"
       target: "./output/NA20764/NA20764.cram.crai"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20764/NA20764.cram.autosome_PAR_ploidy_2.wgs_metrics"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20764_NA20764.cram.autosome_PAR_ploidy_2.wgs_metrics"
       target: "./output/NA20764/NA20764.cram.autosome_PAR_ploidy_2.wgs_metrics"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20764/NA20764.cram"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20764_NA20764.cram"
       target: "./output/NA20764/NA20764.cram"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20764/NA20764.cram.chrX_nonPAR_ploidy_2.wgs_metrics"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20764_NA20764.cram.chrX_nonPAR_ploidy_2.wgs_metrics"
       target: "./output/NA20764/NA20764.cram.chrX_nonPAR_ploidy_2.wgs_metrics"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20764/NA20764.cram.flagstat"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20764_NA20764.cram.flagstat"
       target: "./output/NA20764/NA20764.cram.flagstat"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20764/NA20764.chrY_nonPAR_ploidy_1.g.vcf.gz.bcftools-stats"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20764_NA20764.chrY_nonPAR_ploidy_1.g.vcf.gz.bcftools-stats"
       target: "./output/NA20764/NA20764.chrY_nonPAR_ploidy_1.g.vcf.gz.bcftools-stats"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20764/NA20764.chrX_nonPAR_ploidy_1.g.vcf.gz.bcftools-stats"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20764_NA20764.chrX_nonPAR_ploidy_1.g.vcf.gz.bcftools-stats"
       target: "./output/NA20764/NA20764.chrX_nonPAR_ploidy_1.g.vcf.gz.bcftools-stats"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20764/NA20764.cram.collect_base_dist_by_cycle"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20764_NA20764.cram.collect_base_dist_by_cycle"
       target: "./output/NA20764/NA20764.cram.collect_base_dist_by_cycle"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20764/NA20764.metrics.txt"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20764_NA20764.metrics.txt"
       target: "./output/NA20764/NA20764.metrics.txt"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20764/NA20764.chrX_nonPAR_ploidy_2.g.vcf.gz.bcftools-stats"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20764_NA20764.chrX_nonPAR_ploidy_2.g.vcf.gz.bcftools-stats"
       target: "./output/NA20764/NA20764.chrX_nonPAR_ploidy_2.g.vcf.gz.bcftools-stats"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20764/NA20764.cram.collect_base_dist_by_cycle.chart.pdf"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20764_NA20764.cram.collect_base_dist_by_cycle.chart.pdf"
       target: "./output/NA20764/NA20764.cram.collect_base_dist_by_cycle.chart.pdf"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20764/NA20764.cram.collect_base_dist_by_cycle.chart.png"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20764_NA20764.cram.collect_base_dist_by_cycle.chart.png"
       target: "./output/NA20764/NA20764.cram.collect_base_dist_by_cycle.chart.png"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20764/NA20764.chrX_nonPAR_ploidy_1.g.vcf.gz.tbi"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20764_NA20764.chrX_nonPAR_ploidy_1.g.vcf.gz.tbi"
       target: "./output/NA20764/NA20764.chrX_nonPAR_ploidy_1.g.vcf.gz.tbi"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA20764/NA20764.chrX_nonPAR_ploidy_2.g.vcf.gz"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA20764_NA20764.chrX_nonPAR_ploidy_2.g.vcf.gz"
       target: "./output/NA20764/NA20764.chrX_nonPAR_ploidy_2.g.vcf.gz"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA18549/NA18549.cram.autosome_PAR_ploidy_2.wgs_metrics"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA18549_NA18549.cram.autosome_PAR_ploidy_2.wgs_metrics"
       target: "./output/NA18549/NA18549.cram.autosome_PAR_ploidy_2.wgs_metrics"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA18549/NA18549.chrX_nonPAR_ploidy_2.g.vcf.gz"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA18549_NA18549.chrX_nonPAR_ploidy_2.g.vcf.gz"
       target: "./output/NA18549/NA18549.chrX_nonPAR_ploidy_2.g.vcf.gz"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA18549/NA18549.autosome_PAR_ploidy_2.g.vcf.gz"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA18549_NA18549.autosome_PAR_ploidy_2.g.vcf.gz"
       target: "./output/NA18549/NA18549.autosome_PAR_ploidy_2.g.vcf.gz"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA18549/NA18549.cram.crai"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA18549_NA18549.cram.crai"
       target: "./output/NA18549/NA18549.cram.crai"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA18549/NA18549.chrX_nonPAR_ploidy_1.g.vcf.gz.tbi"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA18549_NA18549.chrX_nonPAR_ploidy_1.g.vcf.gz.tbi"
       target: "./output/NA18549/NA18549.chrX_nonPAR_ploidy_1.g.vcf.gz.tbi"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA18549/NA18549.cram.idxstats"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA18549_NA18549.cram.idxstats"
       target: "./output/NA18549/NA18549.cram.idxstats"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA18549/NA18549.chrX_nonPAR_ploidy_1.g.vcf.gz"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA18549_NA18549.chrX_nonPAR_ploidy_1.g.vcf.gz"
       target: "./output/NA18549/NA18549.chrX_nonPAR_ploidy_1.g.vcf.gz"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA18549/NA18549.cram.collect_base_dist_by_cycle.chart.pdf"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA18549_NA18549.cram.collect_base_dist_by_cycle.chart.pdf"
       target: "./output/NA18549/NA18549.cram.collect_base_dist_by_cycle.chart.pdf"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA18549/NA18549.chrX_nonPAR_ploidy_1.g.vcf.gz.bcftools-stats"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA18549_NA18549.chrX_nonPAR_ploidy_1.g.vcf.gz.bcftools-stats"
       target: "./output/NA18549/NA18549.chrX_nonPAR_ploidy_1.g.vcf.gz.bcftools-stats"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA18549/NA18549.cram.chrX_nonPAR_ploidy_2.wgs_metrics"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA18549_NA18549.cram.chrX_nonPAR_ploidy_2.wgs_metrics"
       target: "./output/NA18549/NA18549.cram.chrX_nonPAR_ploidy_2.wgs_metrics"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA18549/NA18549.chrX_nonPAR_ploidy_2.g.vcf.gz.tbi"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA18549_NA18549.chrX_nonPAR_ploidy_2.g.vcf.gz.tbi"
       target: "./output/NA18549/NA18549.chrX_nonPAR_ploidy_2.g.vcf.gz.tbi"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA18549/NA18549.chrY_nonPAR_ploidy_1.g.vcf.gz.bcftools-stats"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA18549_NA18549.chrY_nonPAR_ploidy_1.g.vcf.gz.bcftools-stats"
       target: "./output/NA18549/NA18549.chrY_nonPAR_ploidy_1.g.vcf.gz.bcftools-stats"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA18549/NA18549.cram.collect_base_dist_by_cycle.chart.png"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA18549_NA18549.cram.collect_base_dist_by_cycle.chart.png"
       target: "./output/NA18549/NA18549.cram.collect_base_dist_by_cycle.chart.png"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA18549/NA18549.cram.collect_base_dist_by_cycle"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA18549_NA18549.cram.collect_base_dist_by_cycle"
       target: "./output/NA18549/NA18549.cram.collect_base_dist_by_cycle"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA18549/NA18549.cram.chrY_nonPAR_ploidy_1.wgs_metrics"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA18549_NA18549.cram.chrY_nonPAR_ploidy_1.wgs_metrics"
       target: "./output/NA18549/NA18549.cram.chrY_nonPAR_ploidy_1.wgs_metrics"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA18549/NA18549.autosome_PAR_ploidy_2.g.vcf.gz.tbi"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA18549_NA18549.autosome_PAR_ploidy_2.g.vcf.gz.tbi"
       target: "./output/NA18549/NA18549.autosome_PAR_ploidy_2.g.vcf.gz.tbi"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA18549/NA18549.chrY_nonPAR_ploidy_1.g.vcf.gz.tbi"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA18549_NA18549.chrY_nonPAR_ploidy_1.g.vcf.gz.tbi"
       target: "./output/NA18549/NA18549.chrY_nonPAR_ploidy_1.g.vcf.gz.tbi"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA18549/NA18549.metrics.txt"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA18549_NA18549.metrics.txt"
       target: "./output/NA18549/NA18549.metrics.txt"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA18549/NA18549.autosome_PAR_ploidy_2.g.vcf.gz.bcftools-stats"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA18549_NA18549.autosome_PAR_ploidy_2.g.vcf.gz.bcftools-stats"
       target: "./output/NA18549/NA18549.autosome_PAR_ploidy_2.g.vcf.gz.bcftools-stats"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA18549/NA18549.cram.flagstat"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA18549_NA18549.cram.flagstat"
       target: "./output/NA18549/NA18549.cram.flagstat"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA18549/NA18549.cram"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA18549_NA18549.cram"
       target: "./output/NA18549/NA18549.cram"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA18549/NA18549.chrY_nonPAR_ploidy_1.g.vcf.gz"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA18549_NA18549.chrY_nonPAR_ploidy_1.g.vcf.gz"
       target: "./output/NA18549/NA18549.chrY_nonPAR_ploidy_1.g.vcf.gz"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA18549/NA18549.cram.chrX_nonPAR_ploidy_1.wgs_metrics"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA18549_NA18549.cram.chrX_nonPAR_ploidy_1.wgs_metrics"
       target: "./output/NA18549/NA18549.cram.chrX_nonPAR_ploidy_1.wgs_metrics"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/NA18549/NA18549.chrX_nonPAR_ploidy_2.g.vcf.gz.bcftools-stats"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_NA18549_NA18549.chrX_nonPAR_ploidy_2.g.vcf.gz.bcftools-stats"
       target: "./output/NA18549/NA18549.chrX_nonPAR_ploidy_2.g.vcf.gz.bcftools-stats"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/HG00446/HG00446.chrX_nonPAR_ploidy_1.g.vcf.gz.tbi"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_HG00446_HG00446.chrX_nonPAR_ploidy_1.g.vcf.gz.tbi"
       target: "./output/HG00446/HG00446.chrX_nonPAR_ploidy_1.g.vcf.gz.tbi"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/HG00446/HG00446.chrY_nonPAR_ploidy_1.g.vcf.gz"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_HG00446_HG00446.chrY_nonPAR_ploidy_1.g.vcf.gz"
       target: "./output/HG00446/HG00446.chrY_nonPAR_ploidy_1.g.vcf.gz"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/HG00446/HG00446.cram.collect_base_dist_by_cycle"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_HG00446_HG00446.cram.collect_base_dist_by_cycle"
       target: "./output/HG00446/HG00446.cram.collect_base_dist_by_cycle"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/HG00446/HG00446.chrX_nonPAR_ploidy_1.g.vcf.gz.bcftools-stats"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_HG00446_HG00446.chrX_nonPAR_ploidy_1.g.vcf.gz.bcftools-stats"
       target: "./output/HG00446/HG00446.chrX_nonPAR_ploidy_1.g.vcf.gz.bcftools-stats"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/HG00446/HG00446.chrY_nonPAR_ploidy_1.g.vcf.gz.bcftools-stats"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_HG00446_HG00446.chrY_nonPAR_ploidy_1.g.vcf.gz.bcftools-stats"
       target: "./output/HG00446/HG00446.chrY_nonPAR_ploidy_1.g.vcf.gz.bcftools-stats"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/HG00446/HG00446.cram.idxstats"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_HG00446_HG00446.cram.idxstats"
       target: "./output/HG00446/HG00446.cram.idxstats"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/HG00446/HG00446.cram.autosome_PAR_ploidy_2.wgs_metrics"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_HG00446_HG00446.cram.autosome_PAR_ploidy_2.wgs_metrics"
       target: "./output/HG00446/HG00446.cram.autosome_PAR_ploidy_2.wgs_metrics"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/HG00446/HG00446.cram"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_HG00446_HG00446.cram"
       target: "./output/HG00446/HG00446.cram"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/HG00446/HG00446.chrX_nonPAR_ploidy_1.g.vcf.gz"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_HG00446_HG00446.chrX_nonPAR_ploidy_1.g.vcf.gz"
       target: "./output/HG00446/HG00446.chrX_nonPAR_ploidy_1.g.vcf.gz"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/HG00446/HG00446.chrX_nonPAR_ploidy_2.g.vcf.gz.bcftools-stats"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_HG00446_HG00446.chrX_nonPAR_ploidy_2.g.vcf.gz.bcftools-stats"
       target: "./output/HG00446/HG00446.chrX_nonPAR_ploidy_2.g.vcf.gz.bcftools-stats"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/HG00446/HG00446.cram.crai"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_HG00446_HG00446.cram.crai"
       target: "./output/HG00446/HG00446.cram.crai"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/HG00446/HG00446.cram.flagstat"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_HG00446_HG00446.cram.flagstat"
       target: "./output/HG00446/HG00446.cram.flagstat"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/HG00446/HG00446.cram.collect_base_dist_by_cycle.chart.pdf"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_HG00446_HG00446.cram.collect_base_dist_by_cycle.chart.pdf"
       target: "./output/HG00446/HG00446.cram.collect_base_dist_by_cycle.chart.pdf"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/HG00446/HG00446.cram.chrY_nonPAR_ploidy_1.wgs_metrics"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_HG00446_HG00446.cram.chrY_nonPAR_ploidy_1.wgs_metrics"
       target: "./output/HG00446/HG00446.cram.chrY_nonPAR_ploidy_1.wgs_metrics"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/HG00446/HG00446.cram.collect_base_dist_by_cycle.chart.png"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_HG00446_HG00446.cram.collect_base_dist_by_cycle.chart.png"
       target: "./output/HG00446/HG00446.cram.collect_base_dist_by_cycle.chart.png"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/HG00446/HG00446.autosome_PAR_ploidy_2.g.vcf.gz.bcftools-stats"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_HG00446_HG00446.autosome_PAR_ploidy_2.g.vcf.gz.bcftools-stats"
       target: "./output/HG00446/HG00446.autosome_PAR_ploidy_2.g.vcf.gz.bcftools-stats"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/HG00446/HG00446.cram.chrX_nonPAR_ploidy_2.wgs_metrics"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_HG00446_HG00446.cram.chrX_nonPAR_ploidy_2.wgs_metrics"
       target: "./output/HG00446/HG00446.cram.chrX_nonPAR_ploidy_2.wgs_metrics"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/HG00446/HG00446.autosome_PAR_ploidy_2.g.vcf.gz.tbi"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_HG00446_HG00446.autosome_PAR_ploidy_2.g.vcf.gz.tbi"
       target: "./output/HG00446/HG00446.autosome_PAR_ploidy_2.g.vcf.gz.tbi"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/HG00446/HG00446.metrics.txt"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_HG00446_HG00446.metrics.txt"
       target: "./output/HG00446/HG00446.metrics.txt"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/HG00446/HG00446.chrX_nonPAR_ploidy_2.g.vcf.gz.tbi"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_HG00446_HG00446.chrX_nonPAR_ploidy_2.g.vcf.gz.tbi"
       target: "./output/HG00446/HG00446.chrX_nonPAR_ploidy_2.g.vcf.gz.tbi"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/HG00446/HG00446.cram.chrX_nonPAR_ploidy_1.wgs_metrics"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_HG00446_HG00446.cram.chrX_nonPAR_ploidy_1.wgs_metrics"
       target: "./output/HG00446/HG00446.cram.chrX_nonPAR_ploidy_1.wgs_metrics"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/HG00446/HG00446.autosome_PAR_ploidy_2.g.vcf.gz"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_HG00446_HG00446.autosome_PAR_ploidy_2.g.vcf.gz"
       target: "./output/HG00446/HG00446.autosome_PAR_ploidy_2.g.vcf.gz"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/HG00446/HG00446.chrY_nonPAR_ploidy_1.g.vcf.gz.tbi"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_HG00446_HG00446.chrY_nonPAR_ploidy_1.g.vcf.gz.tbi"
       target: "./output/HG00446/HG00446.chrY_nonPAR_ploidy_1.g.vcf.gz.tbi"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/small-output/HG00446/HG00446.chrX_nonPAR_ploidy_2.g.vcf.gz"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_HG00446_HG00446.chrX_nonPAR_ploidy_2.g.vcf.gz"
       target: "./output/HG00446/HG00446.chrX_nonPAR_ploidy_2.g.vcf.gz"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/qc-filter/filtering-parameters.yaml"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._filtering-parameters.yaml"
       target: "./filtering-parameters.yaml"
       type: secondary
-    - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/qc-filter/mean_coverage.tsv"
+    - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/._output_mean_coverage.tsv"
       target: "./output/mean_coverage.tsv"
       type: secondary
   testing:
     - id: test_1
       files:
-        - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/qc-filter/wf_params.json"
+        - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/wf_params.json"
           target: wf_params.json
           type: wf_params
-        - url: "https://raw.githubusercontent.com/manabuishii/small-sampledata/14feb4f2d4cd623c4cbb2be512e828d8beaa3a6f/qc-filter/wf_engine_params.json"
+        - url: "https://zenodo.org/api/files/d82991dd-e5e6-4067-a398-c918ec35a647/wf_engine_params.json"
           target: wf_engine_params.json
           type: wf_engine_params
